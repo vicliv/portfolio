@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="animated-background">
+        <div class="gradient-overlay"></div>
+        <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Victor Livernoche</div>
+            <ul class="nav-links">
+                <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#publications" data-i18n="nav.publications">Publications</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+                    FR
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home/Introduction Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title" data-i18n="hero.title">
+                        <span class="highlight">Victor Livernoche</span> | Ph.D. Student at Mila
+                    </h1>
+                    <img id="hero-portrait" src="images/portrait.png" alt="Portrait of Victor Livernoche" class="hero-portrait">
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">
+                        I’m Victor Livernoche, a Montreal-born Ph.D. student at McGill University and Mila, supervised by Prof. Reihaneh Rabbany. Outside of research, I enjoy working out, playing sports, and making music. Academically, my work centers on generative modeling, anomaly and deepfake detection, and temporal graph learning. I’m especially interested in how large-scale generative systems can be used responsibly, and how we can design models and datasets that make AI more trustworthy and socially impactful.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="CV.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i>
+                            <span data-i18n="hero.cv">Download CV</span>
+                        </a>
+                        <a href="mailto:victor.livernoche@mail.mcgill.ca" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            <span data-i18n="hero.contact">Contact Me</span>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/vicliv" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://scholar.google.ca/citations?user=wgWMIK4AAAAJ&hl=fr&authuser=1" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/victor-livernoche" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About/CV Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="about.title">About Me</h2>
+                <div class="cv-content">
+                    <div class="cv-section">
+                        <h3 data-i18n="about.education">Education</h3>
+                        <div class="cv-item">
+                            <h4 data-i18n="edu.phd_title">Ph.D., Computer Science</h4>
+                            <p class="cv-meta" data-i18n="edu.phd_meta">McGill University • Sept 2024 – Aug 2028 • GPA: 4.0/4.0</p>
+                            <p data-i18n="edu.phd_desc">Machine learning research supervised by Prof. Reihaneh Rabbany.</p>
+                        </div>
+                        <div class="cv-item">
+                            <h4 data-i18n="edu.msc_title">M.Sc. (Thesis), Computer Science</h4>
+                            <p class="cv-meta" data-i18n="edu.msc_meta">McGill University • Sept 2022 – Aug 2024 • GPA: 4.0/4.0</p>
+                            <p data-i18n="edu.msc_desc">Machine learning research supervised by Prof. Siamak Ravanbakhsh.</p>
+                            <div class="cv-actions">
+                                <a href="https://escholarship.mcgill.ca/concern/theses/pk02ch45g" class="btn-small" target="_blank" rel="noopener noreferrer" data-i18n="edu.msc_thesis">Thesis</a>
+                            </div>
+                        </div>
+                        <div class="cv-item">
+                            <h4 data-i18n="edu.bsc_title">B.Sc., Honours Computer Science (Physics minor)</h4>
+                            <p class="cv-meta" data-i18n="edu.bsc_meta">McGill University • Sept 2019 – May 2022 • GPA: 3.89/4.0</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cv-section">
+                        <h3 data-i18n="about.experience">Experience</h3>
+                        <div class="cv-item">
+                            <h4 data-i18n="exp.mila_student_title">Research Scientist Student</h4>
+                            <p class="cv-meta" data-i18n="exp.mila_student_meta">Mila – Quebec AI Institute, Montréal • Sept 2022 – Present</p>
+                            <p data-i18n="exp.mila_student_desc">Focused on diffusion models and anomaly detection; developed a new anomaly detection method based on diffusion models. Applied models to galactic star anomalies. Member of Mila’s Mental Health Committee.</p>
+                        </div>
+                        <div class="cv-item">
+                            <h4 data-i18n="exp.mila_intern_title">Research Intern</h4>
+                            <p class="cv-meta" data-i18n="exp.mila_intern_meta">Mila – Quebec AI Institute, Montréal • May 2022 – Aug 2022</p>
+                            <p data-i18n="exp.mila_intern_desc">Parametrized the BabyAI reinforcement learning environment in Prof. Yoshua Bengio’s group.</p>
+                        </div>
+                        <div class="cv-item">
+                            <h4 data-i18n="exp.ugra_title">Undergraduate Research Assistant</h4>
+                            <p class="cv-meta" data-i18n="exp.ugra_meta">McGill University, Montréal • May 2021 – Jun 2021</p>
+                            <p data-i18n="exp.ugra_desc">Analyzed data compaction methods in large databases (with Prof. Oana Balmau).</p>
+                        </div>
+                        <div class="cv-item">
+                            <h4 data-i18n="exp.tech3_title">Research Intern</h4>
+                            <p class="cv-meta" data-i18n="exp.tech3_meta">Tech3Lab, HEC Montréal • May 2019 – Aug 2019</p>
+                            <p data-i18n="exp.tech3_desc">Supported research operations (admin tasks, simulations, funding processes, partner communications) with Prof. Pierre‑Majorique Léger.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cv-section">
+                        <h3 data-i18n="about.interests">Research Interests</h3>
+                        <ul class="interest-list">
+                            <li data-i18n="interests.1">Generative modeling for images and multimodal generation</li>
+                            <li data-i18n="interests.2">Energy‑based generative models (theory and applications)</li>
+                            <li data-i18n="interests.3">Anomaly detection and deepfake detection against misinformation</li>
+                            <li data-i18n="interests.4">Temporal graph representation learning</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cv-section">
+                        <h3 data-i18n="about.skills">Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-i18n="skills.dl">Deep Learning</div>
+                            <div class="skill-item" data-i18n="skills.diffusion">Diffusion Models</div>
+                            <div class="skill-item" data-i18n="skills.temporal">Temporal Graphs</div>
+                            <div class="skill-item" data-i18n="skills.python">Python</div>
+                            <div class="skill-item" data-i18n="skills.pytorch">Pytorch</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title" data-i18n="pubs.title">Publications</h2>
+                <div class="publications-grid">
+                    <div class="publication-card">
+                        <h3>OpenFake: An Open Dataset and Platform Toward Large-Scale Deepfake Detection</h3>
+                        <p class="publication-authors">Victor Livernoche, Akshatha Arodi, Andreea Musulan, Zachary Yang, Adam Salvail-Berard, Gaétan Marceau Caron, Jean-François Godbout, Reihaneh Rabbany</p>
+                        <p class="publication-meta" data-i18n="pubs.openfake_meta">Under review • Submitted to NeurIPS Datasets & Benchmarks 2025</p>
+                        <p class="publication-abstract" data-i18n="pubs.openfake_abs">
+                            Large-scale dataset and crowdsourced platform for deepfake detection; coauthors include Arodi, Musulan, Yang, Salvail‑Berard, Marceau Caron, Godbout, and Rabbany.
+                        </p>
+                        <div class="publication-links">
+                            <a href="#" class="btn-small" data-i18n="pubs.preprint">Preprint</a>
+                        </div>
+                    </div>
+                    <div class="publication-card">
+                        <h3>On Diffusion Modeling for Anomaly Detection</h3>
+                        <p class="publication-authors">Victor Livernoche, Vineet Jain, Yashar Hezaveh, Siamak Ravanbakhsh</p>
+                        <p class="publication-meta" data-i18n="pubs.diffusion_meta">ICLR 2024 • Spotlight (Top 5%)</p>
+                        <p class="publication-abstract" data-i18n="pubs.diffusion_abs">
+                            Explores diffusion-model-based anomaly detection, showing strong performance with efficient scoring strategies.
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://openreview.net/forum?id=lR3rk7ysXz" class="btn-small" target="_blank" rel="noopener noreferrer" data-i18n="pubs.paper">Paper</a>
+                        </div>
+                    </div>
+                    <div class="publication-card">
+                        <h3>A Reproduction of Automatic Multi-Label Prompting: Simple and Interpretable Few-Shot Classification</h3>
+                        <p class="publication-authors">Victor Livernoche, Vidya Sujaya</p>
+                        <p class="publication-meta" data-i18n="pubs.prompt_meta">ML Reproducibility Challenge 2022 • ReScience C 9.2 (#33) • 2023</p>
+                        <p class="publication-abstract" data-i18n="pubs.prompt_abs">
+                            Reproduction study evaluating Automatic Multi‑Label Prompting for few-shot classification.
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://openreview.net/forum?id=t8ZZ2Y356Ix" class="btn-small" target="_blank" rel="noopener noreferrer" data-i18n="pubs.paper">Paper</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="projects.title">Other Projects</h2>
+                <div class="projects-grid">
+                    
+                    <div class="project-card">
+                        <h3 data-i18n="projects.nnfs.title">Neural Network from Scratch</h3>
+                        <p data-i18n="projects.nnfs.desc">A Jupyter notebook implementing a neural network from scratch using NumPy.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/vicliv/NN-from-scratch/blob/main/neural_network.ipynb" class="btn-small" data-i18n="projects.code">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3 data-i18n="projects.upcoming.title">Upcoming</h3>
+                        <p data-i18n="projects.upcoming.desc">...</p>
+                        <div class="project-tech">
+                        </div>
+                        <div class="project-links">
+                        </div>
+                    </div>
+                    <!-- TBD: Project cards templates retained for future use
+                    <div class="project-card">
+                        <h3 data-i18n="projects.mldash.title">ML Research Dashboard</h3>
+                        <p data-i18n="projects.mldash.desc">Interactive dashboard for visualizing machine learning experiments and temporal graph research results.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small" data-i18n="projects.demo">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+                <div class="contact-content">
+                    <p data-i18n="contact.body">I'm always interested in discussing research opportunities, collaborations, or innovative projects in temporal graphs and machine learning.</p>
+                    <div class="contact-buttons">
+                        <a href="mailto:victor.livernoche@mail.mcgill.ca" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            <span data-i18n="contact.send">Send Email</span>
+                        </a>
+                        <a href="CV.pdf" class="btn btn-secondary" download>
+                            <i class="fas fa-download"></i>
+                            <span data-i18n="contact.cv">Download CV</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer.copy">&copy; 2025 Victor. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/vicliv" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://scholar.google.ca/citations?user=wgWMIK4AAAAJ&hl=fr&authuser=1" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+                <a href="https://linkedin.com/in/victor-livernoche" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
