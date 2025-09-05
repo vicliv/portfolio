@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="animated-background">
+        <div class="gradient-overlay"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Victor</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home/Introduction Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Victor</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        I'm interested in temporal graphs learning, machine learning research, and building innovative solutions that bridge theory and practice.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="/cv" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </a>
+                        <a href="mailto:victor@example.com" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Contact Me
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/vicliv" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/victor" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About/CV Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="cv-content">
+                    <div class="cv-section">
+                        <h3>Education</h3>
+                        <div class="cv-item">
+                            <h4>Your Degree</h4>
+                            <p class="cv-meta">University Name • Year</p>
+                            <p>Relevant coursework and achievements in temporal graphs, machine learning, and related fields.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cv-section">
+                        <h3>Experience</h3>
+                        <div class="cv-item">
+                            <h4>Research Position</h4>
+                            <p class="cv-meta">Institution • Duration</p>
+                            <p>Research experience in temporal graphs learning and machine learning applications.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cv-section">
+                        <h3>Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">Machine Learning</div>
+                            <div class="skill-item">Temporal Graphs</div>
+                            <div class="skill-item">Python</div>
+                            <div class="skill-item">Research</div>
+                            <div class="skill-item">Data Analysis</div>
+                            <div class="skill-item">Node.js</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Publications</h2>
+                <div class="publications-grid">
+                    <div class="publication-card">
+                        <h3>Temporal Graph Learning for Dynamic Networks</h3>
+                        <p class="publication-meta">Journal of Machine Learning Research • 2024</p>
+                        <p class="publication-abstract">
+                            This paper presents a novel approach to learning from temporal graphs, focusing on dynamic network analysis and prediction. We introduce new methodologies for capturing temporal dependencies in graph structures.
+                        </p>
+                        <div class="publication-links">
+                            <a href="#" class="btn-small">Paper</a>
+                            <a href="#" class="btn-small">Code</a>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-card">
+                        <h3>Graph Neural Networks for Time Series Analysis</h3>
+                        <p class="publication-meta">Conference on Neural Information Processing Systems • 2023</p>
+                        <p class="publication-abstract">
+                            A comprehensive study on applying graph neural networks to time series data, demonstrating improved performance on various forecasting tasks through temporal graph representations.
+                        </p>
+                        <div class="publication-links">
+                            <a href="#" class="btn-small">Paper</a>
+                            <a href="#" class="btn-small">Slides</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Other Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Portfolio Website</h3>
+                        <p>A dynamic portfolio website built with Node.js and Express, featuring a dark theme and responsive design.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/vicliv/portfolio" class="btn-small">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Temporal Graph Analyzer</h3>
+                        <p>A research tool for analyzing temporal graphs and dynamic networks, implementing state-of-the-art algorithms.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NetworkX</span>
+                            <span class="tech-tag">PyTorch</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>ML Research Dashboard</h3>
+                        <p>Interactive dashboard for visualizing machine learning experiments and temporal graph research results.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <p>I'm always interested in discussing research opportunities, collaborations, or innovative projects in temporal graphs and machine learning.</p>
+                    <div class="contact-buttons">
+                        <a href="mailto:victor@example.com" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Send Email
+                        </a>
+                        <a href="/cv" class="btn btn-secondary" download>
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Victor. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/vicliv" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/victor" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
