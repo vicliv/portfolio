@@ -113,6 +113,10 @@ body {
     gap: 0.75rem;
 }
 
+.mobile-menu-btn {
+    display: none !important;
+}
+
 .lang-toggle {
     padding: 0.5rem 0.9rem;
     border-radius: 8px;
@@ -618,10 +622,6 @@ body {
 }
 
 @media (max-width: 480px) {
-    .nav-links {
-        display: none;
-    }
-    
     .hero-title {
         font-size: 2rem;
     }
