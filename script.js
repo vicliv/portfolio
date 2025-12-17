@@ -204,6 +204,8 @@ document.addEventListener('DOMContentLoaded', function() {
             'pubs.title': 'Publications',
             'pubs.openfake_meta': 'Under review • Submitted to NeurIPS Datasets & Benchmarks 2025',
             'pubs.openfake_abs': 'OpenFake is a politically focused benchmark for modern deepfake detection. It pairs ~3M real images with captions and 963k high‑quality synthetic images from proprietary and open‑source generators, maps misinformation modalities seen on social media, and includes a human‑perception study showing recent proprietary models are hard to distinguish. A crowdsourced adversarial platform continually adds challenging fakes to keep detectors robust.',
+            'pubs.deepfakes_meta': '[UNDER REVIEW] Submitted to The Web Conference 2026 — Short Paper Track',
+            'pubs.deepfakes_abs': 'Concerns about AI-generated political content are growing, yet there is limited empirical evidence on how deepfakes actually appear and circulate across social platforms during major events in democratic countries. In this study, we analyze 187,778 posts from X, Bluesky, and Reddit during the 2025 Canadian federal election with a high-accuracy detection framework. We find that 5.86% of election-related images were deepfakes, shared more often by right-leaning accounts (8.66%) than left-leaning users (4.42%). Most detected deepfakes were benign, and harmful ones saw limited reach—just 0.12% of X views—though realistic fabrications drew higher engagement, highlighting their potential misuse.',
             'pubs.preprint': 'Preprint',
             'pubs.paper': 'Paper',
             'pubs.diffusion_meta': 'ICLR 2024 • Spotlight (Top 5%)',
@@ -273,8 +275,10 @@ document.addEventListener('DOMContentLoaded', function() {
             'skills.python': 'Python',
             'skills.pytorch': 'PyTorch',
             'pubs.title': 'Publications',
-            'pubs.openfake_meta': 'En évaluation • Soumis à NeurIPS Datasets & Benchmarks 2025',
+            'pubs.openfake_meta': 'En évaluation • Soumis à ICLR 2026',
             'pubs.openfake_abs': "OpenFake est un benchmark axé sur le politique pour la détection de deepfakes modernes. Il associe ~3 M d’images réelles avec légendes à 963 k d’images synthétiques de haute qualité issues de générateurs propriétaires et open source, cartographie les modalités de désinformation observées sur les réseaux sociaux et inclut une étude de perception montrant que les modèles propriétaires récents sont difficiles à distinguer. Une plateforme participative adversariale ajoute en continu des cas difficiles pour maintenir la robustesse des détecteurs.",
+            'pubs.deepfakes_meta': '[EN ÉVALUATION] Soumis à The Web Conference 2026 — Short Paper Track',
+            'pubs.deepfakes_abs': "Les inquiétudes envers les contenus politiques générés par l’IA augmentent, mais on dispose de peu de données empiriques sur la présence réelle des deepfakes durant les grands événements démocratiques. Nous analysons 187 778 publications sur X, Bluesky et Reddit pendant la campagne fédérale canadienne de 2025 à l’aide d’un détecteur haute précision entraîné sur des modèles génératifs modernes. Nous montrons que 5,86 % des images liées à l’élection étaient des deepfakes, partagées plus souvent par les comptes de droite (8,66 %) que ceux de gauche (4,42 %). La plupart étaient bénins et les deepfakes nuisibles constituaient seulement 0,12 % des vues sur X, mais les fabrications réalistes suscitaient plus d’engagement, soulignant leur potentiel de mésusage.",
             'pubs.preprint': 'Prépublication',
             'pubs.paper': 'Article',
             'pubs.diffusion_meta': 'ICLR 2024 • Spotlight (Top 5%)',
@@ -495,81 +499,4 @@ document.addEventListener('DOMContentLoaded', function() {
         background.style.transform = `translateY(${rate}px)`;
     });
 
-    // Mobile menu toggle (if needed)
-    function createMobileMenu() {
-        const nav = document.querySelector('.nav-container');
-        const navLinks = document.querySelector('.nav-links');
-        
-        // Check if mobile menu button already exists
-        if (document.querySelector('.mobile-menu-btn')) return;
-        
-        const mobileMenuBtn = document.createElement('button');
-        mobileMenuBtn.className = 'mobile-menu-btn';
-        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-        mobileMenuBtn.style.cssText = `
-            display: none;
-            background: none;
-            border: none;
-            color: var(--text-primary);
-            font-size: 1.5rem;
-            cursor: pointer;
-        `;
-        
-        nav.appendChild(mobileMenuBtn);
-        
-        mobileMenuBtn.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-            const icon = this.querySelector('i');
-            icon.className = navLinks.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
-        });
-        
-        // Show mobile menu button on small screens
-        function checkScreenSize() {
-            if (window.innerWidth <= 768) {
-                mobileMenuBtn.style.display = 'block';
-                navLinks.style.cssText = `
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    width: 100%;
-                    background: rgba(10, 10, 10, 0.95);
-                    flex-direction: column;
-                    padding: 1rem;
-                    border-top: 1px solid var(--border-color);
-                    transform: translateY(-100%);
-                    opacity: 0;
-                    visibility: hidden;
-                    transition: all 0.3s ease;
-                `;
-            } else {
-                mobileMenuBtn.style.display = 'none';
-                navLinks.style.cssText = '';
-                navLinks.classList.remove('active');
-            }
-        }
-        
-        window.addEventListener('resize', checkScreenSize);
-        checkScreenSize();
-    }
-    
-    createMobileMenu();
 });
-
-// Add CSS for mobile menu active state
-const style = document.createElement('style');
-style.textContent = `
-    .nav-links.active {
-        transform: translateY(0) !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-    }
-    
-    .nav-links a.active {
-        color: var(--primary-color) !important;
-    }
-    
-    .nav-links a.active::after {
-        width: 100% !important;
-    }
-`;
-document.head.appendChild(style);
