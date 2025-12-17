@@ -561,14 +561,20 @@ body {
 @media (max-width: 768px) {
     .nav-container {
         padding: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
     }
     
     .nav-links {
         gap: 1rem;
+        flex-wrap: wrap;
+        width: 100%;
     }
     
     .nav-actions {
-        margin-left: auto;
+        margin-left: 0;
+        align-self: flex-end;
     }
 
     .hero-title {
