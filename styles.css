@@ -562,6 +562,21 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 900px) {
+    /* Hide the desktop nav links on mobile to keep only brand + language toggle */
+    .nav-links {
+        display: none !important;
+    }
+
+    .nav-container {
+        padding: 0.85rem 1.25rem;
+    }
+
+    .nav-brand {
+        font-size: 1.35rem;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-container {
         padding: 1rem;
