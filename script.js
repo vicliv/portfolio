@@ -443,4 +443,47 @@ document.addEventListener('DOMContentLoaded', function () {
         background.style.transform = `translateY(${rate}px)`;
     });
 
+    // =========================================
+    // Dark / Light Mode Toggle
+    // =========================================
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const blobContainer = document.createElement('div');
+    blobContainer.id = 'light-blobs';
+    blobContainer.innerHTML = `
+        <div class="light-blob light-blob-1"></div>
+        <div class="light-blob light-blob-2"></div>
+        <div class="light-blob light-blob-3"></div>
+    `;
+
+    function applyTheme(mode) {
+        if (mode === 'light') {
+            document.body.classList.add('light-mode');
+            if (!document.getElementById('light-blobs')) {
+                document.body.appendChild(blobContainer);
+            }
+            if (themeToggleBtn) {
+                themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+            }
+        } else {
+            document.body.classList.remove('light-mode');
+            const blobs = document.getElementById('light-blobs');
+            if (blobs) blobs.remove();
+            if (themeToggleBtn) {
+                themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+            }
+        }
+        localStorage.setItem('theme', mode);
+    }
+
+    // Initialize theme from saved preference (default: dark)
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    applyTheme(savedTheme);
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            const current = document.body.classList.contains('light-mode') ? 'light' : 'dark';
+            applyTheme(current === 'dark' ? 'light' : 'dark');
+        });
+    }
+
 });

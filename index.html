@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <div class="animated-background">
         <div class="gradient-overlay"></div>
@@ -27,6 +29,9 @@
                 <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
             <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
                 <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
                     FR
                 </button>
@@ -42,9 +47,15 @@
                     <h1 class="hero-title" data-i18n="hero.title">
                         <span class="highlight">Victor Livernoche</span> | Ph.D. Student at Mila
                     </h1>
-                    <img id="hero-portrait" src="images/portrait.png" alt="Portrait of Victor Livernoche" class="hero-portrait">
+                    <img id="hero-portrait" src="images/portrait.png" alt="Portrait of Victor Livernoche"
+                        class="hero-portrait">
                     <p class="hero-subtitle" data-i18n="hero.subtitle">
-                        I’m Victor Livernoche, a Montreal-born Ph.D. student at McGill University and Mila, supervised by Prof. Reihaneh Rabbany. Outside of research, I enjoy working out, playing sports, and making music. Academically, my work centers on generative modeling, anomaly and deepfake detection, and temporal graph learning. I’m especially interested in how large-scale generative systems can be used responsibly, and how we can design models and datasets that make AI more trustworthy and socially impactful.
+                        I’m Victor Livernoche, a Montreal-born Ph.D. student at McGill University and Mila, supervised
+                        by Prof. Reihaneh Rabbany. Outside of research, I enjoy working out, playing sports, and making
+                        music. Academically, my work centers on generative modeling, anomaly and deepfake detection, and
+                        temporal graph learning. I’m especially interested in how large-scale generative systems can be
+                        used responsibly, and how we can design models and datasets that make AI more trustworthy and
+                        socially impactful.
                     </p>
                     <div class="hero-buttons">
                         <a href="CV.pdf" class="btn btn-primary" download>
@@ -60,7 +71,8 @@
                         <a href="https://github.com/vicliv" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://scholar.google.ca/citations?user=wgWMIK4AAAAJ&hl=fr&authuser=1" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+                        <a href="https://scholar.google.ca/citations?user=wgWMIK4AAAAJ&hl=fr&authuser=1" target="_blank"
+                            rel="noopener noreferrer" aria-label="Google Scholar">
                             <i class="fas fa-graduation-cap"></i>
                         </a>
                         <a href="https://linkedin.com/in/victor-livernoche" target="_blank" rel="noopener noreferrer">
@@ -80,47 +92,62 @@
                         <h3 data-i18n="about.education">Education</h3>
                         <div class="cv-item">
                             <h4 data-i18n="edu.phd_title">Ph.D., Computer Science</h4>
-                            <p class="cv-meta" data-i18n="edu.phd_meta">McGill University • Sept 2024 – Aug 2028 • GPA: 4.0/4.0</p>
-                            <p data-i18n="edu.phd_desc">Machine learning research supervised by Prof. Reihaneh Rabbany.</p>
+                            <p class="cv-meta" data-i18n="edu.phd_meta">McGill University • Sept 2024 – Aug 2028 • GPA:
+                                4.0/4.0</p>
+                            <p data-i18n="edu.phd_desc">Machine learning research supervised by Prof. Reihaneh Rabbany.
+                            </p>
                         </div>
                         <div class="cv-item">
                             <h4 data-i18n="edu.msc_title">M.Sc. (Thesis), Computer Science</h4>
-                            <p class="cv-meta" data-i18n="edu.msc_meta">McGill University • Sept 2022 – Aug 2024 • GPA: 4.0/4.0</p>
-                            <p data-i18n="edu.msc_desc">Machine learning research supervised by Prof. Siamak Ravanbakhsh.</p>
+                            <p class="cv-meta" data-i18n="edu.msc_meta">McGill University • Sept 2022 – Aug 2024 • GPA:
+                                4.0/4.0</p>
+                            <p data-i18n="edu.msc_desc">Machine learning research supervised by Prof. Siamak
+                                Ravanbakhsh.</p>
                             <div class="cv-actions">
-                                <a href="https://escholarship.mcgill.ca/concern/theses/pk02ch45g" class="btn-small" target="_blank" rel="noopener noreferrer" data-i18n="edu.msc_thesis">Thesis</a>
+                                <a href="https://escholarship.mcgill.ca/concern/theses/pk02ch45g" class="btn-small"
+                                    target="_blank" rel="noopener noreferrer" data-i18n="edu.msc_thesis">Thesis</a>
                             </div>
                         </div>
                         <div class="cv-item">
                             <h4 data-i18n="edu.bsc_title">B.Sc., Honours Computer Science (Physics minor)</h4>
-                            <p class="cv-meta" data-i18n="edu.bsc_meta">McGill University • Sept 2019 – May 2022 • GPA: 3.89/4.0</p>
+                            <p class="cv-meta" data-i18n="edu.bsc_meta">McGill University • Sept 2019 – May 2022 • GPA:
+                                3.89/4.0</p>
                         </div>
                     </div>
-                    
+
                     <div class="cv-section">
                         <h3 data-i18n="about.experience">Experience</h3>
                         <div class="cv-item">
                             <h4 data-i18n="exp.mila_student_title">Research Scientist Student</h4>
-                            <p class="cv-meta" data-i18n="exp.mila_student_meta">Mila – Quebec AI Institute, Montréal • Sept 2022 – Present</p>
-                            <p data-i18n="exp.mila_student_desc">Focused on diffusion models and anomaly detection; developed a new anomaly detection method based on diffusion models. Applied models to galactic star anomalies. Member of Mila’s Mental Health Committee.</p>
+                            <p class="cv-meta" data-i18n="exp.mila_student_meta">Mila – Quebec AI Institute, Montréal •
+                                Sept 2022 – Present</p>
+                            <p data-i18n="exp.mila_student_desc">Focused on diffusion models and anomaly detection;
+                                developed a new anomaly detection method based on diffusion models. Applied models to
+                                galactic star anomalies. Member of Mila’s Mental Health Committee.</p>
                         </div>
                         <div class="cv-item">
                             <h4 data-i18n="exp.mila_intern_title">Research Intern</h4>
-                            <p class="cv-meta" data-i18n="exp.mila_intern_meta">Mila – Quebec AI Institute, Montréal • May 2022 – Aug 2022</p>
-                            <p data-i18n="exp.mila_intern_desc">Parametrized the BabyAI reinforcement learning environment in Prof. Yoshua Bengio’s group.</p>
+                            <p class="cv-meta" data-i18n="exp.mila_intern_meta">Mila – Quebec AI Institute, Montréal •
+                                May 2022 – Aug 2022</p>
+                            <p data-i18n="exp.mila_intern_desc">Parametrized the BabyAI reinforcement learning
+                                environment in Prof. Yoshua Bengio’s group.</p>
                         </div>
                         <div class="cv-item">
                             <h4 data-i18n="exp.ugra_title">Undergraduate Research Assistant</h4>
-                            <p class="cv-meta" data-i18n="exp.ugra_meta">McGill University, Montréal • May 2021 – Jun 2021</p>
-                            <p data-i18n="exp.ugra_desc">Analyzed data compaction methods in large databases (with Prof. Oana Balmau).</p>
+                            <p class="cv-meta" data-i18n="exp.ugra_meta">McGill University, Montréal • May 2021 – Jun
+                                2021</p>
+                            <p data-i18n="exp.ugra_desc">Analyzed data compaction methods in large databases (with Prof.
+                                Oana Balmau).</p>
                         </div>
                         <div class="cv-item">
                             <h4 data-i18n="exp.tech3_title">Research Intern</h4>
-                            <p class="cv-meta" data-i18n="exp.tech3_meta">Tech3Lab, HEC Montréal • May 2019 – Aug 2019</p>
-                            <p data-i18n="exp.tech3_desc">Supported research operations (admin tasks, simulations, funding processes, partner communications) with Prof. Pierre‑Majorique Léger.</p>
+                            <p class="cv-meta" data-i18n="exp.tech3_meta">Tech3Lab, HEC Montréal • May 2019 – Aug 2019
+                            </p>
+                            <p data-i18n="exp.tech3_desc">Supported research operations (admin tasks, simulations,
+                                funding processes, partner communications) with Prof. Pierre‑Majorique Léger.</p>
                         </div>
                     </div>
-                    
+
                     <div class="cv-section">
                         <h3 data-i18n="about.interests">Research Interests</h3>
                         <ul class="interest-list">
@@ -131,7 +158,7 @@
                             <li data-i18n="interests.5">Anomaly detection</li>
                         </ul>
                     </div>
-                    
+
                     <div class="cv-section">
                         <h3 data-i18n="about.skills">Skills</h3>
                         <div class="skills-grid">
@@ -152,47 +179,73 @@
                 <h2 class="section-title" data-i18n="pubs.title">Publications</h2>
                 <div class="publications-grid">
                     <div class="publication-card">
-                        <h3>Deepfakes in the 2025 Canadian Election: Prevalence, Partisanship, and Platform Dynamics</h3>
-                        <p class="publication-authors">Victor Livernoche, Andreea Musulan, Zachary Yang, Jean-François Godbout, Reihaneh Rabbany</p>
-                        <p class="publication-meta" data-i18n="pubs.deepfakes_meta">In Proceedings of the ACM Web Conference 2026</p>
+                        <h3>Deepfakes in the 2025 Canadian Election: Prevalence, Partisanship, and Platform Dynamics
+                        </h3>
+                        <p class="publication-authors">Victor Livernoche, Andreea Musulan, Zachary Yang, Jean-François
+                            Godbout, Reihaneh Rabbany</p>
+                        <p class="publication-meta" data-i18n="pubs.deepfakes_meta">In Proceedings of the ACM Web
+                            Conference 2026</p>
                         <p class="publication-abstract" data-i18n="pubs.deepfakes_abs">
-                            Concerns about AI-generated political content are growing, yet there is limited empirical evidence on how deepfakes actually appear and circulate across social platforms during major events in democratic countries. In this study, we present one of the first in-depth analyses of how these realistic synthetic media shape the political landscape online, focusing specifically on the 2025 Canadian federal election. By analyzing 187,778 posts from X, Bluesky, and Reddit with a high-accuracy detection framework trained on a diverse set of modern generative models, we find that 5.86% of election-related images were deepfakes. Right-leaning accounts shared them more frequently, with 8.66% of their posted images flagged compared to 4.42% for left-leaning users, often with defamatory or conspiratorial intent. Yet, most detected deepfakes were benign or non-political, and harmful ones drew little attention, accounting for only 0.12% of all views on X. Overall, deepfakes were present in the election conversation, but their reach was modest, and realistic fabricated images, although less common, drew higher engagement, highlighting growing concerns about their potential misuse.
+                            Concerns about AI-generated political content are growing, yet there is limited empirical
+                            evidence on how deepfakes actually appear and circulate across social platforms during major
+                            events in democratic countries. In this study, we present one of the first in-depth analyses
+                            of how these realistic synthetic media shape the political landscape online, focusing
+                            specifically on the 2025 Canadian federal election. By analyzing 187,778 posts from X,
+                            Bluesky, and Reddit with a high-accuracy detection framework trained on a diverse set of
+                            modern generative models, we find that 5.86% of election-related images were deepfakes.
+                            Right-leaning accounts shared them more frequently, with 8.66% of their posted images
+                            flagged compared to 4.42% for left-leaning users, often with defamatory or conspiratorial
+                            intent. Yet, most detected deepfakes were benign or non-political, and harmful ones drew
+                            little attention, accounting for only 0.12% of all views on X. Overall, deepfakes were
+                            present in the election conversation, but their reach was modest, and realistic fabricated
+                            images, although less common, drew higher engagement, highlighting growing concerns about
+                            their potential misuse.
                         </p>
                         <div class="publication-links">
-                            <a href="https://arxiv.org/abs/2512.13915" class="btn-small" data-i18n="pubs.preprint">Preprint</a>
+                            <a href="https://arxiv.org/abs/2512.13915" class="btn-small"
+                                data-i18n="pubs.preprint">Preprint</a>
                         </div>
                     </div>
                     <div class="publication-card">
                         <h3>OpenFake: An Open Dataset and Platform Toward Real-World Deepfake Detection</h3>
-                        <p class="publication-authors">Victor Livernoche, Akshatha Arodi, Andreea Musulan, Zachary Yang, Adam Salvail-Berard, Gaétan Marceau Caron, Jean-François Godbout, Reihaneh Rabbany</p>
+                        <p class="publication-authors">Victor Livernoche, Akshatha Arodi, Andreea Musulan, Zachary Yang,
+                            Adam Salvail-Berard, Gaétan Marceau Caron, Jean-François Godbout, Reihaneh Rabbany</p>
                         <p class="publication-meta" data-i18n="pubs.openfake_meta">Under review</p>
                         <p class="publication-abstract" data-i18n="pubs.openfake_abs">
-                            Large-scale dataset and crowdsourced platform for deepfake detection; coauthors include Arodi, Musulan, Yang, Salvail‑Berard, Marceau Caron, Godbout, and Rabbany.
+                            Large-scale dataset and crowdsourced platform for deepfake detection; coauthors include
+                            Arodi, Musulan, Yang, Salvail‑Berard, Marceau Caron, Godbout, and Rabbany.
                         </p>
                         <div class="publication-links">
-                            <a href="https://arxiv.org/abs/2509.09495" class="btn-small" data-i18n="pubs.preprint">Preprint</a>
+                            <a href="https://arxiv.org/abs/2509.09495" class="btn-small"
+                                data-i18n="pubs.preprint">Preprint</a>
                         </div>
                     </div>
                     <div class="publication-card">
                         <h3>On Diffusion Modeling for Anomaly Detection</h3>
-                        <p class="publication-authors">Victor Livernoche, Vineet Jain, Yashar Hezaveh, Siamak Ravanbakhsh</p>
+                        <p class="publication-authors">Victor Livernoche, Vineet Jain, Yashar Hezaveh, Siamak
+                            Ravanbakhsh</p>
                         <p class="publication-meta" data-i18n="pubs.diffusion_meta">ICLR 2024 • Spotlight (Top 5%)</p>
                         <p class="publication-abstract" data-i18n="pubs.diffusion_abs">
-                            Explores diffusion-model-based anomaly detection, showing strong performance with efficient scoring strategies.
+                            Explores diffusion-model-based anomaly detection, showing strong performance with efficient
+                            scoring strategies.
                         </p>
                         <div class="publication-links">
-                            <a href="https://openreview.net/forum?id=lR3rk7ysXz" class="btn-small" target="_blank" rel="noopener noreferrer" data-i18n="pubs.paper">Paper</a>
+                            <a href="https://openreview.net/forum?id=lR3rk7ysXz" class="btn-small" target="_blank"
+                                rel="noopener noreferrer" data-i18n="pubs.paper">Paper</a>
                         </div>
                     </div>
                     <div class="publication-card">
-                        <h3>A Reproduction of Automatic Multi-Label Prompting: Simple and Interpretable Few-Shot Classification</h3>
+                        <h3>A Reproduction of Automatic Multi-Label Prompting: Simple and Interpretable Few-Shot
+                            Classification</h3>
                         <p class="publication-authors">Victor Livernoche, Vidya Sujaya</p>
-                        <p class="publication-meta" data-i18n="pubs.prompt_meta">ML Reproducibility Challenge 2022 • ReScience C 9.2 (#33) • 2023</p>
+                        <p class="publication-meta" data-i18n="pubs.prompt_meta">ML Reproducibility Challenge 2022 •
+                            ReScience C 9.2 (#33) • 2023</p>
                         <p class="publication-abstract" data-i18n="pubs.prompt_abs">
                             Reproduction study evaluating Automatic Multi‑Label Prompting for few-shot classification.
                         </p>
                         <div class="publication-links">
-                            <a href="https://openreview.net/forum?id=t8ZZ2Y356Ix" class="btn-small" target="_blank" rel="noopener noreferrer" data-i18n="pubs.paper">Paper</a>
+                            <a href="https://openreview.net/forum?id=t8ZZ2Y356Ix" class="btn-small" target="_blank"
+                                rel="noopener noreferrer" data-i18n="pubs.paper">Paper</a>
                         </div>
                     </div>
                 </div>
@@ -204,20 +257,22 @@
             <div class="container">
                 <h2 class="section-title" data-i18n="projects.title">Other Projects</h2>
                 <div class="projects-grid">
-                    
+
                     <div class="project-card">
                         <h3 data-i18n="projects.nnfs.title">Neural Network from Scratch</h3>
-                        <p data-i18n="projects.nnfs.desc">A Jupyter notebook implementing a neural network from scratch using NumPy.</p>
+                        <p data-i18n="projects.nnfs.desc">A Jupyter notebook implementing a neural network from scratch
+                            using NumPy.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/vicliv/NN-from-scratch/blob/main/neural_network.ipynb" class="btn-small" data-i18n="projects.code">
+                            <a href="https://github.com/vicliv/NN-from-scratch/blob/main/neural_network.ipynb"
+                                class="btn-small" data-i18n="projects.code">
                                 <i class="fab fa-github"></i> Code
                             </a>
                         </div>
                     </div>
-                    
+
                     <div class="project-card">
                         <h3 data-i18n="projects.upcoming.title">Upcoming</h3>
                         <p data-i18n="projects.upcoming.desc">...</p>
@@ -251,7 +306,8 @@
             <div class="container">
                 <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
                 <div class="contact-content">
-                    <p data-i18n="contact.body">I'm always interested in discussing research opportunities, collaborations, or innovative projects in temporal graphs and machine learning.</p>
+                    <p data-i18n="contact.body">I'm always interested in discussing research opportunities,
+                        collaborations, or innovative projects in temporal graphs and machine learning.</p>
                     <div class="contact-buttons">
                         <a href="mailto:vlivernoche@gmail.com" class="btn btn-primary">
                             <i class="fas fa-envelope"></i>
@@ -274,7 +330,8 @@
                 <a href="https://github.com/vicliv" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://scholar.google.ca/citations?user=wgWMIK4AAAAJ&hl=fr&authuser=1" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+                <a href="https://scholar.google.ca/citations?user=wgWMIK4AAAAJ&hl=fr&authuser=1" target="_blank"
+                    rel="noopener noreferrer" aria-label="Google Scholar">
                     <i class="fas fa-graduation-cap"></i>
                 </a>
                 <a href="https://linkedin.com/in/victor-livernoche" target="_blank" rel="noopener noreferrer">
@@ -289,4 +346,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
