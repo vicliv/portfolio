@@ -1,0 +1,279 @@
+/* recipe.js — Single recipe page for Victor's recipe collection */
+
+const GITHUB_REPO   = 'vicliv/vicliv.github.io';
+const GITHUB_BRANCH = 'main';
+const LANG_KEY      = 'lang';
+
+/* ---- Quantity rounding constants ---- */
+const COOK_FRACTIONS = [0, 1/8, 1/4, 1/3, 3/8, 1/2, 5/8, 2/3, 3/4, 7/8];
+const FRAC_DISPLAY   = ['',  '⅛',  '¼',  '⅓',  '⅜',  '½',  '⅝',  '⅔',  '¾',  '⅞'];
+const VOLUME_UNITS   = new Set(['cup', 'cups', 'tbsp', 'tsp']);
+const METRIC_UNITS   = new Set(['g', 'kg', 'ml', 'L', 'l']);
+
+/* ---- UI strings ---- */
+const UI = {
+  en: {
+    ingredients:  'Ingredients',
+    instructions: 'Instructions',
+    notes:        'Notes',
+    editGithub:   'Edit on GitHub',
+    allRecipes:   'All Recipes',
+    backLabel:    'All Recipes',
+    servings:     'servings',
+    source:       'Source:',
+    notFound:     'Recipe not found.'
+  },
+  fr: {
+    ingredients:  'Ingrédients',
+    instructions: 'Instructions',
+    notes:        'Notes',
+    editGithub:   'Modifier sur GitHub',
+    allRecipes:   'Toutes les recettes',
+    backLabel:    'Toutes les recettes',
+    servings:     'portions',
+    source:       'Source\u00a0:',
+    notFound:     'Recette introuvable.'
+  }
+};
+
+/* ---- State ---- */
+let currentRecipe   = null;
+let currentPortions = 2;
+
+/* ---- Language helpers ---- */
+function getLang() {
+  return localStorage.getItem(LANG_KEY) ||
+    (navigator.language && navigator.language.startsWith('fr') ? 'fr' : 'en');
+}
+
+function t(key) {
+  const lang = getLang();
+  return (UI[lang] || UI.en)[key] || key;
+}
+
+/* ---- Quantity formatting ---- */
+function snapFraction(frac) {
+  let bestIdx = 0, bestDist = Math.abs(COOK_FRACTIONS[0] - frac);
+  for (let i = 1; i < COOK_FRACTIONS.length; i++) {
+    const d = Math.abs(COOK_FRACTIONS[i] - frac);
+    if (d < bestDist) { bestDist = d; bestIdx = i; }
+  }
+  return bestIdx;
+}
+
+function formatVolumeQty(scaled) {
+  const whole = Math.floor(scaled);
+  const frac  = scaled - whole;
+  const idx   = snapFraction(frac);
+
+  // If the fractional part is closer to 1 than to ⅞, round up to next whole
+  if (COOK_FRACTIONS[idx] > 0.9) return String(whole + 1);
+
+  const fracStr = FRAC_DISPLAY[idx];
+  if (whole === 0) return fracStr || '0';
+  if (!fracStr)    return String(whole);
+  return `${whole} ${fracStr}`;
+}
+
+function formatQuantity(quantity, unit, scaleFactor) {
+  if (quantity == null) return null;
+  const scaled = quantity * scaleFactor;
+
+  if (METRIC_UNITS.has(unit)) {
+    if (scaled >= 100) return String(Math.round(scaled / 5) * 5);
+    if (scaled >= 10)  return String(Math.round(scaled));
+    return String(Math.round(scaled * 10) / 10);
+  }
+
+  if (VOLUME_UNITS.has(unit)) return formatVolumeQty(scaled);
+
+  // Countable whole items — round to nearest int, minimum 1
+  return String(Math.max(1, Math.round(scaled)));
+}
+
+function renderIngredientItem(ing, scaleFactor) {
+  const lang = getLang();
+  const item = (lang === 'fr' && ing.itemFr) ? ing.itemFr : ing.item;
+
+  if (ing.quantity == null) {
+    return `<li class="ingredient-item"><span class="ingredient-qty"></span>${escHtml(item)}</li>`;
+  }
+
+  const qty  = formatQuantity(ing.quantity, ing.unit, scaleFactor);
+  const unit = ing.unit || '';
+
+  let qtyDisplay;
+  if (!unit) {
+    qtyDisplay = qty;
+  } else if (METRIC_UNITS.has(unit)) {
+    qtyDisplay = `${qty}${unit}`;   // "200g", "1.5L"
+  } else {
+    qtyDisplay = `${qty} ${unit}`;  // "1 cup", "2 tbsp"
+  }
+
+  return `<li class="ingredient-item"><span class="ingredient-qty">${escHtml(qtyDisplay)}</span>${escHtml(item)}</li>`;
+}
+
+/* ---- DOM rendering ---- */
+function renderIngredients(recipe, portions) {
+  const scaleFactor = portions / recipe.defaultPortions;
+  const list        = document.getElementById('ingredients-list');
+  const hasGroups   = recipe.ingredients.some(i => i.group);
+
+  if (hasGroups) {
+    const grouped = {}, order = [];
+    recipe.ingredients.forEach(ing => {
+      const g = ing.group || '';
+      if (!grouped[g]) { grouped[g] = []; order.push(g); }
+      grouped[g].push(ing);
+    });
+    let html = '';
+    for (const g of order) {
+      if (g) html += `<li class="ingredient-group-label">${escHtml(g)}</li>`;
+      html += grouped[g].map(ing => renderIngredientItem(ing, scaleFactor)).join('');
+    }
+    list.innerHTML = html;
+  } else {
+    list.innerHTML = recipe.ingredients.map(ing => renderIngredientItem(ing, scaleFactor)).join('');
+  }
+}
+
+function renderSteps(recipe) {
+  const lang = getLang();
+  const list = document.getElementById('steps-list');
+  list.innerHTML = recipe.steps.map(step => {
+    const text = (lang === 'fr' && step.textFr) ? step.textFr : step.text;
+    return `<li class="step-item"><span>${escHtml(text)}</span></li>`;
+  }).join('');
+}
+
+function renderNotes(recipe) {
+  const lang   = getLang();
+  const notes  = (lang === 'fr' && recipe.notesFr) ? recipe.notesFr : recipe.notes;
+  const el     = document.getElementById('recipe-notes');
+  if (notes) {
+    el.innerHTML   = `<h3>${t('notes')}</h3><p>${escHtml(notes)}</p>`;
+    el.style.display = '';
+  } else {
+    el.style.display = 'none';
+  }
+}
+
+function applyUIStrings() {
+  const lang = getLang();
+  document.documentElement.lang                        = lang;
+  document.getElementById('ingredients-title').textContent = t('ingredients');
+  document.getElementById('instructions-title').textContent = t('instructions');
+  document.getElementById('edit-label').textContent    = t('editGithub');
+  document.getElementById('all-recipes-label').textContent = t('allRecipes');
+  document.getElementById('back-label').textContent    = t('backLabel');
+  document.getElementById('lang-toggle').textContent   = lang === 'fr' ? 'EN' : 'FR';
+}
+
+function renderRecipe(recipe) {
+  const lang  = getLang();
+  const title = (lang === 'fr' && recipe.titleFr) ? recipe.titleFr : recipe.title;
+
+  document.title = `${title} — Victor's Recipes`;
+  document.getElementById('recipe-title').textContent = title;
+
+  // Header image
+  const imgEl = document.getElementById('recipe-header-image');
+  if (recipe.image) {
+    imgEl.src = recipe.image;
+    imgEl.alt = title;
+    imgEl.style.display = 'block';
+    imgEl.onerror = () => { imgEl.style.display = 'none'; };
+  } else {
+    imgEl.style.display = 'none';
+  }
+
+  // Portions label
+  const portionLabel = (lang === 'fr' && recipe.portionLabelFr)
+    ? recipe.portionLabelFr : (recipe.portionLabel || t('servings'));
+  document.getElementById('portions-label').textContent = portionLabel;
+
+  // Meta line
+  const metaParts = [];
+  if (recipe.time)       metaParts.push(`<span><i class="fas fa-clock"></i> ${escHtml(recipe.time)}</span>`);
+  if (recipe.difficulty) metaParts.push(`<span><i class="fas fa-signal"></i> ${escHtml(recipe.difficulty)}</span>`);
+  document.getElementById('recipe-meta').innerHTML = metaParts.join('');
+
+  renderIngredients(recipe, currentPortions);
+  renderSteps(recipe);
+  renderNotes(recipe);
+
+  // Edit on GitHub link
+  const editPath = recipe.editPath || `recipes/data/${recipe.slug}.json`;
+  document.getElementById('edit-link').href =
+    `https://github.com/${GITHUB_REPO}/edit/${GITHUB_BRANCH}/${editPath}`;
+
+  // Source
+  const sourceEl = document.getElementById('recipe-source');
+  sourceEl.innerHTML = recipe.source
+    ? `${t('source')} <a href="${escAttr(recipe.source)}" target="_blank" rel="noopener noreferrer">${escHtml(recipe.source)}</a>`
+    : '';
+}
+
+function updatePortions(delta) {
+  const next = Math.max(1, Math.min(20, currentPortions + delta));
+  if (next === currentPortions) return;
+  currentPortions = next;
+  document.getElementById('portions-display').textContent = currentPortions;
+  renderIngredients(currentRecipe, currentPortions);
+}
+
+/* ---- Escape helpers ---- */
+function escHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+function escAttr(str) { return escHtml(str); }
+
+/* ---- Init ---- */
+async function init() {
+  const params = new URLSearchParams(window.location.search);
+  const slug   = params.get('slug');
+
+  if (!slug) {
+    document.getElementById('recipe-title').textContent = t('notFound');
+    return;
+  }
+
+  let recipe;
+  try {
+    const resp = await fetch(`data/${encodeURIComponent(slug)}.json`);
+    if (!resp.ok) throw new Error();
+    recipe = await resp.json();
+  } catch {
+    document.getElementById('recipe-title').textContent = t('notFound');
+    return;
+  }
+
+  currentRecipe   = recipe;
+  currentPortions = recipe.defaultPortions || 2;
+  document.getElementById('portions-display').textContent = currentPortions;
+
+  applyUIStrings();
+  renderRecipe(recipe);
+
+  document.getElementById('portions-dec').addEventListener('click', () => updatePortions(-1));
+  document.getElementById('portions-inc').addEventListener('click', () => updatePortions(+1));
+
+  document.getElementById('lang-toggle').addEventListener('click', () => {
+    const next = getLang() === 'en' ? 'fr' : 'en';
+    localStorage.setItem(LANG_KEY, next);
+    applyUIStrings();
+    renderRecipe(recipe);
+  });
+}
+
+// Set initial lang state before async work
+(function () {
+  const lang = getLang();
+  document.getElementById('lang-toggle').textContent = lang === 'fr' ? 'EN' : 'FR';
+  document.documentElement.lang = lang;
+})();
+
+init();

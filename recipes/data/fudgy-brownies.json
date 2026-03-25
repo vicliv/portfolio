@@ -1,0 +1,38 @@
+{
+  "slug": "fudgy-brownies",
+  "title": "Fudgy Brownies",
+  "titleFr": "Brownies fondants",
+  "description": "The ultimate homemade brownies: fudgy, moist, intensely chocolatey with perfectly crispy edges. Ready in under an hour.",
+  "descriptionFr": "Les meilleurs brownies maison : fondants, moelleux et intensément chocolatés avec des bords croustillants. Prêts en moins d'une heure.",
+  "defaultPortions": 16,
+  "portionLabel": "brownies",
+  "portionLabelFr": "brownies",
+  "tags": ["dessert", "chocolate", "baking"],
+  "time": "55 min",
+  "difficulty": "easy",
+  "ingredients": [
+    { "quantity": 1.5, "unit": "cup", "item": "granulated sugar", "itemFr": "sucre en poudre", "group": "" },
+    { "quantity": 0.75, "unit": "cup", "item": "all-purpose flour", "itemFr": "farine tout usage", "group": "" },
+    { "quantity": 0.67, "unit": "cup", "item": "cocoa powder, sifted", "itemFr": "cacao en poudre, tamisé", "group": "" },
+    { "quantity": 0.5, "unit": "cup", "item": "powdered sugar, sifted", "itemFr": "sucre glace, tamisé", "group": "" },
+    { "quantity": 0.5, "unit": "cup", "item": "dark chocolate chips", "itemFr": "pépites de chocolat noir", "group": "" },
+    { "quantity": 0.75, "unit": "tsp", "item": "sea salt", "itemFr": "sel de mer", "group": "" },
+    { "quantity": 2, "unit": null, "item": "large eggs", "itemFr": "gros œufs", "group": "" },
+    { "quantity": 0.5, "unit": "cup", "item": "canola or olive oil", "itemFr": "huile de canola ou d'olive", "group": "" },
+    { "quantity": 2, "unit": "tbsp", "item": "water", "itemFr": "eau", "group": "" },
+    { "quantity": 0.5, "unit": "tsp", "item": "vanilla extract", "itemFr": "extrait de vanille", "group": "" }
+  ],
+  "steps": [
+    { "text": "Preheat the oven to 165°C (325°F). Grease a 20×20 cm (8×8-inch) baking dish and line with parchment paper.", "textFr": "Préchauffer le four à 165°C (325°F). Graisser un moule carré de 20×20 cm et le tapisser de papier sulfurisé." },
+    { "text": "In a bowl, combine all dry ingredients: granulated sugar, flour, cocoa powder, powdered sugar, chocolate chips, and salt.", "textFr": "Dans un bol, mélanger tous les ingrédients secs : sucre, farine, cacao, sucre glace, pépites de chocolat et sel." },
+    { "text": "In a large bowl, whisk together the wet ingredients: eggs, oil, water, and vanilla.", "textFr": "Dans un grand bol, fouetter les ingrédients humides : œufs, huile, eau et vanille." },
+    { "text": "Add the dry mixture to the wet mixture and stir until just combined — do not overmix.", "textFr": "Ajouter le mélange sec aux ingrédients humides et mélanger jusqu'à ce que ce soit juste incorporé — ne pas trop mélanger." },
+    { "text": "Pour into the prepared pan and smooth the top. Bake for 40–48 minutes, until a toothpick inserted in the centre comes out with only a few moist crumbs.", "textFr": "Verser dans le moule et lisser le dessus. Cuire 40 à 48 minutes, jusqu'à ce qu'un cure-dent inséré au centre ressorte avec quelques miettes humides seulement." },
+    { "text": "Cool completely in the pan before cutting into 16 squares.", "textFr": "Laisser refroidir complètement dans le moule avant de couper en 16 carrés." }
+  ],
+  "notes": "The key to fudgy brownies is pulling them out while the centre looks slightly underdone. They firm up as they cool. Store in an airtight container for up to 3 days.",
+  "notesFr": "Le secret des brownies fondants est de les sortir quand le centre semble encore légèrement pas tout à fait cuit. Ils se raffermissent en refroidissant.",
+  "image": "../images/fudgy-brownies.jpg",
+  "source": "https://www.loveandlemons.com/brownies-recipe/",
+  "editPath": "recipes/data/fudgy-brownies.json"
+}

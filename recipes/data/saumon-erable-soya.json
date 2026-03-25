@@ -1,0 +1,54 @@
+{
+  "slug": "saumon-erable-soya",
+  "title": "Maple-Soy Baked Salmon",
+  "titleFr": "Saumon à l'érable et au soya cuit au four",
+  "description": "A simple baked salmon glazed with a sweet and savoury maple-soy marinade. The glaze caramelizes beautifully in the oven for a rich, lacquered finish.",
+  "descriptionFr": "Un saumon au four facile, nappé d'une marinade sucrée-salée à l'érable et au soya. Le glaçage caramélise délicieusement pendant la cuisson.",
+  "defaultPortions": 4,
+  "portionLabel": "servings",
+  "portionLabelFr": "portions",
+  "tags": ["fish", "salmon", "baked", "quick"],
+  "time": "30 min",
+  "difficulty": "easy",
+  "ingredients": [
+    { "quantity": 800, "unit": "g", "item": "salmon fillet (skin-on, in 4 portions)", "itemFr": "filet de saumon (avec peau, en 4 portions)", "group": "" },
+    { "quantity": null, "unit": null, "item": "salt and pepper, to taste", "itemFr": "sel et poivre, au goût", "group": "" },
+    { "quantity": 60, "unit": "ml", "item": "maple syrup", "itemFr": "sirop d'érable", "group": "glaze" },
+    { "quantity": 60, "unit": "ml", "item": "soy sauce", "itemFr": "sauce soya", "group": "glaze" },
+    { "quantity": 2, "unit": "tbsp", "item": "olive oil", "itemFr": "huile d'olive", "group": "glaze" },
+    { "quantity": 2, "unit": "", "item": "garlic cloves, minced", "itemFr": "gousses d'ail, hachées", "group": "glaze" },
+    { "quantity": 1, "unit": "tbsp", "item": "fresh ginger, grated", "itemFr": "gingembre frais, râpé", "group": "glaze" },
+    { "quantity": 1, "unit": "tbsp", "item": "rice vinegar", "itemFr": "vinaigre de riz", "group": "glaze" },
+    { "quantity": 1, "unit": "tsp", "item": "sesame oil", "itemFr": "huile de sésame", "group": "glaze" },
+    { "quantity": 1, "unit": "tsp", "item": "sriracha or chili flakes (optional)", "itemFr": "sriracha ou flocons de piment (facultatif)", "group": "glaze" },
+    { "quantity": 1, "unit": "tbsp", "item": "sesame seeds, for garnish", "itemFr": "graines de sésame, pour garnir", "group": "garnish" },
+    { "quantity": 2, "unit": "", "item": "green onions, thinly sliced, for garnish", "itemFr": "oignons verts, émincés, pour garnir", "group": "garnish" }
+  ],
+  "steps": [
+    {
+      "text": "Preheat the oven to 200°C (400°F). Line a baking sheet with parchment paper or aluminium foil.",
+      "textFr": "Préchauffez le four à 200°C (400°F). Tapissez une plaque de cuisson de papier parchemin ou de papier d'aluminium."
+    },
+    {
+      "text": "In a small bowl, whisk together the maple syrup, soy sauce, olive oil, garlic, ginger, rice vinegar, sesame oil, and sriracha (if using).",
+      "textFr": "Dans un petit bol, fouettez ensemble le sirop d'érable, la sauce soya, l'huile d'olive, l'ail, le gingembre, le vinaigre de riz, l'huile de sésame et la sriracha (si utilisée)."
+    },
+    {
+      "text": "Place the salmon portions skin-side down on the prepared baking sheet. Season lightly with salt and pepper. Spoon or brush the maple-soy glaze generously over each fillet, reserving a little for basting.",
+      "textFr": "Déposez les portions de saumon côté peau sur la plaque. Assaisonnez légèrement de sel et poivre. Badigeonnez généreusement chaque filet du glaçage érable-soya, en en réservant un peu pour arroser en cours de cuisson."
+    },
+    {
+      "text": "Bake for 12–15 minutes, basting once halfway through with the remaining glaze, until the salmon is cooked through and the glaze is caramelized. The fish should flake easily with a fork.",
+      "textFr": "Faites cuire au four 12 à 15 minutes, en arrosant une fois à mi-cuisson avec le reste du glaçage, jusqu'à ce que le saumon soit cuit et le glaçage caramélisé. Le poisson doit se défaire facilement à la fourchette."
+    },
+    {
+      "text": "Transfer to plates and garnish with sesame seeds and sliced green onions. Serve immediately with steamed rice and stir-fried vegetables.",
+      "textFr": "Disposez dans les assiettes et garnissez de graines de sésame et d'oignons verts émincés. Servez immédiatement avec du riz vapeur et des légumes sautés."
+    }
+  ],
+  "notes": "Don't marinate the salmon in the soy-maple mixture for more than 30 minutes, as the salt will start to cure the fish. For a stickier glaze, reduce the marinade in a small saucepan for a few minutes before brushing it on.",
+  "notesFr": "Ne marinez pas le saumon plus de 30 minutes dans la sauce soya-érable, car le sel commencerait à le cuire à froid. Pour un glaçage plus épais et collant, faites réduire la marinade quelques minutes dans une petite casserole avant de l'appliquer.",
+  "image": "../images/saumon-erable-soya.jpg",
+  "source": "https://ici.radio-canada.ca/mordu/recettes/7864/saumon-erable-soya-cuit-four",
+  "editPath": "recipes/data/saumon-erable-soya.json"
+}

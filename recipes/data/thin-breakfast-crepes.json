@@ -1,0 +1,34 @@
+{
+  "slug": "thin-breakfast-crepes",
+  "title": "Thin Breakfast Crepes",
+  "titleFr": "Crêpes fines pour le déjeuner",
+  "description": "Light, paper-thin crepes made with a simple vanilla batter. Quick to prepare and yields about 14 delicate crepes.",
+  "descriptionFr": "Des crêpes fines et légères avec une simple pâte à la vanille. Rapides à faire, elles donnent environ 14 crêpes.",
+  "defaultPortions": 4,
+  "portionLabel": "servings",
+  "portionLabelFr": "portions",
+  "tags": ["breakfast", "brunch", "crepes", "vegetarian", "kids", "french"],
+  "time": "35 min",
+  "difficulty": "easy",
+  "ingredients": [
+    { "quantity": 150, "unit": "g", "item": "all-purpose flour", "itemFr": "farine tout usage", "group": "" },
+    { "quantity": 2, "unit": "tbsp", "item": "sugar", "itemFr": "sucre", "group": "" },
+    { "quantity": null, "unit": null, "item": "pinch of salt", "itemFr": "pincée de sel", "group": "" },
+    { "quantity": 2, "unit": null, "item": "eggs", "itemFr": "œufs", "group": "" },
+    { "quantity": 375, "unit": "ml", "item": "milk", "itemFr": "lait", "group": "" },
+    { "quantity": 0.5, "unit": "tsp", "item": "vanilla extract", "itemFr": "extrait de vanille", "group": "" },
+    { "quantity": 1, "unit": "tbsp", "item": "unsalted butter, melted", "itemFr": "beurre non salé, fondu", "group": "" },
+    { "quantity": null, "unit": null, "item": "softened butter, for cooking", "itemFr": "beurre ramolli, pour la cuisson", "group": "" }
+  ],
+  "steps": [
+    { "text": "In a bowl, mix the flour, sugar, and salt. Add the eggs, 125 ml (½ cup) of the milk, and vanilla extract. Whisk until smooth. Gradually whisk in the remaining milk. Stir in the melted butter.", "textFr": "Dans un bol, mélanger la farine, le sucre et le sel. Ajouter les œufs, 125 ml de lait et la vanille. Fouetter jusqu'à homogénéité. Incorporer graduellement le reste du lait. Ajouter le beurre fondu." },
+    { "text": "Heat a 23 cm (9-inch) non-stick skillet over medium heat. Brush lightly with softened butter.", "textFr": "Chauffer une poêle antiadhésive de 23 cm à feu moyen. Badigeonner légèrement de beurre ramolli." },
+    { "text": "Pour about 3 tbsp (45 ml) of batter into the centre. Immediately tilt the pan in a circular motion to spread the batter evenly. Cook until the edges pull away and begin to colour, about 1 minute. Flip and cook 10 more seconds.", "textFr": "Verser environ 45 ml de pâte au centre. Incliner immédiatement la poêle en mouvement circulaire pour répartir la pâte. Cuire jusqu'à ce que le bord se décolle et commence à dorer, environ 1 minute. Retourner et cuire 10 secondes de plus." },
+    { "text": "Stack cooked crepes on a plate and cover loosely with foil to keep warm and prevent drying. Repeat with remaining batter.", "textFr": "Empiler les crêpes cuites dans une assiette et couvrir de papier d'aluminium pour garder au chaud. Répéter avec le reste de la pâte." }
+  ],
+  "notes": "Makes about 14 crepes. Serve with maple syrup, fresh fruit, or Nutella. Leftover batter keeps overnight in the fridge — whisk before using.",
+  "notesFr": "Donne environ 14 crêpes. Servir avec du sirop d'érable, des fruits frais ou du Nutella. La pâte se conserve une nuit au réfrigérateur — bien mélanger avant d'utiliser.",
+  "image": "../images/thin-breakfast-crepes.jpg",
+  "source": "https://www.ricardocuisine.com/en/recipes/5864-thin-breakfast-crepes-the-best",
+  "editPath": "recipes/data/thin-breakfast-crepes.json"
+}

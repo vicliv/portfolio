@@ -1,0 +1,65 @@
+{
+  "slug": "fondant-chocolat",
+  "title": "Chocolate Fondant Cake",
+  "titleFr": "Fondant au chocolat",
+  "description": "A rich two-bake chocolate cake with a gooey centre. The secret is baking it in two stages.",
+  "descriptionFr": "Un fondant au chocolat intense cuit en deux étapes pour un cœur coulant inoubliable.",
+  "defaultPortions": 8,
+  "portionLabel": "slices",
+  "portionLabelFr": "parts",
+  "tags": ["dessert", "chocolate", "cake"],
+  "time": "1 h 20 min",
+  "difficulty": "medium",
+  "ingredients": [
+    { "quantity": 200, "unit": "g", "item": "unsalted butter, plus extra for the pan", "itemFr": "beurre non salé, + pour le moule", "group": "" },
+    { "quantity": 200, "unit": "g", "item": "dark chocolate (70% min.)", "itemFr": "chocolat noir (70% min.)", "group": "" },
+    { "quantity": 6, "unit": "", "item": "eggs, separated", "itemFr": "œufs, séparés", "group": "" },
+    { "quantity": 225, "unit": "g", "item": "caster sugar, divided", "itemFr": "sucre en poudre, divisé", "group": "" },
+    { "quantity": 30, "unit": "g", "item": "unsweetened cocoa powder", "itemFr": "cacao en poudre non sucré", "group": "" },
+    { "quantity": 30, "unit": "g", "item": "all-purpose flour", "itemFr": "farine tout usage", "group": "" },
+    { "quantity": null, "unit": null, "item": "pinch of salt", "itemFr": "pincée de sel", "group": "" }
+  ],
+  "steps": [
+    {
+      "text": "Preheat oven to 180°C (350°F). Butter a 22 cm (9-inch) springform pan.",
+      "textFr": "Préchauffez le four à 180°C. Beurrez un moule à charnière de 22 cm."
+    },
+    {
+      "text": "Melt the chocolate and butter together over a double boiler or in the microwave in 30-second bursts, stirring between each. Let cool slightly.",
+      "textFr": "Faites fondre le chocolat et le beurre ensemble au bain-marie ou au micro-ondes par tranches de 30 secondes en remuant entre chaque. Laissez tiédir."
+    },
+    {
+      "text": "Separate the eggs. In a large bowl, whisk the egg yolks with half the sugar (about 112 g) until the mixture thickens and turns pale yellow.",
+      "textFr": "Séparez les œufs. Dans un grand bol, fouettez les jaunes avec la moitié du sucre (environ 112 g) jusqu'à ce que le mélange épaississe et blanchisse."
+    },
+    {
+      "text": "Beat the egg whites to stiff peaks. Gradually add the remaining sugar while beating until you have a firm, glossy meringue.",
+      "textFr": "Montez les blancs en neige ferme. Incorporez progressivement le reste du sucre en continuant de battre jusqu'à obtenir une meringue ferme et brillante."
+    },
+    {
+      "text": "Fold the melted chocolate into the yolk mixture. Add the cocoa powder and flour and mix until smooth. Add a large spoonful of meringue to loosen the batter, then gently fold in the rest in two additions, preserving as much air as possible.",
+      "textFr": "Incorporez le chocolat fondu au mélange de jaunes. Ajoutez le cacao et la farine et mélangez jusqu'à homogénéité. Ajoutez une grande cuillerée de meringue pour assouplir la pâte, puis incorporez délicatement le reste en deux fois, en préservant les bulles d'air."
+    },
+    {
+      "text": "Pour two-thirds of the batter into the prepared pan. Bake for 25 minutes. Let cool completely to room temperature.",
+      "textFr": "Versez les deux tiers de la pâte dans le moule préparé. Enfournez 25 minutes. Laissez refroidir complètement à température ambiante."
+    },
+    {
+      "text": "Refrigerate the remaining one-third of the batter (at least 30 minutes or up to overnight).",
+      "textFr": "Réservez le tiers restant de la pâte au réfrigérateur (au moins 30 minutes, jusqu'au lendemain)."
+    },
+    {
+      "text": "Once the cake is fully cooled, preheat the oven again to 180°C. Spread the chilled batter evenly over the top of the cake. Bake for 10–15 minutes, until a thin crust forms on the surface.",
+      "textFr": "Une fois le gâteau complètement refroidi, préchauffez à nouveau le four à 180°C. Étalez uniformément la pâte réservée sur le dessus du gâteau. Enfournez 10–15 minutes, jusqu'à formation d'une fine croûte en surface."
+    },
+    {
+      "text": "Rest for 10 minutes before unmoulding. Serve warm with crème anglaise or vanilla ice cream.",
+      "textFr": "Laissez reposer 10 minutes avant de démouler. Servez tiède avec de la crème anglaise ou de la glace à la vanille."
+    }
+  ],
+  "notes": "The two-bake technique is the key: the base bakes fully and sets, while the chilled top layer remains gooey. Make sure the base is completely cool before spreading the second layer. Don't overbake the second stage — a thin dry crust on top is exactly what you want.",
+  "notesFr": "La technique en deux cuissons est le secret : la base est cuite à fond et se tient, tandis que la couche supérieure refroidie reste fondante. Assurez-vous que la base est bien froide avant d'étaler la deuxième couche. Ne surbivez pas la deuxième cuisson — une fine croûte sèche en surface, c'est exactement ce qu'on cherche.",
+  "image": "../images/fondant-chocolat.jpg",
+  "source": "",
+  "editPath": "recipes/data/fondant-chocolat.json"
+}

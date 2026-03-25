@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe — Victor's Recipes</title>
+    <link rel="stylesheet" href="recipes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="recipe-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-back">
+                <i class="fas fa-arrow-left"></i>
+                <span id="back-label">All Recipes</span>
+            </a>
+            <div class="nav-actions">
+                <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">FR</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="recipe-layout">
+        <!-- Left: sticky ingredients panel -->
+        <aside class="ingredients-panel">
+            <div class="ingredients-panel-title" id="ingredients-title">Ingredients</div>
+
+            <div class="portions-control">
+                <button class="portions-btn" id="portions-dec" aria-label="Decrease portions">−</button>
+                <div class="portions-display-group">
+                    <span id="portions-display">2</span>
+                    <span id="portions-label">servings</span>
+                </div>
+                <button class="portions-btn" id="portions-inc" aria-label="Increase portions">+</button>
+            </div>
+
+            <ul class="ingredients-list" id="ingredients-list">
+                <!-- Populated by recipe.js -->
+            </ul>
+
+            <a class="btn-edit-github" id="edit-link" href="#" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+                <span id="edit-label">Edit on GitHub</span>
+            </a>
+        </aside>
+
+        <!-- Right: scrollable recipe content -->
+        <div class="recipe-content">
+            <div class="recipe-header">
+                <img class="recipe-header-image" id="recipe-header-image" src="" alt="" style="display:none" loading="lazy">
+                <h1 class="recipe-title" id="recipe-title">Loading…</h1>
+                <div class="recipe-meta" id="recipe-meta"></div>
+            </div>
+
+            <div class="steps-section">
+                <h2 id="instructions-title">Instructions</h2>
+                <ol class="steps-list" id="steps-list">
+                    <!-- Populated by recipe.js -->
+                </ol>
+            </div>
+
+            <div class="recipe-notes" id="recipe-notes" style="display:none"></div>
+
+            <div class="recipe-footer">
+                <a href="index.html" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i>
+                    <span id="all-recipes-label">All Recipes</span>
+                </a>
+                <div class="recipe-source" id="recipe-source"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="recipe.js"></script>
+</body>
+</html>

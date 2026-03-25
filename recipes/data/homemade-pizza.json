@@ -1,0 +1,40 @@
+{
+  "slug": "homemade-pizza",
+  "title": "Homemade Pizza",
+  "titleFr": "Pizza maison",
+  "description": "A reliable hand-kneaded pizza dough that yields two thin-crust pizzas. Chewy, crisp on the bottom, and infinitely customizable.",
+  "descriptionFr": "Une pâte à pizza pétrie à la main qui donne deux pizzas à croûte mince. Moelleuse, croustillante en dessous et infiniment personnalisable.",
+  "defaultPortions": 8,
+  "portionLabel": "slices (2 pizzas)",
+  "portionLabelFr": "tranches (2 pizzas)",
+  "tags": ["italian", "pizza", "dinner", "baking"],
+  "time": "1 h 30 min",
+  "difficulty": "medium",
+  "ingredients": [
+    { "quantity": 7, "unit": "g", "item": "active dry yeast (1 packet)", "itemFr": "levure sèche active (1 sachet)", "group": "dough" },
+    { "quantity": 1, "unit": "tsp", "item": "sugar", "itemFr": "sucre", "group": "dough" },
+    { "quantity": 240, "unit": "ml", "item": "warm water (45°C / 110°F)", "itemFr": "eau tiède (45°C / 110°F)", "group": "dough" },
+    { "quantity": 300, "unit": "g", "item": "all-purpose flour, plus extra for kneading", "itemFr": "farine tout usage, + pour pétrir", "group": "dough" },
+    { "quantity": 1, "unit": "tsp", "item": "salt", "itemFr": "sel", "group": "dough" },
+    { "quantity": 2, "unit": "tbsp", "item": "olive oil, plus extra for the bowl", "itemFr": "huile d'olive, + pour le bol", "group": "dough" },
+    { "quantity": 1, "unit": "cup", "item": "pizza sauce or crushed tomatoes", "itemFr": "sauce pizza ou tomates concassées", "group": "topping" },
+    { "quantity": 200, "unit": "g", "item": "mozzarella, shredded or sliced", "itemFr": "mozzarella, râpée ou tranchée", "group": "topping" },
+    { "quantity": null, "unit": null, "item": "toppings of your choice", "itemFr": "garnitures de votre choix", "group": "topping" },
+    { "quantity": null, "unit": null, "item": "cornmeal or semolina, for the pan", "itemFr": "semoule de maïs ou semoule, pour la plaque", "group": "topping" }
+  ],
+  "steps": [
+    { "text": "In a small bowl, dissolve the yeast and sugar in the warm water. Let stand for 5–10 minutes until foamy. If it doesn't foam, the yeast is dead — start over with fresh yeast.", "textFr": "Dans un petit bol, dissoudre la levure et le sucre dans l'eau tiède. Laisser reposer 5 à 10 minutes jusqu'à formation d'une mousse. Si ça ne mousse pas, la levure est morte — recommencer avec de la levure fraîche." },
+    { "text": "In a large bowl, mix the flour and salt. Add the olive oil and yeast mixture. Stir until a shaggy dough forms, then turn onto a lightly floured surface.", "textFr": "Dans un grand bol, mélanger la farine et le sel. Ajouter l'huile d'olive et le mélange de levure. Mélanger jusqu'à formation d'une pâte grossière, puis renverser sur une surface légèrement farinée." },
+    { "text": "Knead for 6–8 minutes until the dough is smooth, elastic, and slightly tacky (not sticky). Add flour a tablespoon at a time if it sticks too much.", "textFr": "Pétrir 6 à 8 minutes jusqu'à ce que la pâte soit lisse, élastique et légèrement collante (pas vraiment collante). Ajouter de la farine une cuillère à la fois si elle colle trop." },
+    { "text": "Place the dough in a lightly oiled bowl, cover with plastic wrap, and let rise in a warm place for 30–45 minutes until doubled in size.", "textFr": "Placer la pâte dans un bol légèrement huilé, couvrir de pellicule plastique et laisser lever dans un endroit chaud 30 à 45 minutes jusqu'à ce qu'elle double de volume." },
+    { "text": "Preheat the oven to 220°C (425°F). If using a baking stone or steel, place it in the oven now. Otherwise, dust a baking sheet with cornmeal.", "textFr": "Préchauffer le four à 220°C (425°F). Si vous utilisez une pierre ou une plaque de cuisson en acier, la mettre au four maintenant. Sinon, saupoudrer une plaque de semoule de maïs." },
+    { "text": "Punch down the dough and divide into 2 equal pieces. On a floured surface, stretch each piece into a round (about 30 cm). Use your knuckles to gently stretch from the centre outward.", "textFr": "Dégazer la pâte et diviser en 2 parts égales. Sur une surface farinée, étirer chaque part en un disque d'environ 30 cm. Utiliser vos poings pour étirer délicatement depuis le centre vers l'extérieur." },
+    { "text": "Transfer the stretched dough to the prepared baking sheet. Spread sauce, add cheese, and your chosen toppings. Leave a 1 cm border.", "textFr": "Transférer la pâte étirée sur la plaque préparée. Étaler la sauce, ajouter le fromage et vos garnitures. Laisser un bord de 1 cm." },
+    { "text": "Bake for 12–15 minutes until the crust is golden and the cheese is bubbly and lightly browned. Slice and serve immediately.", "textFr": "Cuire 12 à 15 minutes jusqu'à ce que la croûte soit dorée et le fromage bouillonnant et légèrement doré. Couper et servir immédiatement." }
+  ],
+  "notes": "The dough can rise in the fridge overnight (punch down, divide, and bring to room temperature before shaping). For a crispier bottom, preheat a baking sheet upside-down and slide the pizza directly onto it.",
+  "notesFr": "La pâte peut lever une nuit au réfrigérateur (dégazer, diviser et laisser revenir à température ambiante avant de façonner). Pour une base plus croustillante, préchauffer une plaque retournée et y glisser la pizza directement.",
+  "image": "../images/homemade-pizza.jpg",
+  "source": "https://www.allrecipes.com/recipe/205113/master-pizza-dough/",
+  "editPath": "recipes/data/homemade-pizza.json"
+}

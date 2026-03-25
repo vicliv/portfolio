@@ -1,5 +1,5 @@
 // Smooth scrolling for navigation links
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Interactive background (neural links + mouse light + ripples)
     (function setupInteractiveBackground() {
         const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -22,15 +22,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Colors from CSS variables
         function hexToRgb(hex) {
-            const m = hex.trim().replace('#','').match(/.{1,2}/g);
-            if (!m) return {r:35,g:174,b:179};
-            const [r,g,b] = m.map(x => parseInt(x,16));
-            return {r,g,b};
+            const m = hex.trim().replace('#', '').match(/.{1,2}/g);
+            if (!m) return { r: 35, g: 174, b: 179 };
+            const [r, g, b] = m.map(x => parseInt(x, 16));
+            return { r, g, b };
         }
         const primaryHex = getComputedStyle(document.documentElement).getPropertyValue('--primary-color') || '#23aeb3';
         const accentHex = getComputedStyle(document.documentElement).getPropertyValue('--accent-color') || '#02385c';
-        const {r:pr, g:pg, b:pb} = hexToRgb(primaryHex);
-        const {r:ar, g:ag, b:ab} = hexToRgb(accentHex);
+        const { r: pr, g: pg, b: pb } = hexToRgb(primaryHex);
+        const { r: ar, g: ag, b: ab } = hexToRgb(accentHex);
 
         // Particles (neural nodes)
         const particles = [];
@@ -38,20 +38,20 @@ document.addEventListener('DOMContentLoaded', function() {
         const count = prefersReducedMotion ? 0 : 200; // fixed 200 nodes as requested
         const linkDist = 100; // tighter link distance to limit line count
 
-        function rand(min, max){ return Math.random()*(max-min)+min; }
-        for (let i=0;i<count;i++){
+        function rand(min, max) { return Math.random() * (max - min) + min; }
+        for (let i = 0; i < count; i++) {
             particles.push({
-                x: Math.random()*width,
-                y: Math.random()*height,
-                vx: rand(-0.4,0.4),
-                vy: rand(-0.4,0.4),
+                x: Math.random() * width,
+                y: Math.random() * height,
+                vx: rand(-0.4, 0.4),
+                vy: rand(-0.4, 0.4),
                 r: rand(1.1, 2.0)
             });
         }
 
-        const mouse = { x: width/2, y: height/2, active: false };
+        const mouse = { x: width / 2, y: height / 2, active: false };
 
-        function onMove(e){
+        function onMove(e) {
             const rect = canvas.getBoundingClientRect();
             mouse.x = (e.clientX - rect.left);
             mouse.y = (e.clientY - rect.top);
@@ -62,61 +62,61 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let lastT = performance.now();
         let lastDraw = 0; // 30 FPS cap
-        function tick(t){
+        function tick(t) {
             // Limit to ~30 FPS for smoother performance on laptops
             if (t - lastDraw < 33) { requestAnimationFrame(tick); return; }
             lastDraw = t;
             const dt = Math.min(33, t - lastT); // cap delta
             lastT = t;
-            ctx.clearRect(0,0,width,height);
+            ctx.clearRect(0, 0, width, height);
 
             // Optional global fade (disabled for performance)
             // ctx.fillStyle = 'rgba(10,10,10,0.03)';
             // ctx.fillRect(0,0,width,height);
 
             // Update + draw particles
-            for (let p of particles){
+            for (let p of particles) {
                 // Mild attraction to mouse
                 const dx = mouse.x - p.x;
                 const dy = mouse.y - p.y;
-                const d2 = dx*dx + dy*dy;
+                const d2 = dx * dx + dy * dy;
                 const d = Math.sqrt(d2) || 1;
-                const influence = mouse.active ? Math.min(0.10, 24/d2) : 0.012;
-                p.vx += (dx/d) * influence;
-                p.vy += (dy/d) * influence;
+                const influence = mouse.active ? Math.min(0.10, 24 / d2) : 0.012;
+                p.vx += (dx / d) * influence;
+                p.vy += (dy / d) * influence;
 
                 // Move
-                p.x += p.vx * (dt/16);
-                p.y += p.vy * (dt/16);
+                p.x += p.vx * (dt / 16);
+                p.y += p.vy * (dt / 16);
                 // Friction
                 p.vx *= 0.970;
                 p.vy *= 0.970;
                 // Wrap edges
-                if (p.x < -10) p.x = width+10; else if (p.x > width+10) p.x = -10;
-                if (p.y < -10) p.y = height+10; else if (p.y > height+10) p.y = -10;
+                if (p.x < -10) p.x = width + 10; else if (p.x > width + 10) p.x = -10;
+                if (p.y < -10) p.y = height + 10; else if (p.y > height + 10) p.y = -10;
 
                 // Node
                 ctx.beginPath();
-                ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+                ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
                 ctx.fillStyle = `rgba(${pr},${pg},${pb},0.6)`;
                 ctx.fill();
             }
 
             // Links
-            for (let i=0;i<particles.length;i++){
+            for (let i = 0; i < particles.length; i++) {
                 const a = particles[i];
-                for (let j=i+1;j<particles.length;j++){
+                for (let j = i + 1; j < particles.length; j++) {
                     const b = particles[j];
                     const dx = a.x - b.x;
                     const dy = a.y - b.y;
-                    const d = Math.hypot(dx,dy);
-                    if (d < linkDist){
-                        let alpha = (1 - d/linkDist) * 0.4;
+                    const d = Math.hypot(dx, dy);
+                    if (d < linkDist) {
+                        let alpha = (1 - d / linkDist) * 0.4;
                         // Boost near mouse
-                        const mdx = (a.x+b.x)/2 - mouse.x;
-                        const mdy = (a.y+b.y)/2 - mouse.y;
+                        const mdx = (a.x + b.x) / 2 - mouse.x;
+                        const mdy = (a.y + b.y) / 2 - mouse.y;
                         const md = Math.hypot(mdx, mdy);
-                        alpha += Math.max(0, 0.1 - md/900);
+                        alpha += Math.max(0, 0.1 - md / 900);
                         ctx.strokeStyle = `rgba(${ar},${ag},${ab},${Math.min(0.6, Math.max(0, alpha))})`;
                         ctx.lineWidth = 0.8;
                         ctx.beginPath();
@@ -128,8 +128,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             // Mouse spotlight
-            if (mouse.active){
-                const maxR = Math.max(420, Math.min(560, Math.sqrt(width*height)*0.18));
+            if (mouse.active) {
+                const maxR = Math.max(420, Math.min(560, Math.sqrt(width * height) * 0.18));
                 const grad = ctx.createRadialGradient(mouse.x, mouse.y, 0, mouse.x, mouse.y, maxR);
                 grad.addColorStop(0.0, `rgba(${pr},${pg},${pb},0.08)`);
                 grad.addColorStop(0.35, `rgba(${pr},${pg},${pb},0.01)`);
@@ -137,11 +137,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Clip to a region to avoid full-canvas overdraw
                 ctx.save();
                 ctx.beginPath();
-                ctx.arc(mouse.x, mouse.y, maxR, 0, Math.PI*2);
+                ctx.arc(mouse.x, mouse.y, maxR, 0, Math.PI * 2);
                 ctx.clip();
                 ctx.globalCompositeOperation = 'source-over';
                 ctx.fillStyle = grad;
-                ctx.fillRect(mouse.x - maxR, mouse.y - maxR, maxR*2, maxR*2);
+                ctx.fillRect(mouse.x - maxR, mouse.y - maxR, maxR * 2, maxR * 2);
                 ctx.restore();
             }
 
@@ -154,80 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
     })();
     // Internationalization (EN/FR)
     const i18n = {
-        en: {
-            'page.title': "Victor's Portfolio",
-            'nav.home': 'Home',
-            'nav.about': 'About',
-            'nav.publications': 'Publications',
-            'nav.projects': 'Projects',
-            'nav.contact': 'Contact',
-            'hero.title': "<span class=\"highlight\">Victor Livernoche</span> | Ph.D. Student at Mila",
-            'hero.subtitle': "I’m Victor, a Montreal-born Ph.D. student at McGill University and Mila, supervised by Prof. Reihaneh Rabbany. Outside of research, I enjoy working out, playing sports, and making music. Academically, my work centers on generative modeling, anomaly and deepfake detection, and temporal graph learning. I’m especially interested in how large-scale generative systems can be used more efficiently, and how we can design models and datasets that make AI more trustworthy and socially impactful.",
-            'hero.cv': 'Download CV',
-            'hero.contact': 'Contact Me',
-            'hero.img_alt': 'Portrait of Victor Livernoche',
-            'about.title': 'About Me',
-            'about.education': 'Education',
-            'edu.phd_title': 'Ph.D., Computer Science',
-            'edu.phd_meta': 'McGill University • Sept 2024 – Aug 2028 • GPA: 4.0/4.0',
-            'edu.phd_desc': 'Machine learning research supervised by Prof. Reihaneh Rabbany.',
-            'edu.msc_title': 'M.Sc. (Thesis), Computer Science',
-            'edu.msc_meta': 'McGill University • Sept 2022 – Aug 2024 • GPA: 4.0/4.0',
-            'edu.msc_desc': 'Machine learning research supervised by Prof. Siamak Ravanbakhsh.',
-            'edu.msc_thesis': 'Thesis',
-            'edu.bsc_title': 'B.Sc., Honours Computer Science (Physics minor)',
-            'edu.bsc_meta': 'McGill University • Sept 2019 – May 2022 • GPA: 3.89/4.0',
-            'about.experience': 'Experience',
-            'exp.mila_student_title': 'Research Scientist Student',
-            'exp.mila_student_meta': 'Mila – Quebec AI Institute, Montréal • Sept 2022 – Present',
-            'exp.mila_student_desc': 'Focused on diffusion models and anomaly detection; developed a new anomaly detection method based on diffusion models. Applied models to galactic star anomalies. Member of Mila’s Mental Health Committee.',
-            'exp.mila_intern_title': 'Research Intern',
-            'exp.mila_intern_meta': 'Mila – Quebec AI Institute, Montréal • May 2022 – Aug 2022',
-            'exp.mila_intern_desc': 'Parametrized the BabyAI reinforcement learning environment in Prof. Yoshua Bengio’s group.',
-            'exp.ugra_title': 'Undergraduate Research Assistant',
-            'exp.ugra_meta': 'McGill University, Montréal • May 2021 – Jun 2021',
-            'exp.ugra_desc': 'Analyzed data compaction methods in large databases (with Prof. Oana Balmau).',
-            'exp.tech3_title': 'Research Intern',
-            'exp.tech3_meta': 'Tech3Lab, HEC Montréal • May 2019 – Aug 2019',
-            'exp.tech3_desc': 'Supported research operations (admin tasks, simulations, funding processes, partner communications) with Prof. Pierre‑Majorique Léger.',
-            'about.interests': 'Research Interests',
-            'interests.1': 'Generative modeling for images and multimodal generation',
-            'interests.2': 'Energy‑based generative models (theory and applications)',
-            'interests.3': 'Deepfake detection against misinformation',
-            'interests.4': 'Temporal graph representation learning',
-            'interests.5': 'Anomaly detection',
-            'about.skills': 'Skills',
-            'skills.dl': 'Deep Learning',
-            'skills.diffusion': 'Diffusion Models',
-            'skills.temporal': 'Temporal Graphs',
-            'skills.python': 'Python',
-            'skills.pytorch': 'Pytorch',
-            'pubs.title': 'Publications',
-            'pubs.openfake_meta': 'Under review • Submitted to ICLR 2026',
-            'pubs.openfake_abs': 'OpenFake is a politically focused benchmark for modern deepfake detection. It pairs ~3M real images with captions and 963k high‑quality synthetic images from proprietary and open‑source generators, maps misinformation modalities seen on social media, and includes a human‑perception study showing recent proprietary models are hard to distinguish. A crowdsourced adversarial platform continually adds challenging fakes to keep detectors robust. Overall, our results offer encouraging evidence that detectors trained with high-quality data can generalize to real-world social-media distributions.',
-            'pubs.deepfakes_meta': 'Under review • Submitted to The Web Conference 2026 — Short Paper Track',
-            'pubs.deepfakes_abs': 'Concerns about AI-generated political content are rising, yet evidence of how deepfakes actually circulate during elections remains limited. We analyze image-based deepfakes during the 2025 Canadian federal election across 187,778 posts from X, Bluesky, and Reddit using a high-accuracy detector. We find that 5.86% of election-related images were synthetic, with higher prevalence among right-leaning accounts (8.66% vs. 4.42%). Most deepfakes were benign or non-political, and harmful content had limited reach, accounting for only 0.12% of views on X. However, the most realistic fabrications attracted disproportionately high engagement.',
-            'pubs.preprint': 'Preprint',
-            'pubs.paper': 'Paper',
-            'pubs.diffusion_meta': 'ICLR 2024 • Spotlight (Top 5%)',
-            'pubs.diffusion_abs': 'This work explores using diffusion models for anomaly detection in unsupervised and semi-supervised settings. It introduces Diffusion Time Estimation (DTE), a simplified and efficient alternative to DDPM that estimates a diffusion-time density to score anomalies. DTE performs faster than DDPM and achieves top results on ADBench, showing diffusion-based methods are competitive and scalable.',
-            'pubs.prompt_meta': 'ML Reproducibility Challenge 2022 • ReScience C 9.2 (#33) • 2023',
-            'pubs.prompt_abs': 'We reproduce and extend AMuLaP, a method for automatic label prompting in few-shot classification. We confirm the original results on 3 GLUE tasks and test on 2 new datasets. Despite some setup friction, the approach is reproducible, efficient, and shows promise for broader real-world NLP applications.',
-            'projects.title': 'Other Projects',
-            'projects.code': 'Code',
-            'projects.demo': 'Demo',
-            'projects.nnfs.title': 'Neural Network from Scratch',
-            'projects.nnfs.desc': 'A Jupyter notebook implementing a neural network from scratch using NumPy.',
-            'projects.upcoming.title': 'Upcoming',
-            'projects.upcoming.desc': '...',
-            'projects.mldash.title': 'ML Research Dashboard',
-            'projects.mldash.desc': 'Interactive dashboard for visualizing machine learning experiments and temporal graph research results.',
-            'contact.title': 'Get In Touch',
-            'contact.body': "I'm always interested in discussing research opportunities, collaborations, or innovative projects in machine learning.",
-            'contact.send': 'Send Email',
-            'contact.cv': 'Download CV',
-            'footer.copy': '© 2025 Victor. All rights reserved.'
-        },
+        en: {},
         fr: {
             'page.title': 'Portfolio de Victor',
             'nav.home': 'Accueil',
@@ -277,9 +204,9 @@ document.addEventListener('DOMContentLoaded', function() {
             'skills.python': 'Python',
             'skills.pytorch': 'PyTorch',
             'pubs.title': 'Publications',
-            'pubs.openfake_meta': 'En évaluation • Soumis à ICLR 2026',
+            'pubs.openfake_meta': 'En évaluation',
             'pubs.openfake_abs': "OpenFake est un benchmark axé sur le politique pour la détection de deepfakes modernes. Il associe ~3 M d’images réelles avec légendes à 963 k d’images synthétiques de haute qualité issues de générateurs propriétaires et open source, cartographie les modalités de désinformation observées sur les réseaux sociaux et inclut une étude de perception montrant que les modèles propriétaires récents sont difficiles à distinguer. Une plateforme participative adversariale ajoute en continu des cas difficiles pour maintenir la robustesse des détecteurs. Globalement, nos résultats apportent des éléments encourageants montrant que des détecteurs entraînés sur des données de haute qualité peuvent se généraliser à des distributions réelles issues des réseaux sociaux.",
-            'pubs.deepfakes_meta': 'En évaluation • Soumis à The Web Conference 2026 — Short Paper Track',
+            'pubs.deepfakes_meta': 'Dans les Actes de la conférence ACM Web 2026',
             'pubs.deepfakes_abs': "Les inquiétudes concernant les contenus politiques générés par l’IA augmentent, mais les données empiriques sur la manière dont les deepfakes circulent réellement pendant les élections restent limitées. Nous analysons les deepfakes visuels lors de l’élection fédérale canadienne de 2025 à partir de 187 778 publications sur X, Bluesky et Reddit, à l’aide d’un détecteur de haute précision. Nous constatons que 5,86 % des images liées à l’élection étaient synthétiques, avec une prévalence plus élevée chez les comptes de droite (8,66 % contre 4,42 %). La majorité des deepfakes étaient bénins ou non politiques, et les contenus nuisibles ont eu une portée limitée, ne représentant que 0,12 % des vues sur X. Toutefois, les fabrications les plus réalistes ont suscité un engagement disproportionné.",
             'pubs.preprint': 'Prépublication',
             'pubs.paper': 'Article',
@@ -300,9 +227,24 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact.body': "Je suis toujours ouvert à discuter d'opportunités de recherche, de collaborations ou de projets innovants en apprentissage automatique.",
             'contact.send': 'Envoyer un e‑mail',
             'contact.cv': 'Télécharger le CV',
-            'footer.copy': '© 2025 Victor. Tous droits réservés.'
+            'footer.copy': '© 2026 Victor. Tous droits réservés.'
         }
     };
+
+    // Auto-extract English from the DOM as the source of truth
+    if (document.title) i18n.en['page.title'] = document.title;
+
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (key) {
+            i18n.en[key] = el.innerHTML;
+        }
+    });
+
+    const portrait = document.getElementById('hero-portrait');
+    if (portrait && portrait.alt) {
+        i18n.en['hero.img_alt'] = portrait.alt;
+    }
 
     function getDefaultLang() {
         const saved = localStorage.getItem('lang');
@@ -348,17 +290,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     // Handle navigation scroll behavior
     const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
-    
+
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
-            
+
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
-            
+
             if (targetSection) {
                 const offsetTop = targetSection.offsetTop - 80; // Account for fixed navbar
-                
+
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'
@@ -371,9 +313,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.querySelector('.navbar');
     let lastScrollTop = 0;
 
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
+
         if (scrollTop > 100) {
             navbar.style.background = 'rgba(10, 10, 10, 0.95)';
             navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.3)';
@@ -381,22 +323,22 @@ document.addEventListener('DOMContentLoaded', function() {
             navbar.style.background = 'rgba(10, 10, 10, 0.9)';
             navbar.style.boxShadow = 'none';
         }
-        
+
         lastScrollTop = scrollTop;
     });
 
     // Add active state to navigation links based on scroll position
     const sections = document.querySelectorAll('section[id]');
-    
+
     function updateActiveNavLink() {
         const scrollPosition = window.scrollY + 100;
-        
+
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
             const sectionId = section.getAttribute('id');
             const navLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
-            
+
             if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
                 // Remove active class from all nav links
                 navLinks.forEach(link => link.classList.remove('active'));
@@ -416,7 +358,7 @@ document.addEventListener('DOMContentLoaded', function() {
         rootMargin: '0px 0px -50px 0px'
     };
 
-    const observer = new IntersectionObserver(function(entries) {
+    const observer = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = '1';
@@ -437,11 +379,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Dynamic typing effect for hero subtitle (optional enhancement)
     const heroSubtitle = document.querySelector('.hero-subtitle');
     const originalText = heroSubtitle.textContent;
-    
+
     function typeWriter(text, element, speed = 50) {
         element.textContent = '';
         let i = 0;
-        
+
         function type() {
             if (i < text.length) {
                 element.textContent += text.charAt(i);
@@ -449,7 +391,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 setTimeout(type, speed);
             }
         }
-        
+
         type();
     }
 
@@ -459,7 +401,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Contact form handling (if needed later)
     const contactButtons = document.querySelectorAll('a[href^="mailto:"]');
     contactButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             // Track contact button clicks for analytics
             console.log('Contact button clicked');
         });
@@ -468,7 +410,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // CV download tracking
     const cvButtons = document.querySelectorAll('a[href="/cv"]');
     cvButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             // Track CV downloads for analytics
             console.log('CV download initiated');
         });
@@ -477,14 +419,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add loading state to buttons
     const buttons = document.querySelectorAll('.btn');
     buttons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             const originalText = this.innerHTML;
-            
+
             // Don't add loading state for download and mailto links
             if (this.hasAttribute('download') || this.href.startsWith('mailto:')) {
                 return;
             }
-            
+
             this.style.opacity = '0.7';
             setTimeout(() => {
                 this.style.opacity = '1';
@@ -493,11 +435,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Parallax effect for background (subtle)
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         const scrolled = window.pageYOffset;
         const background = document.querySelector('.animated-background');
         const rate = scrolled * -0.5;
-        
+
         background.style.transform = `translateY(${rate}px)`;
     });
 
