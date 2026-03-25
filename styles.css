@@ -51,7 +51,7 @@ body {
     width: 100%;
     height: 100%;
     background: radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.1) 0%, transparent 20%),
-                radial-gradient(circle at 80% 20%, rgba(255, 107, 53, 0.1) 0%, transparent 20%);
+        radial-gradient(circle at 80% 20%, rgba(255, 107, 53, 0.1) 0%, transparent 20%);
     animation: overlayShift 20s ease infinite;
 }
 
@@ -61,17 +61,32 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none; /* keep UI interactive */
+    pointer-events: none;
+    /* keep UI interactive */
 }
 
 @keyframes gradientShift {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
 }
 
 @keyframes overlayShift {
-    0%, 100% { opacity: 0.3; }
-    50% { opacity: 0.1; }
+
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
 }
 
 /* Navigation */
@@ -563,6 +578,7 @@ body {
 
 /* Responsive Design */
 @media (max-width: 900px) {
+
     /* Hide the desktop nav links on mobile to keep only brand + language toggle */
     .nav-links {
         display: none !important;
@@ -585,11 +601,11 @@ body {
         justify-content: space-between;
         gap: 1rem;
     }
-    
+
     .nav-links {
         display: none;
     }
-    
+
     .nav-actions {
         margin-left: 0;
     }
@@ -597,37 +613,37 @@ body {
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.125rem;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .container {
         padding: 0 1rem;
     }
-    
+
     .section {
         padding: 4rem 0;
     }
-    
+
     .publications-grid,
     .projects-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
-    
+
     .footer .container {
         flex-direction: column;
         text-align: center;
@@ -638,7 +654,7 @@ body {
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .section-title {
         font-size: 1.75rem;
     }
@@ -660,4 +676,245 @@ body {
 .social-links a:focus {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
+}
+
+/* =========================================
+   THEME TOGGLE BUTTON
+   ========================================= */
+.theme-toggle {
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* =========================================
+   LIGHT MODE OVERRIDES
+   ========================================= */
+body.light-mode {
+    --primary-color: #9b1b30;
+    --secondary-color: #7a1428;
+    --accent-color: #c2185b;
+    --bg-primary: #FAF7F2;
+    --bg-secondary: #FFFFFF;
+    --bg-tertiary: #F0EBE3;
+    --text-primary: #1A1A1A;
+    --text-secondary: #4A4A4A;
+    --text-muted: #717171;
+    --border-color: #E0D8CC;
+    --shadow-color: rgba(155, 27, 48, 0.08);
+    background-color: transparent;
+}
+
+html:has(body.light-mode) {
+    background-color: #FAF7F2;
+}
+
+/* Hide the dark-mode particle canvas in light mode */
+body.light-mode .bg-canvas {
+    display: none;
+}
+
+/* Swap the dark background for animated gradient blobs */
+body.light-mode .animated-background {
+    background: var(--bg-primary);
+    animation: none;
+}
+
+body.light-mode .gradient-overlay {
+    background: none;
+    animation: none;
+}
+
+/* Gradient blob container and elements */
+#light-blobs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.light-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 1;
+    pointer-events: none;
+    will-change: transform;
+}
+
+.light-blob-1 {
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(155, 27, 48, 0.5), transparent 70%);
+    top: -10%;
+    left: -10%;
+    animation: blobFloat1 18s ease-in-out infinite;
+}
+
+.light-blob-2 {
+    width: 650px;
+    height: 650px;
+    background: radial-gradient(circle, rgba(194, 24, 91, 0.35), transparent 70%);
+    top: 40%;
+    right: -12%;
+    animation: blobFloat2 22s ease-in-out infinite;
+}
+
+.light-blob-3 {
+    width: 750px;
+    height: 750px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.3), transparent 70%);
+    bottom: -15%;
+    left: 25%;
+    animation: blobFloat3 20s ease-in-out infinite;
+}
+
+@keyframes blobFloat1 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(80px, 60px) scale(1.1); }
+    66% { transform: translate(-40px, 100px) scale(0.95); }
+}
+
+@keyframes blobFloat2 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(-60px, -80px) scale(1.05); }
+    66% { transform: translate(50px, -40px) scale(0.9); }
+}
+
+@keyframes blobFloat3 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(60px, -50px) scale(1.15); }
+    66% { transform: translate(-80px, 30px) scale(0.95); }
+}
+
+/* Navbar in light mode */
+body.light-mode .navbar {
+    background: rgba(250, 247, 242, 0.92);
+    border-bottom-color: var(--border-color);
+}
+
+body.light-mode .nav-brand {
+    color: var(--primary-color);
+}
+
+body.light-mode .nav-links a {
+    color: var(--text-secondary);
+}
+
+body.light-mode .nav-links a:hover,
+body.light-mode .nav-links a.active {
+    color: var(--primary-color);
+}
+
+/* Cards in light mode */
+body.light-mode .cv-item,
+body.light-mode .publication-card,
+body.light-mode .project-card {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    border-color: var(--border-color);
+    background: var(--bg-secondary);
+}
+
+body.light-mode .cv-item:hover,
+body.light-mode .publication-card:hover,
+body.light-mode .project-card:hover {
+    box-shadow: 0 8px 30px rgba(155, 27, 48, 0.1);
+    border-color: var(--primary-color);
+}
+
+/* Section-alt in light mode */
+body.light-mode .section-alt {
+    background: rgba(240, 235, 227, 0.5);
+}
+
+/* Footer in light mode */
+body.light-mode .footer {
+    background: #F0EBE3;
+    border-top-color: var(--border-color);
+}
+
+/* Social links in light mode */
+body.light-mode .social-links a {
+    background: var(--bg-tertiary);
+    border-color: var(--border-color);
+    color: var(--text-secondary);
+}
+
+body.light-mode .social-links a:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* Highlight gradient for light mode */
+body.light-mode .highlight {
+    background: linear-gradient(90deg, var(--primary-color), #c2185b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Button adjustments for light mode */
+body.light-mode .btn-secondary {
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+body.light-mode .btn-small {
+    background: var(--bg-tertiary);
+    border-color: var(--border-color);
+    color: var(--text-secondary);
+}
+
+/* Skill items in light mode */
+body.light-mode .skill-item {
+    background: var(--bg-tertiary);
+    border-color: var(--border-color);
+}
+
+body.light-mode .skill-item:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Tech tags */
+body.light-mode .tech-tag {
+    background: var(--bg-tertiary);
+    border-color: var(--border-color);
+    color: var(--primary-color);
+}
+
+/* Theme toggle / lang toggle in light mode */
+body.light-mode .theme-toggle,
+body.light-mode .lang-toggle {
+    background: var(--bg-tertiary);
+    border-color: var(--border-color);
+    color: var(--text-secondary);
+}
+
+body.light-mode .theme-toggle:hover,
+body.light-mode .lang-toggle:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Interest list */
+body.light-mode .interest-list li {
+    color: var(--text-secondary);
 }
