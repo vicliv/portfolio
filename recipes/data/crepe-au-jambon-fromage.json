@@ -11,11 +11,11 @@
   "time": "40 min",
   "difficulty": "easy",
   "ingredients": [
-    { "quantity": 150, "unit": "g", "item": "all-purpose flour", "itemFr": "farine tout usage", "group": "Batter" },
+    { "quantity": 1, "unit": "cup", "item": "all-purpose flour", "itemFr": "farine tout usage", "group": "Batter" },
     { "quantity": 2, "unit": "tbsp", "item": "sugar", "itemFr": "sucre", "group": "Batter" },
     { "quantity": null, "unit": null, "item": "pinch of salt", "itemFr": "pincée de sel", "group": "Batter" },
     { "quantity": 2, "unit": null, "item": "eggs", "itemFr": "œufs", "group": "Batter" },
-    { "quantity": 375, "unit": "ml", "item": "milk", "itemFr": "lait", "group": "Batter" },
+    { "quantity": 1.5, "unit": "cup", "item": "milk", "itemFr": "lait", "group": "Batter" },
     { "quantity": 0.5, "unit": "tsp", "item": "vanilla extract", "itemFr": "extrait de vanille", "group": "Batter" },
     { "quantity": 1, "unit": "tbsp", "item": "unsalted butter, melted", "itemFr": "beurre non salé, fondu", "group": "Batter" },
     { "quantity": null, "unit": null, "item": "softened butter, for cooking", "itemFr": "beurre ramolli, pour la cuisson", "group": "Filling" },
@@ -25,7 +25,7 @@
   ],
   "steps": [
     { "text": "In a bowl, mix the flour, sugar, and salt. Add the eggs, 125 ml (½ cup) of the milk, and vanilla extract. Whisk until smooth. Gradually whisk in the remaining milk. Stir in the melted butter.", "textFr": "Dans un bol, mélanger la farine, le sucre et le sel. Ajouter les œufs, 125 ml de lait et la vanille. Fouetter jusqu'à homogénéité. Incorporer graduellement le reste du lait. Ajouter le beurre fondu." },
-    { "text": "Heat a 23 cm (9-inch) non-stick skillet over medium heat. Brush lightly with softened butter.", "textFr": "Chauffer une poêle antiadhésive de 23 cm à feu moyen. Badiggerner légèrement de beurre ramolli." },
+    { "text": "Heat a 23 cm (9-inch) non-stick skillet over medium heat. Brush lightly with softened butter.", "textFr": "Chauffer une poêle antiadhésive de 23 cm à feu moyen. Badigeonner légèrement de beurre ramolli." },
     { "text": "Pour about 3 tbsp (45 ml) of batter into the centre. Immediately tilt the pan in a circular motion to spread the batter evenly. Cook until the edges pull away, about 1 minute.", "textFr": "Verser environ 45 ml de pâte au centre. Incliner immédiatement la poêle en mouvement circulaire pour répartir la pâte. Cuire jusqu'à ce que le bord se décolle, environ 1 minute." },
     { "text": "Flip the crepe. Immediately add one or two slices of ham and some cheese on one half. Fold the crepe in half and let it sit for about 2 minutes (or until the crepe starts crisping) so that the other half cooks and the cheese melts.", "textFr": "Retourner la crêpe. Ajouter immédiatement une ou deux tranches de jambon et du fromage sur une moitié. Plier la crêpe en deux et laisser cuire environ 2 minutes (ou jusqu'à ce que la crêpe commence à croustiller) pour que l'autre moitié cuise et que le fromage fonde." },
     { "text": "Serve the folded crepes warm, drizzled with a little bit of maple syrup.", "textFr": "Servir les crêpes pliées chaudes, arrosées d'un peu de sirop d'érable." }

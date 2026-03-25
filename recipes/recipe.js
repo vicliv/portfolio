@@ -10,6 +10,30 @@ const FRAC_DISPLAY = ['', '⅛', '¼', '⅓', '⅜', '½', '⅝', '⅔', '¾', '
 const VOLUME_UNITS = new Set(['cup', 'cups', 'tbsp', 'tsp']);
 const METRIC_UNITS = new Set(['g', 'kg', 'ml', 'L', 'l']);
 
+/* ---- Volume conversions to ml ---- */
+const ML_PER = { cup: 236.588, cups: 236.588, tbsp: 14.787, tsp: 4.929 };
+const UNITS_KEY = 'units'; // localStorage key
+
+/* ---- Difficulty translations ---- */
+const DIFFICULTY_FR = {
+  easy:   'facile',
+  medium: 'intermédiaire',
+  hard:   'difficile'
+};
+
+/* ---- Tag translations (EN → FR) ---- */
+const TAGS_FR = {
+  breakfast: 'déjeuner', brunch: 'brunch', lunch: 'dîner', dinner: 'souper',
+  dessert: 'dessert', savory: 'salé', spicy: 'épicé', vegetarian: 'végétarien',
+  quick: 'rapide', baking: 'pâtisserie', beef: 'bœuf', chicken: 'poulet',
+  fish: 'poisson', salmon: 'saumon', eggs: 'œufs', french: 'français',
+  italian: 'italien', thai: 'thaïlandais', asian: 'asiatique', korean: 'coréen',
+  pizza: 'pizza', noodles: 'nouilles', crepes: 'crêpes', steak: 'steak',
+  potato: 'pomme de terre', chocolate: 'chocolat', cake: 'gâteau',
+  cookies: 'biscuits', appetizer: 'entrée', 'side dish': 'accompagnement',
+  'fried chicken': 'poulet frit', 'pain doré': 'pain doré'
+};
+
 /* ---- UI strings ---- */
 const UI = {
   en: {
@@ -21,7 +45,9 @@ const UI = {
     backLabel: 'All Recipes',
     servings: 'servings',
     source: 'Source:',
-    notFound: 'Recipe not found.'
+    notFound: 'Recipe not found.',
+    useMetric: 'Use metric (ml)',
+    useImperial: 'Use imperial (cups)'
   },
   fr: {
     ingredients: 'Ingrédients',
@@ -32,13 +58,16 @@ const UI = {
     backLabel: 'Toutes les recettes',
     servings: 'portions',
     source: 'Source\u00a0:',
-    notFound: 'Recette introuvable.'
+    notFound: 'Recette introuvable.',
+    useMetric: 'Utiliser métrique (ml)',
+    useImperial: 'Utiliser impérial (tasses)'
   }
 };
 
 /* ---- State ---- */
 let currentRecipe = null;
 let currentPortions = 2;
+let useMetric = localStorage.getItem(UNITS_KEY) === 'metric';
 
 /* ---- Language helpers ---- */
 function getLang() {
@@ -85,7 +114,16 @@ function formatQuantity(quantity, unit, scaleFactor) {
     return String(Math.round(scaled * 10) / 10);
   }
 
-  if (VOLUME_UNITS.has(unit)) return formatVolumeQty(scaled);
+  if (VOLUME_UNITS.has(unit)) {
+    if (useMetric) {
+      // Convert to ml and round sensibly
+      const ml = scaled * ML_PER[unit];
+      if (ml >= 100) return String(Math.round(ml / 5) * 5);
+      if (ml >= 10)  return String(Math.round(ml));
+      return String(Math.round(ml * 10) / 10);
+    }
+    return formatVolumeQty(scaled);
+  }
 
   // Countable whole items — round to nearest int, minimum 1
   return String(Math.max(1, Math.round(scaled)));
@@ -101,14 +139,16 @@ function renderIngredientItem(ing, scaleFactor) {
 
   const qty = formatQuantity(ing.quantity, ing.unit, scaleFactor);
   const unit = ing.unit || '';
+  const isVolumeUnit = VOLUME_UNITS.has(unit);
+  const displayUnit = (useMetric && isVolumeUnit) ? 'ml' : unit;
 
   let qtyDisplay;
-  if (!unit) {
+  if (!displayUnit) {
     qtyDisplay = qty;
-  } else if (METRIC_UNITS.has(unit)) {
-    qtyDisplay = `${qty}${unit}`;   // "200g", "1.5L"
+  } else if (METRIC_UNITS.has(displayUnit) || (useMetric && isVolumeUnit)) {
+    qtyDisplay = `${qty}${displayUnit}`;  // "237ml", "200g"
   } else {
-    qtyDisplay = `${qty} ${unit}`;  // "1 cup", "2 tbsp"
+    qtyDisplay = `${qty} ${displayUnit}`; // "1 cup", "2 tbsp"
   }
 
   return `<li class="ingredient-item"><span class="ingredient-qty">${escHtml(qtyDisplay)}</span>${escHtml(item)}</li>`;
@@ -168,6 +208,15 @@ function applyUIStrings() {
   document.getElementById('all-recipes-label').textContent = t('allRecipes');
   document.getElementById('back-label').textContent = t('backLabel');
   document.getElementById('lang-toggle').textContent = lang === 'fr' ? 'EN' : 'FR';
+  // Unit toggle label: show what clicking will switch TO
+  const unitToggleLabel = document.getElementById('unit-toggle-label');
+  if (unitToggleLabel) {
+    unitToggleLabel.textContent = useMetric ? t('useImperial') : t('useMetric');
+  }
+  const unitToggleBtn = document.getElementById('unit-toggle');
+  if (unitToggleBtn) {
+    unitToggleBtn.classList.toggle('active', useMetric);
+  }
 }
 
 function renderRecipe(recipe) {
@@ -196,7 +245,17 @@ function renderRecipe(recipe) {
   // Meta line
   const metaParts = [];
   if (recipe.time) metaParts.push(`<span><i class="fas fa-clock"></i> ${escHtml(recipe.time)}</span>`);
-  if (recipe.difficulty) metaParts.push(`<span><i class="fas fa-signal"></i> ${escHtml(recipe.difficulty)}</span>`);
+  if (recipe.difficulty) {
+    const diffLabel = lang === 'fr' ? (DIFFICULTY_FR[recipe.difficulty] || recipe.difficulty) : recipe.difficulty;
+    metaParts.push(`<span><i class="fas fa-signal"></i> ${escHtml(diffLabel)}</span>`);
+  }
+  if (recipe.tags && recipe.tags.length) {
+    const tagHtml = recipe.tags.map(tag => {
+      const label = lang === 'fr' ? (TAGS_FR[tag.toLowerCase()] || tag) : tag;
+      return `<span class="recipe-tag-meta">${escHtml(label)}</span>`;
+    }).join('');
+    metaParts.push(`<span class="recipe-tag-group">${tagHtml}</span>`);
+  }
   document.getElementById('recipe-meta').innerHTML = metaParts.join('');
 
   renderIngredients(recipe, currentPortions);
@@ -260,6 +319,13 @@ async function init() {
 
   document.getElementById('portions-dec').addEventListener('click', () => updatePortions(-1));
   document.getElementById('portions-inc').addEventListener('click', () => updatePortions(+1));
+
+  document.getElementById('unit-toggle').addEventListener('click', () => {
+    useMetric = !useMetric;
+    localStorage.setItem(UNITS_KEY, useMetric ? 'metric' : 'imperial');
+    applyUIStrings();
+    renderIngredients(currentRecipe, currentPortions);
+  });
 
   document.getElementById('lang-toggle').addEventListener('click', () => {
     const next = getLang() === 'en' ? 'fr' : 'en';

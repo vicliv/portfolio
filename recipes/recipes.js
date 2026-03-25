@@ -35,6 +35,54 @@ const CATEGORY_TAGS = {
   dessert:   ['dessert']
 };
 
+// Difficulty translations
+const DIFFICULTY_FR = {
+  easy:   'facile',
+  medium: 'intermédiaire',
+  hard:   'difficile'
+};
+
+// Tag translations (EN → FR)
+const TAGS_FR = {
+  // meals
+  breakfast:    'déjeuner',
+  brunch:       'brunch',
+  lunch:        'dîner',
+  dinner:       'souper',
+  dessert:      'dessert',
+  // descriptors
+  savory:       'salé',
+  spicy:        'épicé',
+  vegetarian:   'végétarien',
+  quick:        'rapide',
+  baking:       'pâtisserie',
+  // proteins
+  beef:         'bœuf',
+  chicken:      'poulet',
+  fish:         'poisson',
+  salmon:       'saumon',
+  eggs:         'œufs',
+  // cuisine
+  french:       'français',
+  italian:      'italien',
+  thai:         'thaïlandais',
+  asian:        'asiatique',
+  korean:       'coréen',
+  // dishes / ingredients
+  pizza:        'pizza',
+  noodles:      'nouilles',
+  crepes:       'crêpes',
+  steak:        'steak',
+  potato:       'pomme de terre',
+  chocolate:    'chocolat',
+  cake:         'gâteau',
+  cookies:      'biscuits',
+  appetizer:    'entrée',
+  'side dish':  'accompagnement',
+  'fried chicken': 'poulet frit',
+  'pain doré':  'pain doré'
+};
+
 let allRecipes = [];
 let activeCategory   = '';
 let activeDifficulty = '';
@@ -103,7 +151,14 @@ function renderCard(recipe) {
   const lang = getLang();
   const title = (lang === 'fr' && recipe.titleFr) ? recipe.titleFr : recipe.title;
   const desc  = (lang === 'fr' && recipe.descriptionFr) ? recipe.descriptionFr : recipe.description;
-  const tags  = (recipe.tags || []).map(tag => `<span class="recipe-tag">${escHtml(tag)}</span>`).join('');
+
+  const difficultyRaw = recipe.difficulty || '';
+  const difficulty = lang === 'fr' ? (DIFFICULTY_FR[difficultyRaw] || difficultyRaw) : difficultyRaw;
+
+  const tags = (recipe.tags || []).map(tag => {
+    const label = lang === 'fr' ? (TAGS_FR[tag.toLowerCase()] || tag) : tag;
+    return `<span class="recipe-tag">${escHtml(label)}</span>`;
+  }).join('');
 
   return `
     <a href="recipe.html?slug=${encodeURIComponent(recipe.slug)}" class="recipe-card">
@@ -113,7 +168,7 @@ function renderCard(recipe) {
         ${desc ? `<p class="recipe-card-desc">${escHtml(desc)}</p>` : ''}
         <div class="recipe-card-meta">
           ${recipe.time       ? `<span><i class="fas fa-clock"></i> ${escHtml(recipe.time)}</span>` : ''}
-          ${recipe.difficulty ? `<span><i class="fas fa-signal"></i> ${escHtml(recipe.difficulty)}</span>` : ''}
+          ${difficulty        ? `<span><i class="fas fa-signal"></i> ${escHtml(difficulty)}</span>` : ''}
         </div>
         ${tags ? `<div class="recipe-tags">${tags}</div>` : ''}
       </div>

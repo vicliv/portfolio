@@ -423,6 +423,39 @@ body::before {
   color: var(--text-secondary);
 }
 
+/* ---- Unit toggle (imperial / metric) ---- */
+.unit-toggle-row {
+  display: flex;
+}
+
+.unit-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 0.3rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.unit-toggle-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.unit-toggle-btn.active {
+  background: rgba(35, 174, 179, 0.12);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
 /* ---- Ingredients List ---- */
 .ingredients-list {
   list-style: none;
@@ -516,6 +549,22 @@ body::before {
 .recipe-meta i {
   color: var(--primary-color);
   margin-right: 0.3rem;
+}
+
+.recipe-tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.recipe-tag-meta {
+  background: var(--bg-tertiary);
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 20px;
+  white-space: nowrap;
 }
 
 /* ---- Steps Section ---- */
