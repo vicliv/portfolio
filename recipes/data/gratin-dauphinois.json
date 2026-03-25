@@ -1,0 +1,35 @@
+{
+  "slug": "gratin-dauphinois",
+  "title": "Gratin Dauphinois",
+  "titleFr": "Gratin dauphinois",
+  "description": "The definitive gratin dauphinois: thinly sliced potatoes simmered in milk, cream, garlic, and onion, baked golden and topped with melted Gruyère.",
+  "descriptionFr": "Le meilleur gratin dauphinois : des pommes de terre tranchées finement mijotées dans du lait, de la crème, de l'ail et de l'oignon, puis cuites au four avec du Gruyère.",
+  "defaultPortions": 6,
+  "portionLabel": "servings",
+  "portionLabelFr": "portions",
+  "tags": ["potato", "gratin", "french", "side dish", "vegetarian"],
+  "time": "2 h",
+  "difficulty": "medium",
+  "ingredients": [
+    { "quantity": 750, "unit": "ml", "item": "milk", "itemFr": "lait", "group": "" },
+    { "quantity": 250, "unit": "ml", "item": "35% heavy cream", "itemFr": "crème 35%", "group": "" },
+    { "quantity": 1, "unit": null, "item": "onion, peeled and halved", "itemFr": "oignon, pelé et coupé en deux", "group": "" },
+    { "quantity": 3, "unit": null, "item": "garlic cloves, peeled and halved", "itemFr": "gousses d'ail, pelées et coupées en deux", "group": "" },
+    { "quantity": 2000, "unit": "g", "item": "white potatoes, peeled and sliced 3 mm thick (use a mandoline)", "itemFr": "pommes de terre blanches, pelées et tranchées à 3 mm à la mandoline", "group": "" },
+    { "quantity": 0.5, "unit": "tsp", "item": "salt", "itemFr": "sel", "group": "" },
+    { "quantity": null, "unit": null, "item": "black pepper, to taste", "itemFr": "poivre noir, au goût", "group": "" },
+    { "quantity": 100, "unit": "g", "item": "Gruyère cheese, grated", "itemFr": "fromage Gruyère, râpé", "group": "" }
+  ],
+  "steps": [
+    { "text": "Position the rack at the bottom of the oven and preheat to 200°C (400°F).", "textFr": "Placer la grille au bas du four et le préchauffer à 200°C (400°F)." },
+    { "text": "In a large pot, bring the milk, cream, onion, and garlic to a boil. Reduce heat and simmer gently for 5 minutes. Remove and discard the onion and garlic.", "textFr": "Dans une grande casserole, porter le lait, la crème, l'oignon et l'ail à ébullition. Réduire le feu et laisser mijoter 5 minutes. Retirer et jeter l'oignon et l'ail." },
+    { "text": "Add the sliced potatoes and salt. Return to a boil, then simmer very gently for 15 minutes, stirring delicately. Stir in the grated cheese and season with pepper.", "textFr": "Ajouter les pommes de terre tranchées et le sel. Porter à nouveau à ébullition, puis laisser mijoter très doucement 15 minutes en remuant délicatement. Incorporer le fromage râpé et poivrer." },
+    { "text": "Transfer the potato mixture to a 23 cm square or 28×20 cm rectangular gratin dish.", "textFr": "Verser le mélange de pommes de terre dans un plat à gratin carré de 23 cm ou rectangulaire de 28×20 cm." },
+    { "text": "Bake for 50 minutes, until the potatoes are completely tender and the top is deep golden. Let rest for 15 minutes before serving.", "textFr": "Cuire au four 50 minutes, jusqu'à ce que les pommes de terre soient bien tendres et le dessus bien doré. Laisser reposer 15 minutes avant de servir." }
+  ],
+  "notes": "Resting is essential — it allows the gratin to firm up for clean, stable portions. Serve alongside roasted meats: beef, veal, pork, or turkey. A mandoline is strongly recommended for uniform 3 mm slices.",
+  "notesFr": "Le temps de repos est essentiel pour que le gratin se tienne bien lors du service. Accompagner d'une viande rôtie. Une mandoline est vivement recommandée pour des tranches uniformes à 3 mm.",
+  "image": "../images/gratin-dauphinois.jpg",
+  "source": "https://www.ricardocuisine.com/recettes/4915-gratin-dauphinois-le-meilleur",
+  "editPath": "recipes/data/gratin-dauphinois.json"
+}

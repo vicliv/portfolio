@@ -1,0 +1,63 @@
+{
+  "slug": "tournedos-sauce-poivre",
+  "title": "Beef Tournedos with Pepper Sauce",
+  "titleFr": "Tournedos de bœuf sauce au poivre",
+  "description": "Pan-seared beef tournedos served with a classic homemade pepper sauce made with shallots, cognac, beef broth, and cream. An elegant yet straightforward bistro classic.",
+  "descriptionFr": "Tournedos de bœuf poêlés servis avec une sauce au poivre maison à base d'échalotes, de cognac, de bouillon de bœuf et de crème. Un classique de bistro élégant et facile à réaliser.",
+  "defaultPortions": 2,
+  "portionLabel": "servings",
+  "portionLabelFr": "portions",
+  "tags": ["beef", "steak", "french", "dinner"],
+  "time": "35 min",
+  "difficulty": "medium",
+  "ingredients": [
+    { "quantity": 2, "unit": "", "item": "beef tournedos (filet mignon rounds), about 180 g each", "itemFr": "tournedos de bœuf (rondelles de filet mignon), environ 180 g chacun", "group": "steak" },
+    { "quantity": 1, "unit": "tbsp", "item": "olive oil", "itemFr": "huile d'olive", "group": "steak" },
+    { "quantity": 15, "unit": "g", "item": "unsalted butter", "itemFr": "beurre non salé", "group": "steak" },
+    { "quantity": null, "unit": null, "item": "salt and coarsely ground black pepper, to taste", "itemFr": "sel et poivre noir grossièrement moulu, au goût", "group": "steak" },
+    { "quantity": 15, "unit": "g", "item": "unsalted butter", "itemFr": "beurre non salé", "group": "pepper sauce" },
+    { "quantity": 2, "unit": "", "item": "small French shallots, finely chopped", "itemFr": "petites échalotes françaises, finement hachées", "group": "pepper sauce" },
+    { "quantity": 1, "unit": "tbsp", "item": "black peppercorns, crushed", "itemFr": "grains de poivre noir, concassés", "group": "pepper sauce" },
+    { "quantity": 1, "unit": "tsp", "item": "garlic, finely chopped", "itemFr": "ail, finement haché", "group": "pepper sauce" },
+    { "quantity": 2, "unit": "tbsp", "item": "cognac (optional)", "itemFr": "cognac (facultatif)", "group": "pepper sauce" },
+    { "quantity": 125, "unit": "ml", "item": "beef broth", "itemFr": "bouillon de bœuf", "group": "pepper sauce" },
+    { "quantity": 1, "unit": "tbsp", "item": "Worcestershire sauce", "itemFr": "sauce Worcestershire", "group": "pepper sauce" },
+    { "quantity": 250, "unit": "ml", "item": "heavy cream (35%)", "itemFr": "crème à 35 %", "group": "pepper sauce" },
+    { "quantity": null, "unit": null, "item": "salt, to taste", "itemFr": "sel, au goût", "group": "pepper sauce" }
+  ],
+  "steps": [
+    {
+      "text": "Remove the tournedos from the refrigerator 30 minutes before cooking to bring them to room temperature. Pat dry with paper towels and season generously with salt and coarsely ground black pepper on both sides.",
+      "textFr": "Sortez les tournedos du réfrigérateur 30 minutes avant la cuisson pour les amener à température ambiante. Épongez-les avec du papier absorbant et assaisonnez généreusement de sel et de poivre noir grossièrement moulu sur les deux faces."
+    },
+    {
+      "text": "Heat olive oil and butter in a heavy skillet (preferably cast iron) over high heat until the butter is foaming. Sear the tournedos for 2–3 minutes per side for medium-rare, or longer to your preference. Rest on a plate loosely tented with foil while you make the sauce.",
+      "textFr": "Faites chauffer l'huile d'olive et le beurre dans une poêle épaisse (de préférence en fonte) à feu vif jusqu'à ce que le beurre mousse. Saisissez les tournedos 2 à 3 minutes par face pour une cuisson saignante-à-point, ou plus longtemps selon votre goût. Laissez reposer dans une assiette recouverte de papier d'aluminium pendant la préparation de la sauce."
+    },
+    {
+      "text": "In the same skillet, reduce the heat to medium. Melt the butter for the sauce, then sauté the shallots until translucent, about 3 minutes.",
+      "textFr": "Dans la même poêle, réduisez le feu à moyen. Faites fondre le beurre pour la sauce, puis faites revenir les échalotes jusqu'à ce qu'elles soient translucides, environ 3 minutes."
+    },
+    {
+      "text": "Add the crushed peppercorns and garlic. Cook for 1 minute, stirring, until the garlic just begins to colour.",
+      "textFr": "Ajoutez les grains de poivre concassés et l'ail. Faites cuire 1 minute en remuant, jusqu'à ce que l'ail commence légèrement à colorer."
+    },
+    {
+      "text": "If using, add the cognac and simmer for 1 minute, scraping up any browned bits from the pan. Pour in the beef broth and Worcestershire sauce, then stir in the cream and a pinch of salt.",
+      "textFr": "Si vous l'utilisez, ajoutez le cognac et laissez mijoter 1 minute en grattant les sucs de cuisson. Versez le bouillon de bœuf et la sauce Worcestershire, puis incorporez la crème et une pincée de sel."
+    },
+    {
+      "text": "Reduce the heat to low and simmer for about 10 minutes, stirring occasionally, until the sauce thickens enough to coat the back of a spoon. Adjust seasoning.",
+      "textFr": "Réduisez le feu à doux et faites mijoter environ 10 minutes en remuant de temps en temps, jusqu'à ce que la sauce soit assez épaisse pour napper le dos d'une cuillère. Rectifiez l'assaisonnement."
+    },
+    {
+      "text": "Return the rested tournedos (and any accumulated juices) to the pan for 30 seconds to warm through and coat in sauce. Serve immediately with the pepper sauce spooned over the top. Goes well with pommes dauphines, mashed potatoes, or roasted vegetables.",
+      "textFr": "Remettez les tournedos reposés (avec leur jus) dans la poêle 30 secondes pour les réchauffer et les enrober de sauce. Servez immédiatement avec la sauce au poivre versée par-dessus. Accompagnez de pommes dauphines, de purée de pommes de terre ou de légumes rôtis."
+    }
+  ],
+  "notes": "For the best crust, make sure the pan is very hot and the steaks are completely dry before searing. The resting period is essential — it allows the juices to redistribute. If you don't have cognac, dry brandy or even a splash of red wine works well for deglazing.",
+  "notesFr": "Pour une belle croûte, assurez-vous que la poêle est très chaude et les steaks parfaitement secs avant de saisir. Le temps de repos est essentiel pour que les jus se redistribuent. Si vous n'avez pas de cognac, du brandy sec ou un trait de vin rouge feront l'affaire pour déglacer.",
+  "image": "../images/tournedos-sauce-poivre.jpg",
+  "source": "https://bonpourtoi.ca/recettes/sauce-au-poivre-maison/",
+  "editPath": "recipes/data/tournedos-sauce-poivre.json"
+}

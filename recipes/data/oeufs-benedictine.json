@@ -1,0 +1,57 @@
+{
+  "slug": "oeufs-benedictine",
+  "title": "Eggs Benedict",
+  "titleFr": "Œufs bénédictine",
+  "description": "The brunch classic: toasted English muffins topped with Canadian back bacon, perfectly poached eggs, and a silky homemade hollandaise sauce. Elegant but very doable at home.",
+  "descriptionFr": "Le classique du brunch : muffins anglais grillés garnis de bacon canadien, d'œufs pochés à la perfection et d'une sauce hollandaise maison onctueuse. Élégant mais tout à fait réalisable à la maison.",
+  "defaultPortions": 2,
+  "portionLabel": "servings",
+  "portionLabelFr": "portions",
+  "tags": ["brunch", "eggs", "canadian", "french sauce"],
+  "time": "35 min",
+  "difficulty": "medium",
+  "ingredients": [
+    { "quantity": 3, "unit": "", "item": "egg yolks", "itemFr": "jaunes d'œufs", "group": "hollandaise" },
+    { "quantity": 3, "unit": "tbsp", "item": "water", "itemFr": "eau", "group": "hollandaise" },
+    { "quantity": 1, "unit": "tbsp", "item": "white wine vinegar", "itemFr": "vinaigre de vin blanc", "group": "hollandaise" },
+    { "quantity": 170, "unit": "g", "item": "unsalted butter, melted and kept warm", "itemFr": "beurre non salé, fondu et gardé tiède", "group": "hollandaise" },
+    { "quantity": null, "unit": null, "item": "salt and white pepper, to taste", "itemFr": "sel et poivre blanc, au goût", "group": "hollandaise" },
+    { "quantity": 4, "unit": "", "item": "eggs, very fresh", "itemFr": "œufs, très frais", "group": "poached eggs" },
+    { "quantity": 2, "unit": "tbsp", "item": "white vinegar (for poaching water)", "itemFr": "vinaigre blanc (pour l'eau de pochage)", "group": "poached eggs" },
+    { "quantity": 2, "unit": "", "item": "English muffins, split and toasted", "itemFr": "muffins anglais, coupés en deux et grillés", "group": "assembly" },
+    { "quantity": 4, "unit": "", "item": "slices Canadian back bacon (or ham), warmed", "itemFr": "tranches de bacon canadien (ou jambon), réchauffées", "group": "assembly" },
+    { "quantity": null, "unit": null, "item": "paprika or cayenne, for garnish", "itemFr": "paprika ou cayenne, pour garnir", "group": "assembly" },
+    { "quantity": null, "unit": null, "item": "fresh chives, chopped, for garnish", "itemFr": "ciboulette fraîche, hachée, pour garnir", "group": "assembly" }
+  ],
+  "steps": [
+    {
+      "text": "Make the hollandaise: In the top of a double boiler (a heatproof bowl set over a pot of barely simmering water, not touching the water), combine the egg yolks, water, and white wine vinegar. Whisk vigorously over the gentle heat until the mixture thickens, becomes pale, and roughly triples in volume, about 3–5 minutes. Do not let it get too hot or the yolks will scramble.",
+      "textFr": "Préparez la sauce hollandaise : Dans la partie supérieure d'un bain-marie (un bol résistant à la chaleur posé sur une casserole d'eau à peine frémissante, sans toucher l'eau), mélangez les jaunes d'œufs, l'eau et le vinaigre de vin blanc. Fouettez vigoureusement sur ce feu doux jusqu'à ce que le mélange épaississe, blanchisse et triple approximativement de volume, environ 3 à 5 minutes. Ne laissez pas chauffer trop fort pour éviter que les jaunes ne coagulent."
+    },
+    {
+      "text": "Remove the bowl from the heat. Whisking constantly, add the warm melted butter in a very thin, steady stream — just a few drops at a time at first, then in a slow drizzle — until the sauce is thick and emulsified. Season with salt and white pepper. Cover the surface directly with plastic wrap and keep warm over the (turned-off) pot of warm water.",
+      "textFr": "Retirez le bol du feu. En fouettant sans arrêt, incorporez le beurre fondu tiède en un filet très fin et régulier — quelques gouttes à la fois au début, puis en un mince filet continu — jusqu'à ce que la sauce soit épaisse et émulsionnée. Assaisonnez de sel et de poivre blanc. Couvrez la surface directement de pellicule plastique et gardez au chaud sur la casserole d'eau tiède (hors du feu)."
+    },
+    {
+      "text": "Poach the eggs: Fill a wide, deep saucepan or sauté pan with about 8 cm (3 inches) of water. Add the white vinegar and bring to a gentle simmer — you want small bubbles, not a rolling boil. Crack each egg into a small ramekin or cup.",
+      "textFr": "Pochez les œufs : Remplissez une grande casserole ou sauteuse d'environ 8 cm (3 po) d'eau. Ajoutez le vinaigre blanc et portez à frémissement doux — vous voulez de petites bulles, pas une ébullition vigoureuse. Cassez chaque œuf dans un petit ramequin ou une tasse."
+    },
+    {
+      "text": "Using a spoon, stir the simmering water in a circular motion to create a gentle whirlpool. Slide one egg at a time into the centre of the whirlpool. Poach for about 3 minutes for a runny yolk. Remove with a slotted spoon and drain briefly on a paper towel. Repeat for all 4 eggs (you can do 2 at a time in a large pan).",
+      "textFr": "À l'aide d'une cuillère, remuez l'eau frémissante en mouvement circulaire pour créer un léger tourbillon. Faites glisser un œuf à la fois au centre du tourbillon. Pochez environ 3 minutes pour un jaune coulant. Retirez à l'aide d'une écumoire et égouttez brièvement sur du papier absorbant. Répétez pour les 4 œufs (vous pouvez en pocher 2 à la fois dans une grande poêle)."
+    },
+    {
+      "text": "Assemble: Place the toasted English muffin halves cut-side up on warm plates (2 halves per person). Top each half with a slice of warmed Canadian bacon, then a poached egg.",
+      "textFr": "Montage : Disposez les moitiés de muffins anglais grillés, côté coupé vers le haut, sur des assiettes chaudes (2 moitiés par personne). Surmontez chaque moitié d'une tranche de bacon canadien réchauffé, puis d'un œuf poché."
+    },
+    {
+      "text": "Spoon the hollandaise sauce generously over each egg. Finish with a pinch of paprika or cayenne and a sprinkle of fresh chives. Serve immediately.",
+      "textFr": "Nappez généreusement chaque œuf de sauce hollandaise. Terminez avec une pincée de paprika ou de cayenne et quelques brins de ciboulette fraîche hachée. Servez immédiatement."
+    }
+  ],
+  "notes": "The hollandaise is the trickiest part — keep the heat very gentle and never stop whisking. If the sauce starts to look greasy or breaks, whisk in a teaspoon of cold water to re-emulsify. For a smooth poach, use the freshest eggs possible; older egg whites spread thin. You can poach the eggs up to 1 hour ahead and keep them in cold water, then reheat briefly in hot (not boiling) water for 30 seconds just before serving.",
+  "notesFr": "La sauce hollandaise est la partie la plus délicate — gardez le feu très doux et ne cessez jamais de fouetter. Si la sauce semble huileuse ou tourne, incorporez rapidement une cuillère à café d'eau froide pour la rattraper. Pour un pochage impeccable, utilisez les œufs les plus frais possible ; les blancs d'œufs vieux se dispersent trop. Vous pouvez pocher les œufs jusqu'à 1 heure à l'avance et les garder dans de l'eau froide, puis les réchauffer brièvement dans de l'eau chaude (non bouillante) pendant 30 secondes juste avant de servir.",
+  "image": "../images/oeufs-benedictine.jpg",
+  "source": "https://www.ricardocuisine.com/recettes/4909-sauce-hollandaise",
+  "editPath": "recipes/data/oeufs-benedictine.json"
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "beef-tartare",
+  "title": "Beef Tartare",
+  "titleFr": "Tartare de bœuf",
+  "description": "A classic French bistro beef tartare by chef Robin Filteau-Boucher, with diced sirloin, mayonnaise, chives, and roasted bone marrow, topped with crispy potato julienne and grated Louis d'Or cheese.",
+  "descriptionFr": "Un tartare de bœuf façon bistro du chef Robin Filteau-Boucher, à base de surlonge, mayonnaise, ciboulette et moelle rôtie, garni de julienne croustillante et de fromage Louis d'Or.",
+  "defaultPortions": 4,
+  "portionLabel": "servings",
+  "portionLabelFr": "portions",
+  "tags": ["beef", "appetizer", "bistro", "french"],
+  "time": "1 h (+ 12 h soak)",
+  "difficulty": "hard",
+  "ingredients": [
+    { "quantity": 4, "unit": null, "item": "beef marrow bones, halved horizontally", "itemFr": "os à moelle de bœuf, coupés en deux horizontalement", "group": "Bone Marrow" },
+    { "quantity": 450, "unit": "g", "item": "sirloin steak", "itemFr": "bifteck de surlonge", "group": "Tartare" },
+    { "quantity": 1, "unit": "tbsp", "item": "mayonnaise", "itemFr": "mayonnaise", "group": "Tartare" },
+    { "quantity": 25, "unit": "g", "item": "chives, chopped", "itemFr": "ciboulette, hachée", "group": "Tartare" },
+    { "quantity": null, "unit": null, "item": "olive oil, to taste", "itemFr": "huile d'olive, au goût", "group": "Tartare" },
+    { "quantity": null, "unit": null, "item": "salt and pepper, to taste", "itemFr": "sel et poivre, au goût", "group": "Tartare" },
+    { "quantity": 2, "unit": null, "item": "large Russet potatoes, peeled", "itemFr": "grosses pommes de terre Russet, pelées", "group": "Crispy Potatoes" },
+    { "quantity": null, "unit": null, "item": "vegetable oil, for frying", "itemFr": "huile végétale, pour la friture", "group": "Crispy Potatoes" },
+    { "quantity": 35, "unit": "g", "item": "Louis d'Or cheese, finely grated", "itemFr": "fromage Louis d'Or, finement râpé", "group": "Garnish" }
+  ],
+  "steps": [
+    { "text": "Soak the marrow bones in cold water for at least 12 hours or overnight. Drain and pat dry.", "textFr": "Faire tremper les os à moelle dans l'eau froide pendant au moins 12 heures. Égoutter et assécher." },
+    { "text": "Preheat the oven to 200°C (400°F). Roast the bones on a baking sheet for about 20 minutes. Scoop out the marrow and keep warm.", "textFr": "Préchauffer le four à 200°C (400°F). Rôtir les os sur une plaque environ 20 minutes. Extraire la moelle et garder au chaud." },
+    { "text": "Keep the sirloin well chilled over a bowl of ice. Dice the beef into small, even cubes.", "textFr": "Garder le bifteck bien froid sur un bol de glace. Couper le bœuf en petits cubes uniformes." },
+    { "text": "Cut the peeled potatoes into a fine julienne. Rinse, soak in cold water for 10 minutes, then dry thoroughly.", "textFr": "Couper les pommes de terre pelées en fine julienne. Rincer, tremper 10 minutes dans l'eau froide, puis bien assécher." },
+    { "text": "Deep-fry the potato julienne in vegetable oil heated to 180°C (350°F) until golden and crispy. Drain on paper towels and season with salt.", "textFr": "Frire la julienne dans l'huile chauffée à 180°C (350°F) jusqu'à ce qu'elle soit dorée et croustillante. Égoutter et saler." },
+    { "text": "In a bowl, mix the diced beef with mayonnaise, chives, a drizzle of olive oil, salt, and pepper.", "textFr": "Dans un bol, mélanger le bœuf avec la mayonnaise, la ciboulette, un filet d'huile d'olive, sel et poivre." },
+    { "text": "Using a ring mould, plate the tartare. Top with warm bone marrow, crispy potato julienne, and grated Louis d'Or cheese. Serve immediately.", "textFr": "À l'aide d'un emporte-pièce, dresser le tartare. Garnir de moelle chaude, de julienne croustillante et de fromage Louis d'Or râpé. Servir immédiatement." }
+  ],
+  "notes": "Keep the beef very cold throughout preparation. Marrow bones are available at most butchers. Use a mandoline or the julienne blade of a food processor for uniform potato strips.",
+  "notesFr": "Garder le bœuf très froid tout au long de la préparation. Les os à moelle sont disponibles chez la plupart des bouchers.",
+  "image": "../images/beef-tartare.jpg",
+  "source": "https://www.ricardocuisine.com/recettes/10598-tartare-de-b-uf-de-robin-filteau-boucher",
+  "editPath": "recipes/data/beef-tartare.json"
+}

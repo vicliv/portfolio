@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor's Recipes</title>
+    <meta name="description" content="A personal collection of recipes by Victor Livernoche.">
+    <link rel="stylesheet" href="recipes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="recipe-nav">
+        <div class="nav-container">
+            <span class="nav-brand" id="nav-brand">Recipes</span>
+            <div class="nav-actions">
+                <a href="../index.html" class="nav-back" id="nav-back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <span id="back-label">Portfolio</span>
+                </a>
+                <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">FR</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="recipes-header">
+            <h1><span class="highlight" id="header-title">Recipes</span></h1>
+            <p id="header-subtitle">A collection of recipes I enjoy making.</p>
+        </header>
+
+        <div class="gallery-controls">
+            <div class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="search-input" class="search-input" autocomplete="off">
+            </div>
+            <div class="filter-row">
+                <div class="filter-group" id="category-filters">
+                    <button class="filter-btn active" data-filter="category" data-value="" data-label-en="All" data-label-fr="Tous">All</button>
+                    <button class="filter-btn" data-filter="category" data-value="breakfast" data-label-en="Breakfast" data-label-fr="Déjeuner">Breakfast</button>
+                    <button class="filter-btn" data-filter="category" data-value="lunch" data-label-en="Lunch" data-label-fr="Dîner">Lunch</button>
+                    <button class="filter-btn" data-filter="category" data-value="dinner" data-label-en="Dinner" data-label-fr="Souper">Dinner</button>
+                    <button class="filter-btn" data-filter="category" data-value="dessert" data-label-en="Dessert" data-label-fr="Dessert">Dessert</button>
+                </div>
+                <div class="filter-group" id="difficulty-filters">
+                    <button class="filter-btn active" data-filter="difficulty" data-value="" data-label-en="All levels" data-label-fr="Tous niveaux">All levels</button>
+                    <button class="filter-btn" data-filter="difficulty" data-value="easy" data-label-en="Easy" data-label-fr="Facile">Easy</button>
+                    <button class="filter-btn" data-filter="difficulty" data-value="medium" data-label-en="Medium" data-label-fr="Moyen">Medium</button>
+                    <button class="filter-btn" data-filter="difficulty" data-value="hard" data-label-en="Hard" data-label-fr="Difficile">Hard</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="recipes-gallery" id="recipes-gallery">
+            <p class="loading" id="gallery-loading">Loading...</p>
+        </div>
+    </div>
+
+    <footer class="recipes-page-footer">
+        <div class="container">
+            <p>&copy; 2026 Victor Livernoche</p>
+        </div>
+    </footer>
+
+    <script src="recipes.js"></script>
+</body>
+</html>

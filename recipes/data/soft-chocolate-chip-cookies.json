@@ -1,0 +1,36 @@
+{
+  "slug": "soft-chocolate-chip-cookies",
+  "title": "Soft Chocolate Chip Cookies",
+  "titleFr": "Cookies moelleux aux pépites de chocolat",
+  "description": "Ultra-thick, soft, and buttery chocolate chip cookies with no chilling required. Perfectly gooey centres every time.",
+  "descriptionFr": "Des cookies aux pépites de chocolat ultra-épais, moelleux et beurrés sans temps de repos. Des centres parfaitement fondants à chaque fois.",
+  "defaultPortions": 12,
+  "portionLabel": "cookies",
+  "portionLabelFr": "cookies",
+  "tags": ["dessert", "cookies", "chocolate", "baking"],
+  "time": "20 min",
+  "difficulty": "easy",
+  "ingredients": [
+    { "quantity": 8, "unit": "tbsp", "item": "salted butter", "itemFr": "beurre salé", "group": "" },
+    { "quantity": 0.5, "unit": "cup", "item": "white sugar", "itemFr": "sucre blanc", "group": "" },
+    { "quantity": 0.25, "unit": "cup", "item": "light brown sugar, packed", "itemFr": "cassonade légère, bien tassée", "group": "" },
+    { "quantity": 1, "unit": "tsp", "item": "vanilla extract", "itemFr": "extrait de vanille", "group": "" },
+    { "quantity": 1, "unit": null, "item": "egg", "itemFr": "œuf", "group": "" },
+    { "quantity": 1.5, "unit": "cup", "item": "all-purpose flour", "itemFr": "farine tout usage", "group": "" },
+    { "quantity": 0.5, "unit": "tsp", "item": "baking soda", "itemFr": "bicarbonate de soude", "group": "" },
+    { "quantity": 0.25, "unit": "tsp", "item": "salt", "itemFr": "sel", "group": "" },
+    { "quantity": 0.75, "unit": "cup", "item": "mixed chocolate chips and chunks", "itemFr": "pépites et morceaux de chocolat mélangés", "group": "" }
+  ],
+  "steps": [
+    { "text": "Preheat the oven to 175°C (350°F). Microwave the butter for about 40 seconds until nearly melted but not hot.", "textFr": "Préchauffer le four à 175°C (350°F). Faire fondre le beurre au micro-ondes environ 40 secondes jusqu'à ce qu'il soit presque fondu mais pas chaud." },
+    { "text": "Beat the melted butter with both sugars until creamy. Add the vanilla and egg, then beat on low speed for 10–15 seconds only — do not overbeat.", "textFr": "Battre le beurre fondu avec les deux sucres jusqu'à obtenir une crème. Ajouter la vanille et l'œuf, puis battre à basse vitesse seulement 10 à 15 secondes — ne pas trop battre." },
+    { "text": "Mix in the flour, baking soda, and salt until the mixture forms crumbles. Press into a dough ball with your hands. Fold in the chocolate chips and chunks.", "textFr": "Incorporer la farine, le bicarbonate et le sel jusqu'à obtenir des grumeaux. Former une boule de pâte avec les mains. Incorporer les pépites et morceaux de chocolat." },
+    { "text": "Roll the dough into 12 balls and place on an ungreased baking sheet. Bake for 9–11 minutes until puffed and barely golden — do not overbake.", "textFr": "Former 12 boules de pâte et placer sur une plaque de cuisson non graissée. Cuire 9 à 11 minutes jusqu'à ce qu'elles soient gonflées et à peine dorées — ne pas trop cuire." },
+    { "text": "Leave the cookies to cool on the baking sheet for at least 30 minutes. They will sink and become dense and soft as they cool.", "textFr": "Laisser refroidir les cookies sur la plaque pendant au moins 30 minutes. Ils s'affaisseront et deviendront denses et moelleux en refroidissant." }
+  ],
+  "notes": "The secret to softness: slightly underbake and cool on the pan. Don't rush moving them. A mix of chips and chunks creates varied chocolate pockets.",
+  "notesFr": "Le secret du moelleux : légère sous-cuisson et refroidissement sur la plaque. Ne pas les déplacer trop tôt. Un mélange de pépites et de morceaux crée des poches de chocolat variées.",
+  "image": "../images/soft-chocolate-chip-cookies.jpg",
+  "source": "https://pinchofyum.com/the-best-soft-chocolate-chip-cookies",
+  "editPath": "recipes/data/soft-chocolate-chip-cookies.json"
+}

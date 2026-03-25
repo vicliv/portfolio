@@ -1,0 +1,32 @@
+{
+  "slug": "french-toast",
+  "title": "French Toast",
+  "titleFr": "Pain doré",
+  "description": "Golden pan-fried French toast soaked in a vanilla egg custardé",
+  "descriptionFr": "Pain doré croustillant à l'extérieur et moelleux à l'intérieur.",
+  "defaultPortions": 4,
+  "portionLabel": "servings",
+  "portionLabelFr": "portions",
+  "tags": ["breakfast", "brunch", "vegetarian", "french", "pain doré"],
+  "time": "30 min",
+  "difficulty": "easy",
+  "ingredients": [
+    { "quantity": 0.5, "unit": "cup", "item": "milk", "itemFr": "lait", "group": "French Toast" },
+    { "quantity": 55, "unit": "g", "item": "brown sugar", "itemFr": "cassonade", "group": "French Toast" },
+    { "quantity": 2, "unit": null, "item": "eggs", "itemFr": "œufs", "group": "French Toast" },
+    { "quantity": 0.5, "unit": "tsp", "item": "vanilla extract", "itemFr": "extrait de vanille", "group": "French Toast" },
+    { "quantity": 4, "unit": null, "item": "thick slices white bread", "itemFr": "tranches épaisses de pain blanc", "group": "French Toast" },
+    { "quantity": 2, "unit": "tbsp", "item": "unsalted butter", "itemFr": "beurre non salé", "group": "French Toast" },
+  ],
+  "steps": [
+    { "text": "In a shallow bowl, whisk together the milk, brown sugar, eggs, and vanilla extract.", "textFr": "Dans un plat creux, fouetter ensemble le lait, la cassonade, les œufs et l'extrait de vanille." },
+    { "text": "Soak each bread slice in the egg mixture, letting it absorb well on both sides.", "textFr": "Tremper chaque tranche de pain dans le mélange aux œufs, en laissant bien absorber des deux côtés." },
+    { "text": "Melt half the butter in a non-stick skillet over medium-low heat. Cook two soaked slices for about 2 minutes per side until deep golden. Keep warm in a 95°C (200°F) oven. Repeat with remaining butter and bread.", "textFr": "Faire fondre la moitié du beurre dans une poêle antiadhésive à feu moyen-doux. Cuire deux tranches environ 2 minutes par côté. Garder au chaud au four à 95°C (200°F). Répéter avec le reste." },
+    { "text": "Dust with powdered sugar and serve with the cold strawberry coulis.", "textFr": "Saupoudrer de sucre glace et servir avec le coulis de fraises froid." }
+  ],
+  "notes": "For a richer result, use thick brioche instead of regular white bread. The coulis can be made up to 2 days ahead.",
+  "notesFr": "Pour un résultat plus riche, utiliser de la brioche tranchée épaisse au lieu du pain blanc. Le coulis peut être préparé jusqu'à 2 jours à l'avance.",
+  "image": "../images/french-toast.jpg",
+  "source": "https://www.ricardocuisine.com/recettes/6243-pain-dore-et-coulis-de-fraises",
+  "editPath": "recipes/data/french-toast.json"
+}
