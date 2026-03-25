@@ -147,6 +147,22 @@
     "status": "active"
   },
   {
+    "slug": "crepe-au-jambon-fromage",
+    "title": "Ham and Cheese Crepe",
+    "titleFr": "Crêpe au jambon et fromage",
+    "description": "A savory lunch variation of the classic thin crepe, filled with ham and melted cheese, and served with a surprisingly delicious drizzle of maple syrup.",
+    "descriptionFr": "Une variante salée pour le dîner de la crêpe classique, garnie de jambon et de fromage fondu, servie avec un délicieux filet de sirop d'érable.",
+    "tags": [
+      "lunch",
+      "savory",
+      "crepes"
+    ],
+    "time": "40 min",
+    "difficulty": "easy",
+    "image": "images/crepe-au-jambon-fromage.jpg",
+    "status": "active"
+  },
+  {
     "slug": "oeufs-benedictine",
     "title": "Eggs Benedict",
     "titleFr": "Œufs bénédictine",

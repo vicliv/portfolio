@@ -2,7 +2,7 @@
   "slug": "french-toast",
   "title": "French Toast",
   "titleFr": "Pain doré",
-  "description": "Golden pan-fried French toast soaked in a vanilla egg custardé",
+  "description": "Golden pan-fried French toast soaked in a vanilla egg custard.",
   "descriptionFr": "Pain doré croustillant à l'extérieur et moelleux à l'intérieur.",
   "defaultPortions": 4,
   "portionLabel": "servings",
@@ -16,7 +16,7 @@
     { "quantity": 2, "unit": null, "item": "eggs", "itemFr": "œufs", "group": "French Toast" },
     { "quantity": 0.5, "unit": "tsp", "item": "vanilla extract", "itemFr": "extrait de vanille", "group": "French Toast" },
     { "quantity": 4, "unit": null, "item": "thick slices white bread", "itemFr": "tranches épaisses de pain blanc", "group": "French Toast" },
-    { "quantity": 2, "unit": "tbsp", "item": "unsalted butter", "itemFr": "beurre non salé", "group": "French Toast" },
+    { "quantity": 2, "unit": "tbsp", "item": "unsalted butter", "itemFr": "beurre non salé", "group": "French Toast" }
   ],
   "steps": [
     { "text": "In a shallow bowl, whisk together the milk, brown sugar, eggs, and vanilla extract.", "textFr": "Dans un plat creux, fouetter ensemble le lait, la cassonade, les œufs et l'extrait de vanille." },
