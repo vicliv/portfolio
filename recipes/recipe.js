@@ -1,43 +1,43 @@
 /* recipe.js — Single recipe page for Victor's recipe collection */
 
-const GITHUB_REPO   = 'vicliv/vicliv.github.io';
+const GITHUB_REPO = 'vicliv/portfolio';
 const GITHUB_BRANCH = 'main';
-const LANG_KEY      = 'lang';
+const LANG_KEY = 'lang';
 
 /* ---- Quantity rounding constants ---- */
-const COOK_FRACTIONS = [0, 1/8, 1/4, 1/3, 3/8, 1/2, 5/8, 2/3, 3/4, 7/8];
-const FRAC_DISPLAY   = ['',  '⅛',  '¼',  '⅓',  '⅜',  '½',  '⅝',  '⅔',  '¾',  '⅞'];
-const VOLUME_UNITS   = new Set(['cup', 'cups', 'tbsp', 'tsp']);
-const METRIC_UNITS   = new Set(['g', 'kg', 'ml', 'L', 'l']);
+const COOK_FRACTIONS = [0, 1 / 8, 1 / 4, 1 / 3, 3 / 8, 1 / 2, 5 / 8, 2 / 3, 3 / 4, 7 / 8];
+const FRAC_DISPLAY = ['', '⅛', '¼', '⅓', '⅜', '½', '⅝', '⅔', '¾', '⅞'];
+const VOLUME_UNITS = new Set(['cup', 'cups', 'tbsp', 'tsp']);
+const METRIC_UNITS = new Set(['g', 'kg', 'ml', 'L', 'l']);
 
 /* ---- UI strings ---- */
 const UI = {
   en: {
-    ingredients:  'Ingredients',
+    ingredients: 'Ingredients',
     instructions: 'Instructions',
-    notes:        'Notes',
-    editGithub:   'Edit on GitHub',
-    allRecipes:   'All Recipes',
-    backLabel:    'All Recipes',
-    servings:     'servings',
-    source:       'Source:',
-    notFound:     'Recipe not found.'
+    notes: 'Notes',
+    editGithub: 'Edit on GitHub',
+    allRecipes: 'All Recipes',
+    backLabel: 'All Recipes',
+    servings: 'servings',
+    source: 'Source:',
+    notFound: 'Recipe not found.'
   },
   fr: {
-    ingredients:  'Ingrédients',
+    ingredients: 'Ingrédients',
     instructions: 'Instructions',
-    notes:        'Notes',
-    editGithub:   'Modifier sur GitHub',
-    allRecipes:   'Toutes les recettes',
-    backLabel:    'Toutes les recettes',
-    servings:     'portions',
-    source:       'Source\u00a0:',
-    notFound:     'Recette introuvable.'
+    notes: 'Notes',
+    editGithub: 'Modifier sur GitHub',
+    allRecipes: 'Toutes les recettes',
+    backLabel: 'Toutes les recettes',
+    servings: 'portions',
+    source: 'Source\u00a0:',
+    notFound: 'Recette introuvable.'
   }
 };
 
 /* ---- State ---- */
-let currentRecipe   = null;
+let currentRecipe = null;
 let currentPortions = 2;
 
 /* ---- Language helpers ---- */
@@ -63,15 +63,15 @@ function snapFraction(frac) {
 
 function formatVolumeQty(scaled) {
   const whole = Math.floor(scaled);
-  const frac  = scaled - whole;
-  const idx   = snapFraction(frac);
+  const frac = scaled - whole;
+  const idx = snapFraction(frac);
 
   // If the fractional part is closer to 1 than to ⅞, round up to next whole
   if (COOK_FRACTIONS[idx] > 0.9) return String(whole + 1);
 
   const fracStr = FRAC_DISPLAY[idx];
   if (whole === 0) return fracStr || '0';
-  if (!fracStr)    return String(whole);
+  if (!fracStr) return String(whole);
   return `${whole} ${fracStr}`;
 }
 
@@ -81,7 +81,7 @@ function formatQuantity(quantity, unit, scaleFactor) {
 
   if (METRIC_UNITS.has(unit)) {
     if (scaled >= 100) return String(Math.round(scaled / 5) * 5);
-    if (scaled >= 10)  return String(Math.round(scaled));
+    if (scaled >= 10) return String(Math.round(scaled));
     return String(Math.round(scaled * 10) / 10);
   }
 
@@ -99,7 +99,7 @@ function renderIngredientItem(ing, scaleFactor) {
     return `<li class="ingredient-item"><span class="ingredient-qty"></span>${escHtml(item)}</li>`;
   }
 
-  const qty  = formatQuantity(ing.quantity, ing.unit, scaleFactor);
+  const qty = formatQuantity(ing.quantity, ing.unit, scaleFactor);
   const unit = ing.unit || '';
 
   let qtyDisplay;
@@ -117,8 +117,8 @@ function renderIngredientItem(ing, scaleFactor) {
 /* ---- DOM rendering ---- */
 function renderIngredients(recipe, portions) {
   const scaleFactor = portions / recipe.defaultPortions;
-  const list        = document.getElementById('ingredients-list');
-  const hasGroups   = recipe.ingredients.some(i => i.group);
+  const list = document.getElementById('ingredients-list');
+  const hasGroups = recipe.ingredients.some(i => i.group);
 
   if (hasGroups) {
     const grouped = {}, order = [];
@@ -148,11 +148,11 @@ function renderSteps(recipe) {
 }
 
 function renderNotes(recipe) {
-  const lang   = getLang();
-  const notes  = (lang === 'fr' && recipe.notesFr) ? recipe.notesFr : recipe.notes;
-  const el     = document.getElementById('recipe-notes');
+  const lang = getLang();
+  const notes = (lang === 'fr' && recipe.notesFr) ? recipe.notesFr : recipe.notes;
+  const el = document.getElementById('recipe-notes');
   if (notes) {
-    el.innerHTML   = `<h3>${t('notes')}</h3><p>${escHtml(notes)}</p>`;
+    el.innerHTML = `<h3>${t('notes')}</h3><p>${escHtml(notes)}</p>`;
     el.style.display = '';
   } else {
     el.style.display = 'none';
@@ -161,17 +161,17 @@ function renderNotes(recipe) {
 
 function applyUIStrings() {
   const lang = getLang();
-  document.documentElement.lang                        = lang;
+  document.documentElement.lang = lang;
   document.getElementById('ingredients-title').textContent = t('ingredients');
   document.getElementById('instructions-title').textContent = t('instructions');
-  document.getElementById('edit-label').textContent    = t('editGithub');
+  document.getElementById('edit-label').textContent = t('editGithub');
   document.getElementById('all-recipes-label').textContent = t('allRecipes');
-  document.getElementById('back-label').textContent    = t('backLabel');
-  document.getElementById('lang-toggle').textContent   = lang === 'fr' ? 'EN' : 'FR';
+  document.getElementById('back-label').textContent = t('backLabel');
+  document.getElementById('lang-toggle').textContent = lang === 'fr' ? 'EN' : 'FR';
 }
 
 function renderRecipe(recipe) {
-  const lang  = getLang();
+  const lang = getLang();
   const title = (lang === 'fr' && recipe.titleFr) ? recipe.titleFr : recipe.title;
 
   document.title = `${title} — Victor's Recipes`;
@@ -195,7 +195,7 @@ function renderRecipe(recipe) {
 
   // Meta line
   const metaParts = [];
-  if (recipe.time)       metaParts.push(`<span><i class="fas fa-clock"></i> ${escHtml(recipe.time)}</span>`);
+  if (recipe.time) metaParts.push(`<span><i class="fas fa-clock"></i> ${escHtml(recipe.time)}</span>`);
   if (recipe.difficulty) metaParts.push(`<span><i class="fas fa-signal"></i> ${escHtml(recipe.difficulty)}</span>`);
   document.getElementById('recipe-meta').innerHTML = metaParts.join('');
 
@@ -234,7 +234,7 @@ function escAttr(str) { return escHtml(str); }
 /* ---- Init ---- */
 async function init() {
   const params = new URLSearchParams(window.location.search);
-  const slug   = params.get('slug');
+  const slug = params.get('slug');
 
   if (!slug) {
     document.getElementById('recipe-title').textContent = t('notFound');
@@ -251,7 +251,7 @@ async function init() {
     return;
   }
 
-  currentRecipe   = recipe;
+  currentRecipe = recipe;
   currentPortions = recipe.defaultPortions || 2;
   document.getElementById('portions-display').textContent = currentPortions;
 
