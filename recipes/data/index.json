@@ -40,7 +40,8 @@
     "tags": [
       "fish",
       "salmon",
-      "quick"
+      "quick",
+      "dinner"
     ],
     "time": "30 min",
     "difficulty": "easy",
@@ -57,7 +58,8 @@
       "thai",
       "noodles",
       "chicken",
-      "asian"
+      "asian",
+      "dinner"
     ],
     "time": "30 min",
     "difficulty": "medium",
@@ -74,7 +76,8 @@
       "potato",
       "french",
       "side dish",
-      "vegetarian"
+      "vegetarian",
+      "dinner"
     ],
     "time": "2 h",
     "difficulty": "medium",
@@ -108,7 +111,8 @@
       "korean",
       "fried chicken",
       "spicy",
-      "asian"
+      "asian",
+      "dinner"
     ],
     "time": "1 h 50 min",
     "difficulty": "medium",

@@ -12,7 +12,7 @@
   "difficulty": "easy",
   "ingredients": [
     { "quantity": 0.5, "unit": "cup", "item": "milk", "itemFr": "lait", "group": "French Toast" },
-    { "quantity": 55, "unit": "g", "item": "brown sugar", "itemFr": "cassonade", "group": "French Toast" },
+    { "quantity": 0.25, "unit": "cup", "item": "brown sugar", "itemFr": "cassonade", "group": "French Toast" },
     { "quantity": 2, "unit": null, "item": "eggs", "itemFr": "œufs", "group": "French Toast" },
     { "quantity": 0.5, "unit": "tsp", "item": "vanilla extract", "itemFr": "extrait de vanille", "group": "French Toast" },
     { "quantity": 4, "unit": null, "item": "thick slices white bread", "itemFr": "tranches épaisses de pain blanc", "group": "French Toast" },
