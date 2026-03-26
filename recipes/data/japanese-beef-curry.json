@@ -1,0 +1,41 @@
+{
+  "slug": "japanese-beef-curry",
+  "title": "Japanese Beef Curry",
+  "titleFr": "Curry de bœuf japonais",
+  "description": "A rich and comforting Japanese beef curry with tender vegetables and a deeply flavoured sauce spiked with honey, soy, and sesame.",
+  "descriptionFr": "Un curry de bœuf japonais riche et réconfortant avec des légumes tendres et une sauce savoureuse relevée de miel, soya et sésame.",
+  "defaultPortions": 3,
+  "portionLabel": "servings",
+  "portionLabelFr": "portions",
+  "tags": ["japanese", "curry", "beef", "asian", "dinner"],
+  "time": "50 min",
+  "difficulty": "medium",
+  "ingredients": [
+    { "quantity": 300, "unit": "g", "item": "beef, cut into bite-size pieces", "itemFr": "bœuf, coupé en morceaux", "group": "Curry" },
+    { "quantity": 2, "unit": "tbsp", "item": "vegetable oil", "itemFr": "huile végétale", "group": "Curry" },
+    { "quantity": 1, "unit": null, "item": "medium onion, sliced", "itemFr": "oignon moyen, émincé", "group": "Curry" },
+    { "quantity": 4, "unit": null, "item": "medium potatoes, cut into bite-size chunks", "itemFr": "pommes de terre moyennes, coupées en morceaux", "group": "Curry" },
+    { "quantity": 3, "unit": null, "item": "medium carrots, cut into bite-size chunks", "itemFr": "carottes moyennes, coupées en morceaux", "group": "Curry" },
+    { "quantity": 1, "unit": null, "item": "garlic clove, minced", "itemFr": "gousse d'ail, hachée", "group": "Curry" },
+    { "quantity": 2, "unit": "cups", "item": "water", "itemFr": "eau", "group": "Curry" },
+    { "quantity": 110, "unit": "g", "item": "Japanese curry sauce mix (about half a box of Glico curry), broken into shards", "itemFr": "mélange de sauce à curry japonais (environ la moitié d'une boîte Glico), cassé en morceaux", "group": "Curry" },
+    { "quantity": 1, "unit": "tbsp", "item": "honey", "itemFr": "miel", "group": "Finishing" },
+    { "quantity": 1, "unit": "tbsp", "item": "soy sauce", "itemFr": "sauce soya", "group": "Finishing" },
+    { "quantity": 1, "unit": "tsp", "item": "sesame oil", "itemFr": "huile de sésame", "group": "Finishing" }
+  ],
+  "steps": [
+    { "text": "Prep all your ingredients before you start cooking: slice the onion, cut the potatoes and carrots into bite-size chunks, mince the garlic, and cut the meat into similar-sized pieces so everything cooks evenly.", "textFr": "Préparer tous les ingrédients avant de commencer : émincer l'oignon, couper les pommes de terre et les carottes en morceaux, hacher l'ail et couper la viande en morceaux similaires pour une cuisson uniforme." },
+    { "text": "Heat the vegetable oil in a large pot or deep pan over medium heat. Add the onion and cook, stirring occasionally, for about 5 minutes until softened and starting to turn translucent.", "textFr": "Chauffer l'huile végétale dans une grande casserole à feu moyen. Ajouter l'oignon et cuire en remuant de temps en temps pendant environ 5 minutes, jusqu'à ce qu'il soit ramolli et translucide." },
+    { "text": "Add the beef to the pot and cook for 3–4 minutes, stirring to brown it on all sides. You don't need to cook it through at this stage — it will finish cooking in the braise.", "textFr": "Ajouter le bœuf et cuire 3–4 minutes en remuant pour le colorer sur tous les côtés. Il n'est pas nécessaire de le cuire complètement à cette étape — il finira de cuire dans le bouillon." },
+    { "text": "Add the potatoes, carrots, and garlic. Stir everything together for about a minute so the vegetables are coated in the oil and lightly toasted.", "textFr": "Ajouter les pommes de terre, les carottes et l'ail. Mélanger pendant environ une minute pour enrober les légumes d'huile et les faire légèrement revenir." },
+    { "text": "Pour in the water and bring to a boil over medium-high heat, scraping up any bits stuck to the bottom of the pot.", "textFr": "Verser l'eau et porter à ébullition à feu moyen-vif, en grattant les sucs collés au fond de la casserole." },
+    { "text": "Once boiling, reduce the heat to low, cover with a lid, and simmer for about 20 minutes, or until the potatoes and carrots are tender when pierced with a fork.", "textFr": "Dès l'ébullition, réduire le feu à doux, couvrir et laisser mijoter environ 20 minutes, ou jusqu'à ce que les pommes de terre et les carottes soient tendres à la fourchette." },
+    { "text": "Turn off the heat. Break the curry sauce mix into shards and add them to the pot. Stir gently and continuously until every piece has fully dissolved into the broth — the sauce will start to thicken noticeably.", "textFr": "Éteindre le feu. Casser le mélange de sauce à curry en morceaux et les ajouter dans la casserole. Remuer doucement et continuellement jusqu'à ce que chaque morceau soit complètement dissous dans le bouillon — la sauce commencera à épaissir." },
+    { "text": "Stir in the honey, soy sauce, and sesame oil. These finishing touches add depth and a subtle sweetness that rounds out the curry sauce. Taste and adjust if needed.", "textFr": "Incorporer le miel, la sauce soya et l'huile de sésame. Ces ajouts finaux apportent de la profondeur et une légère douceur qui équilibre la sauce. Goûter et ajuster si nécessaire." },
+    { "text": "Leave the curry uncovered for 10 minutes to rest and thicken further. Serve hot over steamed rice, pasta, or with bread.", "textFr": "Laisser le curry reposer à découvert pendant 10 minutes pour épaissir davantage. Servir chaud sur du riz vapeur, des pâtes ou avec du pain." }
+  ],
+  "notes": "The Glico curry mix comes in mild, medium, and hot — pick based on your preference. For a richer sauce, substitute 1/4 cup of the water with coconut milk. Leftovers thicken overnight; add a splash of water when reheating.",
+  "notesFr": "Le mélange Glico existe en version douce, moyenne et épicée — choisir selon les préférences. Pour une sauce plus riche, remplacer 1/4 tasse d'eau par du lait de coco. Les restes épaississent au réfrigérateur ; ajouter un peu d'eau lors du réchauffage.",
+  "image": "../images/japanese-beef-curry.jpg",
+  "editPath": "recipes/data/japanese-beef-curry.json"
+}
