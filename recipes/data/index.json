@@ -426,7 +426,13 @@
     "slug": "salmon-tartare",
     "title": "Salmon Tartare",
     "titleFr": "Tartare de saumon",
-    "status": "on-hold"
+    "description": "Fresh and smoked salmon hand-cut into fine dice, seasoned with Dijon mustard, lemon, ginger, cornichons, and fresh herbs. Served with toasted baguette croutons.",
+    "descriptionFr": "Saumon frais et fumé coupé au couteau, assaisonné de moutarde de Dijon, citron, gingembre, cornichons et herbes fraîches. Servi avec des croûtons de baguette grillée.",
+    "tags": ["fish", "salmon", "appetizer", "french", "dinner"],
+    "time": "20 min",
+    "difficulty": "easy",
+    "image": "images/salmon-tartare.jpg",
+    "status": "active"
   },
   {
     "slug": "general-tao",

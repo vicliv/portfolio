@@ -1,0 +1,40 @@
+{
+  "slug": "salmon-tartare",
+  "title": "Salmon Tartare",
+  "titleFr": "Tartare de saumon",
+  "description": "Fresh and smoked salmon hand-cut into fine dice, seasoned with Dijon mustard, lemon, ginger, cornichons, and fresh herbs. Served with toasted baguette croutons.",
+  "descriptionFr": "Saumon frais et fumé coupé au couteau, assaisonné de moutarde de Dijon, citron, gingembre, cornichons et herbes fraîches. Servi avec des croûtons de baguette grillée.",
+  "defaultPortions": 4,
+  "portionLabel": "servings",
+  "portionLabelFr": "portions",
+  "tags": ["fish", "salmon", "appetizer", "french", "dinner"],
+  "time": "20 min",
+  "difficulty": "easy",
+  "ingredients": [
+    { "quantity": 500, "unit": "g", "item": "fresh salmon, sashimi-grade", "itemFr": "saumon frais, qualité sashimi", "group": "Base" },
+    { "quantity": 100, "unit": "g", "item": "smoked salmon", "itemFr": "saumon fumé", "group": "Base" },
+    { "quantity": 1, "unit": "tbsp", "item": "fresh dill (or parsley, or half and half)", "itemFr": "aneth frais (ou persil, ou moitié-moitié)", "group": "Herbs & Aromatics" },
+    { "quantity": 2, "unit": "tbsp", "item": "green onion or French shallot, finely chopped", "itemFr": "oignon vert ou échalote française, finement haché(e)", "group": "Herbs & Aromatics" },
+    { "quantity": 3, "unit": "tbsp", "item": "cornichons, finely chopped", "itemFr": "cornichons, finement hachés", "group": "Herbs & Aromatics" },
+    { "quantity": 1, "unit": "tsp", "item": "fresh ginger, grated", "itemFr": "gingembre frais, râpé", "group": "Herbs & Aromatics" },
+    { "quantity": 1, "unit": "tbsp", "item": "Dijon mustard", "itemFr": "moutarde de Dijon", "group": "Seasoning" },
+    { "quantity": 1.5, "unit": "tbsp", "item": "lemon juice", "itemFr": "jus de citron", "group": "Seasoning" },
+    { "quantity": 1, "unit": "tbsp", "item": "olive oil", "itemFr": "huile d'olive", "group": "Seasoning" },
+    { "quantity": null, "unit": null, "item": "salt and pepper, to taste", "itemFr": "sel et poivre, au goût", "group": "Seasoning" },
+    { "quantity": 1, "unit": "tbsp", "item": "capers (optional but recommended)", "itemFr": "câpres (optionnel, mais recommandé)", "group": "Seasoning" },
+    { "quantity": null, "unit": null, "item": "baguette, sliced and toasted", "itemFr": "baguette, tranchée et grillée au four", "group": "To Serve" }
+  ],
+  "steps": [
+    { "text": "Dice both the fresh salmon and smoked salmon into small, even cubes using a knife — do not use a food processor.", "textFr": "Couper le saumon frais et le saumon fumé en petits dés au couteau — ne pas utiliser un mixeur." },
+    { "text": "Finely chop the herbs, cornichons, and green onion or shallot.", "textFr": "Hacher finement les herbes, les cornichons et l'oignon vert ou l'échalote." },
+    { "text": "In a bowl, combine the salmon, herbs, cornichons, onion, ginger, and Dijon mustard. Mix gently.", "textFr": "Dans un bol, mélanger le saumon, les herbes, les cornichons, l'oignon, le gingembre et la moutarde de Dijon. Mélanger délicatement." },
+    { "text": "Add the lemon juice and olive oil. Season with salt and pepper, then mix gently.", "textFr": "Ajouter le jus de citron et l'huile d'olive. Saler, poivrer, puis mélanger délicatement." },
+    { "text": "Taste and adjust — this step is key. Balance the lemon, salt, and mustard to your liking. Add capers if using.", "textFr": "Goûter et ajuster — cette étape est essentielle. Équilibrer le citron, le sel et la moutarde selon votre goût. Ajouter les câpres si désiré." },
+    { "text": "Optionally, refrigerate for 5–10 minutes to let the flavours meld.", "textFr": "Optionnellement, réfrigérer 5 à 10 minutes pour que les saveurs se marient." },
+    { "text": "Serve with toasted baguette slices, fries, and a light green salad.", "textFr": "Servir avec des tranches de baguette grillée, des frites et une salade verte légère." }
+  ],
+  "notes": "Use sashimi-grade salmon — freshness is critical. Keep the salmon cold throughout preparation. The smoked salmon (~1/4 of the total) adds depth and a smoky note. Adjust lemon and mustard to taste before serving.",
+  "notesFr": "Utiliser du saumon de qualité sashimi — la fraîcheur est essentielle. Garder le saumon froid tout au long de la préparation. Le saumon fumé (~1/4 du total) apporte profondeur et une note fumée. Ajuster le citron et la moutarde avant de servir.",
+  "image": "../images/salmon-tartare.jpg",
+  "editPath": "recipes/data/salmon-tartare.json"
+}
