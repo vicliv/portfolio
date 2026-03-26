@@ -752,16 +752,13 @@ body.light-mode .gradient-overlay {
 .light-blob {
     position: absolute;
     border-radius: 50%;
-    filter: blur(100px);
-    opacity: 1;
     pointer-events: none;
-    will-change: transform;
 }
 
 .light-blob-1 {
     width: 700px;
     height: 700px;
-    background: radial-gradient(circle, rgba(155, 27, 48, 0.5), transparent 70%);
+    background: radial-gradient(circle, rgba(155, 27, 48, 0.4) 0%, transparent 65%);
     top: -10%;
     left: -10%;
     animation: blobFloat1 18s ease-in-out infinite;
@@ -770,7 +767,7 @@ body.light-mode .gradient-overlay {
 .light-blob-2 {
     width: 650px;
     height: 650px;
-    background: radial-gradient(circle, rgba(194, 24, 91, 0.35), transparent 70%);
+    background: radial-gradient(circle, rgba(194, 24, 91, 0.28) 0%, transparent 65%);
     top: 40%;
     right: -12%;
     animation: blobFloat2 22s ease-in-out infinite;
@@ -779,7 +776,7 @@ body.light-mode .gradient-overlay {
 .light-blob-3 {
     width: 750px;
     height: 750px;
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.3), transparent 70%);
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.25) 0%, transparent 65%);
     bottom: -15%;
     left: 25%;
     animation: blobFloat3 20s ease-in-out infinite;
