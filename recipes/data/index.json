@@ -106,8 +106,8 @@
     "slug": "korean-fried-chicken",
     "title": "Korean Fried Chicken",
     "titleFr": "Poulet frit coréen",
-    "description": "Crispy buttermilk-marinated fried chicken coated in a sticky, spicy gochujang sauce.",
-    "descriptionFr": "Poulet frit croustillant mariné au babeurre, enrobé d'une sauce gochujang collante et épicée.",
+    "description": "Crispy air-fried chicken strips coated in seasoned flour and smothered in a sticky, spicy gochujang sauce.",
+    "descriptionFr": "Lanières de poulet croustillantes cuites à la friteuse à air, enrobées d'une sauce gochujang collante et épicée.",
     "tags": [
       "korean",
       "fried chicken",
@@ -115,7 +115,7 @@
       "asian",
       "dinner"
     ],
-    "time": "1 h 50 min",
+    "time": "35 min",
     "difficulty": "medium",
     "image": "images/korean-fried-chicken.jpg",
     "status": "active"
