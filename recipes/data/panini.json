@@ -1,0 +1,33 @@
+{
+  "slug": "panini",
+  "title": "Ham or Turkey Panini",
+  "titleFr": "Panini jambon ou dinde",
+  "description": "A classic pressed sandwich with mayo, Dijon, ham or turkey, tomato, and melted Swiss or Emmental — cooked in a panini press or a covered skillet until golden and gooey.",
+  "descriptionFr": "Un sandwich pressé classique avec mayo, Dijon, jambon ou dinde, tomate et fromage fondu — cuit dans une presse à panini ou une poêle couverte jusqu'à ce qu'il soit doré et fondant.",
+  "defaultPortions": 1,
+  "portionLabel": "serving",
+  "portionLabelFr": "portion",
+  "tags": ["lunch", "sandwich", "quick"],
+  "time": "15 min",
+  "difficulty": "easy",
+  "ingredients": [
+    { "quantity": 2, "unit": "slices", "item": "ciabatta or other sandwich bread", "itemFr": "pain ciabatta ou autre pain tranché" },
+    { "quantity": 1, "unit": "tbsp", "item": "mayonnaise", "itemFr": "mayonnaise" },
+    { "quantity": 1, "unit": "tsp", "item": "Dijon mustard", "itemFr": "moutarde de Dijon" },
+    { "quantity": 3, "unit": "slices", "item": "ham or turkey", "itemFr": "jambon ou dinde" },
+    { "quantity": null, "unit": null, "item": "thin tomato slices (or halved cherry tomatoes)", "itemFr": "tranches minces de tomate (ou tomates cerises coupées en deux)" },
+    { "quantity": null, "unit": null, "item": "salt", "itemFr": "sel" },
+    { "quantity": 2, "unit": "slices", "item": "Swiss or Emmental cheese", "itemFr": "fromage suisse ou emmental" },
+    { "quantity": 1, "unit": "tbsp", "item": "softened butter", "itemFr": "beurre ramolli" }
+  ],
+  "steps": [
+    { "text": "Spread mayonnaise on the inside of the bottom slice of bread and Dijon mustard on the inside of the top slice.", "textFr": "Étaler la mayonnaise sur la face intérieure du pain du bas et la moutarde de Dijon sur celle du pain du haut." },
+    { "text": "Layer the ham or turkey slices over the bottom bread. Add the tomato slices, season lightly with salt, then lay the cheese slices on top.", "textFr": "Répartir les tranches de jambon ou de dinde sur le pain du bas. Ajouter les tranches de tomates, saler légèrement, puis déposer les tranches de fromage." },
+    { "text": "Close the sandwich. Spread softened butter evenly on each exterior side of the bread.", "textFr": "Fermer le sandwich. Étaler du beurre ramolli uniformément sur chaque côté extérieur du pain." },
+    { "text": "Panini press: preheat and cook for 4–5 minutes, pressing the lid down, until the bread is golden and the cheese is melted. Skillet: place in a skillet over medium-low heat, cover with a lid, and press down gently with a spatula. Cook for 3–4 minutes, then flip, cover again, and cook for another 2–3 minutes until both sides are golden and the cheese is fully melted.", "textFr": "Presse à panini : préchauffer et cuire 4–5 minutes en appuyant sur le couvercle, jusqu'à ce que le pain soit doré et le fromage fondu. Poêle : déposer dans une poêle à feu doux-moyen, couvrir et appuyer doucement avec une spatule. Cuire 3–4 minutes, retourner, couvrir à nouveau et cuire encore 2–3 minutes jusqu'à ce que les deux côtés soient dorés et le fromage complètement fondu." }
+  ],
+  "notes": "Ciabatta gives the best texture — crispy crust with a chewy interior — but any sturdy sandwich bread works well.",
+  "notesFr": "La ciabatta donne la meilleure texture — croûte croustillante et mie moelleuse — mais n'importe quel pain à sandwich solide fait très bien l'affaire.",
+  "image": "images/panini.jpg",
+  "editPath": "recipes/data/panini.json"
+}

@@ -334,9 +334,15 @@
   },
   {
     "slug": "panini",
-    "title": "Panini",
-    "titleFr": "Panini",
-    "status": "on-hold"
+    "title": "Ham or Turkey Panini",
+    "titleFr": "Panini jambon ou dinde",
+    "description": "A classic pressed sandwich with mayo, Dijon, ham or turkey, tomato, and melted Swiss or Emmental — cooked in a panini press or a covered skillet until golden and gooey.",
+    "descriptionFr": "Un sandwich pressé classique avec mayo, Dijon, jambon ou dinde, tomate et fromage fondu — cuit dans une presse à panini ou une poêle couverte jusqu'à ce qu'il soit doré et fondant.",
+    "tags": ["lunch", "sandwich", "quick"],
+    "time": "15 min",
+    "difficulty": "easy",
+    "image": "images/panini.jpg",
+    "status": "active"
   },
   {
     "slug": "beef-stew",
