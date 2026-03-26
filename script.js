@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function () {
             'hero.img_alt': 'Portrait de Victor Livernoche',
             'now.title': 'Maintenant',
             'now.research.text': `
-                        <li>Finalisation de la justification théorique d'un article sur la sélection de bruit guidée par la kurtosis pour la détection d'anomalies tabulaires, soumis à ICLR 2026. L'idée centrale s'appuie sur mes travaux antérieurs sur l'estimation du temps de diffusion.</li>
+                        <li>Finalisation de la justification théorique d'un article sur la sélection de bruit guidée par la kurtosis pour le score-matching de débruitage en détection d'anomalies tabulaires. L'idée centrale s'appuie sur mes travaux antérieurs sur l'estimation du temps de diffusion.</li>
                         <li>Exploration d'une direction de diffusion dans l'espace des étiquettes et d'une estimation d'incertitude pour le scoring de réalisme dans la détection de deepfakes, les deux encore en phase préliminaire.</li>
                         <li>Auxiliaire d'enseignement pour COMP 511 à McGill en ce moment, ce qui implique la gestion des soumissions de propositions de projets et la révision par les pairs via OpenReview.</li>
                         <li>En parallèle, démarrage d'un projet sur les signaux de provenance d'images générées par IA, et réflexion sur une direction de recherche sur les deepfakes politiques faisant suite aux travaux autour de l'élection fédérale canadienne de 2025.</li>`,
@@ -334,11 +334,12 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', function () {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
+        const isLight = document.body.classList.contains('light-mode');
         if (scrollTop > 100) {
-            navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+            navbar.style.background = isLight ? 'rgba(250, 247, 242, 0.97)' : 'rgba(10, 10, 10, 0.95)';
             navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.3)';
         } else {
-            navbar.style.background = 'rgba(10, 10, 10, 0.9)';
+            navbar.style.background = isLight ? 'rgba(250, 247, 242, 0.92)' : 'rgba(10, 10, 10, 0.9)';
             navbar.style.boxShadow = 'none';
         }
 
@@ -491,6 +492,14 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
         localStorage.setItem('theme', mode);
+        // Re-apply navbar background in case user toggles theme while scrolled
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const isLight = mode === 'light';
+        if (scrollTop > 100) {
+            navbar.style.background = isLight ? 'rgba(250, 247, 242, 0.97)' : 'rgba(10, 10, 10, 0.95)';
+        } else {
+            navbar.style.background = isLight ? 'rgba(250, 247, 242, 0.92)' : 'rgba(10, 10, 10, 0.9)';
+        }
     }
 
     // Initialize theme from saved preference (default: dark)
