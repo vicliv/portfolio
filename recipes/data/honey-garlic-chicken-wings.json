@@ -1,0 +1,39 @@
+{
+  "slug": "honey-garlic-chicken-wings",
+  "title": "Honey Garlic Chicken Wings",
+  "titleFr": "Ailes de poulet miel et ail",
+  "description": "Crispy air-fried chicken wings seasoned with a baking powder rub, then tossed in a sticky honey garlic sauce with soy, ginger, and a touch of chili.",
+  "descriptionFr": "Ailes de poulet croustillantes cuites à la friteuse à air, assaisonnées avec de la poudre à pâte, puis nappées d'une sauce collante au miel et à l'ail avec soya, gingembre et une touche de piment.",
+  "defaultPortions": 2,
+  "portionLabel": "servings",
+  "portionLabelFr": "portions",
+  "tags": ["chicken", "wings", "appetizer", "dinner"],
+  "time": "45 min",
+  "difficulty": "easy",
+  "ingredients": [
+    { "quantity": 20, "unit": "lbs", "item": "chicken wings, halved at joints, wing tips discarded", "itemFr": "ailes de poulet, séparées à l'articulation, pointes retirées", "group": "Wings" },
+    { "quantity": 2, "unit": "tbsp", "item": "aluminum-free baking powder (not baking soda)", "itemFr": "poudre à pâte sans aluminium (pas de bicarbonate)", "group": "Wings" },
+    { "quantity": 1, "unit": "tsp", "item": "garlic powder", "itemFr": "poudre d'ail", "group": "Wings" },
+    { "quantity": 1, "unit": "tsp", "item": "paprika", "itemFr": "paprika", "group": "Wings" },
+    { "quantity": 0.75, "unit": "tsp", "item": "salt", "itemFr": "sel", "group": "Wings" },
+    { "quantity": 0.5, "unit": "tsp", "item": "freshly ground black pepper", "itemFr": "poivre noir fraîchement moulu", "group": "Wings" },
+    { "quantity": 0.5, "unit": "cup", "item": "honey", "itemFr": "miel", "group": "Honey Garlic Sauce" },
+    { "quantity": 4, "unit": "tbsp", "item": "soy sauce", "itemFr": "sauce soya", "group": "Honey Garlic Sauce" },
+    { "quantity": 0.333, "unit": "cup", "item": "water", "itemFr": "eau", "group": "Honey Garlic Sauce" },
+    { "quantity": 4, "unit": null, "item": "garlic cloves, minced", "itemFr": "gousses d'ail, hachées", "group": "Honey Garlic Sauce" },
+    { "quantity": 1, "unit": "tbsp", "item": "fresh ginger, finely minced", "itemFr": "gingembre frais, finement haché", "group": "Honey Garlic Sauce" },
+    { "quantity": 1, "unit": "tsp", "item": "cornstarch", "itemFr": "fécule de maïs", "group": "Honey Garlic Sauce" },
+    { "quantity": 0.5, "unit": "tsp", "item": "chili flakes", "itemFr": "flocons de piment", "group": "Honey Garlic Sauce" }
+  ],
+  "steps": [
+    { "text": "Pat wings completely dry with paper towels — this is key to crispy skin. In a small bowl, mix baking powder, garlic powder, paprika, salt, and pepper. Toss wings in the seasoning until evenly coated.", "textFr": "Bien éponger les ailes avec du papier absorbant — c'est essentiel pour une peau croustillante. Dans un petit bol, mélanger la poudre à pâte, la poudre d'ail, le paprika, le sel et le poivre. Mélanger les ailes dans l'assaisonnement jusqu'à ce qu'elles soient bien enrobées." },
+    { "text": "Place wings in the air fryer basket skin side up in a single layer, without overcrowding (work in batches if needed). Air fry at 380°F (193°C) for 20 minutes, then flip and increase to 400°F (204°C) for 5–8 more minutes until golden and crispy.", "textFr": "Déposer les ailes dans le panier de la friteuse à air côté peau vers le haut en une seule couche, sans les entasser (cuire en plusieurs fois si nécessaire). Cuire à 193°C (380°F) pendant 20 minutes, retourner, puis augmenter à 204°C (400°F) pour encore 5 à 8 minutes, jusqu'à ce qu'elles soient dorées et croustillantes." },
+    { "text": "While the wings cook, combine all sauce ingredients. Stovetop: bring to a boil over medium heat, then reduce heat and simmer about 10 minutes, stirring occasionally, until thickened. Microwave: microwave on high for 30–60 seconds until boiling, then stir. The sauce should coat the back of a spoon.", "textFr": "Pendant que les ailes cuisent, combiner tous les ingrédients de la sauce. Sur la cuisinière : porter à ébullition à feu moyen, puis réduire le feu et laisser mijoter environ 10 minutes en remuant de temps en temps, jusqu'à épaississement. Au micro-ondes : chauffer à puissance maximale 30 à 60 secondes jusqu'à ébullition, puis remuer. La sauce doit napper le dos d'une cuillère." },
+    { "text": "Transfer the hot wings to a large bowl, pour the sauce over them, and toss to coat. Let rest a few minutes — the sauce will thicken further as it cools.", "textFr": "Transférer les ailes chaudes dans un grand bol, verser la sauce et mélanger pour bien enrober. Laisser reposer quelques minutes — la sauce épaissira davantage en refroidissant." }
+  ],
+  "notes": "Use aluminum-free baking powder only — regular baking powder with aluminum will leave a metallic taste. Don't skip drying the wings thoroughly; moisture is the enemy of crispy skin.",
+  "notesFr": "Utiliser uniquement de la poudre à pâte sans aluminium — la poudre à pâte ordinaire avec aluminium donnera un goût métallique. Ne pas sauter l'étape d'assécher les ailes ; l'humidité est l'ennemie de la peau croustillante.",
+  "image": "images/honey-garlic-chicken-wings.jpg",
+  "source": "Wings: tastesbetterfromscratch.com | Sauce: spendwithpennies.com",
+  "editPath": "recipes/data/honey-garlic-chicken-wings.json"
+}

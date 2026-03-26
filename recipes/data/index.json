@@ -429,6 +429,18 @@
     "status": "on-hold"
   },
   {
+    "slug": "honey-garlic-chicken-wings",
+    "title": "Honey Garlic Chicken Wings",
+    "titleFr": "Ailes de poulet miel et ail",
+    "description": "Crispy air-fried chicken wings seasoned with a baking powder rub, then tossed in a sticky honey garlic sauce with soy, ginger, and a touch of chili.",
+    "descriptionFr": "Ailes de poulet croustillantes cuites à la friteuse à air, assaisonnées avec de la poudre à pâte, puis nappées d'une sauce collante au miel et à l'ail avec soya, gingembre et une touche de piment.",
+    "tags": ["chicken", "wings", "appetizer", "dinner"],
+    "time": "45 min",
+    "difficulty": "easy",
+    "image": "images/honey-garlic-chicken-wings.jpg",
+    "status": "active"
+  },
+  {
     "slug": "salmon-tartare",
     "title": "Salmon Tartare",
     "titleFr": "Tartare de saumon",
