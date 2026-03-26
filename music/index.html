@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victor's Music</title>
+  <meta name="description" content="Music produced by Victor Livernoche.">
+  <link rel="stylesheet" href="music.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="music-nav">
+    <div class="nav-container">
+      <span class="nav-brand" id="nav-brand">Music</span>
+      <div class="nav-actions">
+        <a href="../" class="nav-back">
+          <i class="fas fa-arrow-left"></i>
+          <span id="back-label">Portfolio</span>
+        </a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">FR</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+    <div class="container">
+
+      <header class="music-header">
+        <h1><span class="highlight" id="header-title">Music</span></h1>
+        <p id="header-subtitle">Tracks I have produced. I am using Logic Pro with different plugins. I am also playing piano and most vocals are recorded in my home studio.</p>
+        <a href="https://soundcloud.com/vlyer" target="_blank" rel="noopener noreferrer" class="sc-link" id="sc-profile-link">
+          <i class="fab fa-soundcloud"></i>
+          <span id="sc-label">Follow on SoundCloud</span>
+        </a>
+      </header>
+
+      <div class="gallery-controls">
+        <div class="search-bar">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" id="search-input" class="search-input" autocomplete="off">
+        </div>
+        <div class="filter-row" id="tag-filters">
+          <button class="filter-btn active" data-value="">
+            <span data-en="All" data-fr="Tous">All</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="tracks-grid" id="tracks-grid">
+        <p class="loading" id="grid-loading">Loading…</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Sticky bottom player -->
+  <div class="player-bar" id="player-bar" aria-hidden="true">
+    <div class="player-info">
+      <div class="player-eq" id="player-eq" aria-hidden="true">
+        <span class="eq-bar" style="--d:0.0s;--h:12px"></span>
+        <span class="eq-bar" style="--d:0.2s;--h:18px"></span>
+        <span class="eq-bar" style="--d:0.1s;--h:10px"></span>
+        <span class="eq-bar" style="--d:0.3s;--h:16px"></span>
+        <span class="eq-bar" style="--d:0.15s;--h:8px"></span>
+      </div>
+      <div class="player-text">
+        <span class="player-title" id="player-title">—</span>
+        <span class="player-year" id="player-year"></span>
+      </div>
+    </div>
+    <div class="player-embed-wrap">
+      <iframe
+        id="sc-iframe"
+        class="sc-iframe"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src=""
+      ></iframe>
+    </div>
+    <button class="player-close" id="player-close" aria-label="Close player">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+
+  <footer class="music-footer">
+    <div class="container">
+      <p>&copy; 2026 Victor Livernoche</p>
+    </div>
+  </footer>
+
+  <script src="music.js"></script>
+</body>
+</html>

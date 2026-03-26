@@ -1,29 +1,14 @@
 [
   {
-    "slug": "homemade-pizza",
-    "title": "Homemade Pizza",
-    "titleFr": "Pizza maison",
-    "description": "Hand-kneaded pizza dough that yields two thin-crust pizzas. Chewy, crisp, and infinitely customizable.",
-    "descriptionFr": "Pâte à pizza pétrie à la main pour deux pizzas à croûte mince. Moelleuse, croustillante et infiniment personnalisable.",
-    "tags": [
-      "italian",
-      "pizza",
-      "dinner"
-    ],
-    "time": "1 h 30 min",
-    "difficulty": "medium",
-    "image": "images/homemade-pizza.jpg",
-    "status": "active"
-  },
-  {
     "slug": "beef-tartare",
     "title": "Beef Tartare",
     "titleFr": "Tartare de bœuf",
-    "description": "Classic French bistro beef tartare with diced sirloin, bone marrow, crispy potato julienne, and Louis d'Or cheese.",
-    "descriptionFr": "Tartare de bœuf façon bistro avec surlonge, moelle rôtie, julienne croustillante et fromage Louis d'Or.",
+    "description": "A classic French bistro beef tartare by chef Robin Filteau-Boucher, with diced sirloin, mayonnaise, chives, and roasted bone marrow, topped with crispy potato julienne and grated Louis d'Or cheese.",
+    "descriptionFr": "Un tartare de bœuf façon bistro du chef Robin Filteau-Boucher, à base de surlonge, mayonnaise, ciboulette et moelle rôtie, garni de julienne croustillante et de fromage Louis d'Or.",
     "tags": [
       "beef",
       "appetizer",
+      "bistro",
       "french",
       "dinner"
     ],
@@ -33,28 +18,28 @@
     "status": "active"
   },
   {
-    "slug": "saumon-erable-soya",
-    "title": "Maple-Soy Baked Salmon",
-    "titleFr": "Saumon à l'érable et au soya",
-    "description": "Simple baked salmon glazed with a sweet and savoury maple-soy marinade that caramelizes beautifully.",
-    "descriptionFr": "Saumon au four nappé d'une marinade sucrée-salée à l'érable et au soya qui caramélise délicieusement.",
+    "slug": "caesar-salad",
+    "title": "Caesar Salad",
+    "titleFr": "Salade César",
+    "description": "A classic Caesar salad with homemade dressing, crispy croutons, bacon, lemon-marinated chicken, and shaved Parmesan.",
+    "descriptionFr": "Une salade César classique avec vinaigrette maison, croûtons croustillants, bacon, poulet mariné au citron et parmesan.",
     "tags": [
-      "fish",
-      "salmon",
-      "quick",
+      "salad",
+      "chicken",
+      "lunch",
       "dinner"
     ],
-    "time": "30 min",
-    "difficulty": "easy",
-    "image": "images/saumon-erable-soya.jpg",
+    "time": "40 min",
+    "difficulty": "medium",
+    "image": "images/caesar-salad.jpg",
     "status": "active"
   },
   {
     "slug": "chicken-pad-thai",
     "title": "Chicken Pad Thai",
     "titleFr": "Pad Thaï au poulet",
-    "description": "Restaurant-quality Pad Thai in 30 minutes with a perfectly balanced tamarind-based sauce.",
-    "descriptionFr": "Pad Thaï digne d'un restaurant en 30 minutes avec une sauce au tamarin parfaitement équilibrée.",
+    "description": "A restaurant-quality Pad Thai ready in 30 minutes with a perfectly balanced tamarind-based sauce.",
+    "descriptionFr": "Un Pad Thaï digne d'un restaurant, prêt en 30 minutes avec une sauce à base de tamarin parfaitement équilibrée.",
     "tags": [
       "thai",
       "noodles",
@@ -68,90 +53,6 @@
     "status": "active"
   },
   {
-    "slug": "gratin-dauphinois",
-    "title": "Gratin Dauphinois",
-    "titleFr": "Gratin dauphinois",
-    "description": "The definitive gratin dauphinois: potatoes simmered in cream and garlic, baked golden with Gruyère.",
-    "descriptionFr": "Le meilleur gratin dauphinois : pommes de terre à la crème et à l'ail, gratinées au Gruyère.",
-    "tags": [
-      "potato",
-      "french",
-      "side dish",
-      "vegetarian",
-      "dinner"
-    ],
-    "time": "2 h",
-    "difficulty": "medium",
-    "image": "images/gratin-dauphinois.jpg",
-    "status": "active"
-  },
-  {
-    "slug": "tournedos-sauce-poivre",
-    "title": "Beef Tournedos with Pepper Sauce",
-    "titleFr": "Tournedos de bœuf sauce au poivre",
-    "description": "Pan-seared beef tournedos with a classic homemade pepper sauce of shallots, cognac, and cream.",
-    "descriptionFr": "Tournedos de bœuf poêlés avec une sauce au poivre maison aux échalotes, cognac et crème.",
-    "tags": [
-      "beef",
-      "steak",
-      "french",
-      "dinner"
-    ],
-    "time": "35 min",
-    "difficulty": "medium",
-    "image": "images/tournedos-sauce-poivre.jpg",
-    "status": "active"
-  },
-  {
-    "slug": "korean-fried-chicken",
-    "title": "Korean Fried Chicken",
-    "titleFr": "Poulet frit coréen",
-    "description": "Crispy air-fried chicken strips coated in seasoned flour and smothered in a sticky, spicy gochujang sauce.",
-    "descriptionFr": "Lanières de poulet croustillantes cuites à la friteuse à air, enrobées d'une sauce gochujang collante et épicée.",
-    "tags": [
-      "korean",
-      "fried chicken",
-      "spicy",
-      "asian",
-      "dinner"
-    ],
-    "time": "35 min",
-    "difficulty": "medium",
-    "image": "images/korean-fried-chicken.jpg",
-    "status": "active"
-  },
-  {
-    "slug": "french-toast",
-    "title": "French Toast",
-    "titleFr": "Pain doré",
-    "description": "Golden pan-fried French toast in vanilla egg custard.",
-    "descriptionFr": "Pain doré dans une crème aux œufs vanillée.",
-    "tags": [
-      "breakfast",
-      "brunch"
-    ],
-    "time": "30 min",
-    "difficulty": "easy",
-    "image": "images/french-toast.jpg",
-    "status": "active"
-  },
-  {
-    "slug": "thin-breakfast-crepes",
-    "title": "Thin Breakfast Crepes",
-    "titleFr": "Crêpes fines pour le déjeuner",
-    "description": "Light, paper-thin vanilla crepes. Quick to prepare and yields about 14 delicate crepes.",
-    "descriptionFr": "Des crêpes fines et légères à la vanille. Rapides à faire, donne environ 14 crêpes.",
-    "tags": [
-      "breakfast",
-      "brunch",
-      "crepes"
-    ],
-    "time": "35 min",
-    "difficulty": "easy",
-    "image": "images/thin-breakfast-crepes.jpg",
-    "status": "active"
-  },
-  {
     "slug": "crepe-au-jambon-fromage",
     "title": "Ham and Cheese Crepe",
     "titleFr": "Crêpe au jambon et fromage",
@@ -160,26 +61,13 @@
     "tags": [
       "lunch",
       "savory",
-      "crepes"
+      "crepes",
+      "french",
+      "quick"
     ],
     "time": "40 min",
     "difficulty": "easy",
     "image": "images/crepe-au-jambon-fromage.jpg",
-    "status": "active"
-  },
-  {
-    "slug": "oeufs-benedictine",
-    "title": "Eggs Benedict",
-    "titleFr": "Œufs bénédictine",
-    "description": "Toasted English muffins with Canadian bacon, perfectly poached eggs, and silky homemade hollandaise.",
-    "descriptionFr": "Muffins anglais grillés garnis de bacon canadien, d'œufs pochés et de sauce hollandaise maison.",
-    "tags": [
-      "brunch",
-      "eggs"
-    ],
-    "time": "35 min",
-    "difficulty": "medium",
-    "image": "images/oeufs-benedictine.jpg",
     "status": "active"
   },
   {
@@ -199,11 +87,29 @@
     "status": "active"
   },
   {
+    "slug": "french-toast",
+    "title": "French Toast",
+    "titleFr": "Pain doré",
+    "description": "Golden pan-fried French toast soaked in a vanilla egg custard.",
+    "descriptionFr": "Pain doré croustillant à l'extérieur et moelleux à l'intérieur.",
+    "tags": [
+      "breakfast",
+      "brunch",
+      "vegetarian",
+      "french",
+      "pain doré"
+    ],
+    "time": "30 min",
+    "difficulty": "easy",
+    "image": "images/french-toast.jpg",
+    "status": "active"
+  },
+  {
     "slug": "fudgy-brownies",
     "title": "Fudgy Brownies",
     "titleFr": "Brownies fondants",
-    "description": "The ultimate homemade brownies: fudgy, moist, intensely chocolatey with crispy edges.",
-    "descriptionFr": "Les meilleurs brownies maison : fondants, moelleux, intensément chocolatés avec des bords croustillants.",
+    "description": "The ultimate homemade brownies: fudgy, moist, intensely chocolatey with perfectly crispy edges. Ready in under an hour.",
+    "descriptionFr": "Les meilleurs brownies maison : fondants, moelleux et intensément chocolatés avec des bords croustillants. Prêts en moins d'une heure.",
     "tags": [
       "dessert",
       "chocolate",
@@ -215,19 +121,56 @@
     "status": "active"
   },
   {
-    "slug": "soft-chocolate-chip-cookies",
-    "title": "Soft Chocolate Chip Cookies",
-    "titleFr": "Cookies moelleux aux pépites de chocolat",
-    "description": "Ultra-thick, soft, buttery chocolate chip cookies with gooey centres. No chilling required.",
-    "descriptionFr": "Cookies aux pépites de chocolat ultra-épais, moelleux et beurrés. Aucun temps de repos nécessaire.",
+    "slug": "gratin-dauphinois",
+    "title": "Gratin Dauphinois",
+    "titleFr": "Gratin dauphinois",
+    "description": "The definitive gratin dauphinois: thinly sliced potatoes simmered in milk, cream, garlic, and onion, baked golden and topped with melted Gruyère.",
+    "descriptionFr": "Le meilleur gratin dauphinois : des pommes de terre tranchées finement mijotées dans du lait, de la crème, de l'ail et de l'oignon, puis cuites au four avec du Gruyère.",
     "tags": [
-      "dessert",
-      "cookies",
-      "chocolate"
+      "potato",
+      "gratin",
+      "french",
+      "side dish",
+      "vegetarian",
+      "dinner"
     ],
-    "time": "20 min",
+    "time": "2 h",
+    "difficulty": "medium",
+    "image": "images/gratin-dauphinois.jpg",
+    "status": "active"
+  },
+  {
+    "slug": "homemade-pizza",
+    "title": "Homemade Pizza",
+    "titleFr": "Pizza maison",
+    "description": "A reliable hand-kneaded pizza dough that yields two thin-crust pizzas. Chewy, crisp on the bottom, and infinitely customizable.",
+    "descriptionFr": "Une pâte à pizza pétrie à la main qui donne deux pizzas à croûte mince. Moelleuse, croustillante en dessous et infiniment personnalisable.",
+    "tags": [
+      "italian",
+      "pizza",
+      "dinner",
+      "baking"
+    ],
+    "time": "1 h 30 min",
+    "difficulty": "medium",
+    "image": "images/homemade-pizza.jpg",
+    "status": "active"
+  },
+  {
+    "slug": "honey-garlic-chicken-wings",
+    "title": "Honey Garlic Chicken Wings",
+    "titleFr": "Ailes de poulet miel et ail",
+    "description": "Crispy air-fried chicken wings seasoned with a baking powder rub, then tossed in a sticky honey garlic sauce with soy, ginger, and a touch of chili.",
+    "descriptionFr": "Ailes de poulet croustillantes cuites à la friteuse à air, assaisonnées avec de la poudre à pâte, puis nappées d'une sauce collante au miel et à l'ail avec soya, gingembre et une touche de piment.",
+    "tags": [
+      "chicken",
+      "wings",
+      "appetizer",
+      "dinner"
+    ],
+    "time": "45 min",
     "difficulty": "easy",
-    "image": "images/soft-chocolate-chip-cookies.jpg",
+    "image": "images/honey-garlic-chicken-wings.jpg",
     "status": "active"
   },
   {
@@ -236,101 +179,52 @@
     "titleFr": "Curry de bœuf japonais",
     "description": "A rich and comforting Japanese beef curry with tender vegetables and a deeply flavoured sauce spiked with honey, soy, and sesame.",
     "descriptionFr": "Un curry de bœuf japonais riche et réconfortant avec des légumes tendres et une sauce savoureuse relevée de miel, soya et sésame.",
-    "tags": ["japanese", "curry", "asian", "dinner"],
+    "tags": [
+      "japanese",
+      "curry",
+      "beef",
+      "asian",
+      "dinner"
+    ],
     "time": "50 min",
     "difficulty": "medium",
     "image": "images/japanese-beef-curry.jpg",
     "status": "active"
   },
   {
-    "slug": "steak-frites",
-    "title": "Steak Frites",
-    "titleFr": "Steak frites",
-    "status": "on-hold"
-  },
-  {
-    "slug": "caesar-salad",
-    "title": "Caesar Salad",
-    "titleFr": "Salade César",
-    "description": "A classic Caesar salad with homemade dressing, crispy croutons, bacon, lemon-marinated chicken, and shaved Parmesan.",
-    "descriptionFr": "Une salade César classique avec vinaigrette maison, croûtons croustillants, bacon, poulet mariné au citron et parmesan.",
-    "tags": ["salad", "chicken", "lunch", "dinner"],
-    "time": "40 min",
-    "difficulty": "medium",
-    "image": "images/caesar-salad.jpg",
-    "status": "active"
-  },
-  {
-    "slug": "tacos-boeuf-gratines",
-    "title": "Gratinated Beef Tacos",
-    "titleFr": "Tacos au bœuf gratinés",
-    "description": "Crispy hard-shell tacos filled with seasoned ground beef and melted cheese, finished in the oven and loaded with fresh toppings.",
-    "descriptionFr": "Coquilles à tacos croustillantes garnies de bœuf haché assaisonné et de fromage fondu, passées au four et garnies de légumes frais.",
-    "tags": ["mexican", "beef", "dinner", "tacos"],
+    "slug": "korean-fried-chicken",
+    "title": "Korean Fried Chicken",
+    "titleFr": "Poulet frit coréen",
+    "description": "Crispy air-fried chicken strips coated in seasoned flour and smothered in a sticky, spicy gochujang sauce with bold Korean flavours.",
+    "descriptionFr": "Des lanières de poulet croustillantes cuites à la friteuse à air, enrobées d'une farine assaisonnée et d'une sauce gochujang collante et épicée.",
+    "tags": [
+      "korean",
+      "fried chicken",
+      "spicy",
+      "asian",
+      "dinner"
+    ],
     "time": "35 min",
-    "difficulty": "easy",
-    "image": "images/tacos-boeuf-gratines.jpg",
+    "difficulty": "medium",
+    "image": "images/korean-fried-chicken.jpg",
     "status": "active"
   },
   {
-    "slug": "maple-syrup-pork",
-    "title": "Maple Syrup Pork",
-    "titleFr": "Porc au sirop d'érable",
-    "status": "on-hold"
-  },
-  {
-    "slug": "chicken-fajitas",
-    "title": "Chicken Fajitas",
-    "titleFr": "Fajitas au poulet",
-    "status": "on-hold"
-  },
-  {
-    "slug": "greek-salad",
-    "title": "Greek Salad",
-    "titleFr": "Salade grecque",
-    "status": "on-hold"
-  },
-  {
-    "slug": "sausages",
-    "title": "Sausages",
-    "titleFr": "Saucisses",
-    "status": "on-hold"
-  },
-  {
-    "slug": "chicken-alfredo",
-    "title": "Chicken Alfredo Spaghetti",
-    "titleFr": "Spaghetti poulet alfredo",
-    "status": "on-hold"
-  },
-  {
-    "slug": "roasted-chicken-fries",
-    "title": "Roasted Chicken and Fries",
-    "titleFr": "Poulet rôti et frites",
-    "status": "on-hold"
-  },
-  {
-    "slug": "spaghetti-bolognese",
-    "title": "Spaghetti Bolognese",
-    "titleFr": "Spaghetti bolognaise",
-    "status": "on-hold"
-  },
-  {
-    "slug": "gnocchi",
-    "title": "Gnocchi",
-    "titleFr": "Gnocchi",
-    "status": "on-hold"
-  },
-  {
-    "slug": "dumplings",
-    "title": "Dumplings",
-    "titleFr": "Dumplings",
-    "status": "on-hold"
-  },
-  {
-    "slug": "burger",
-    "title": "Burger",
-    "titleFr": "Burger",
-    "status": "on-hold"
+    "slug": "oeufs-benedictine",
+    "title": "Eggs Benedict",
+    "titleFr": "Œufs bénédictine",
+    "description": "The brunch classic: toasted English muffins topped with Canadian back bacon, perfectly poached eggs, and a silky homemade hollandaise sauce. Elegant but very doable at home.",
+    "descriptionFr": "Le classique du brunch : muffins anglais grillés garnis de bacon canadien, d'œufs pochés à la perfection et d'une sauce hollandaise maison onctueuse. Élégant mais tout à fait réalisable à la maison.",
+    "tags": [
+      "brunch",
+      "eggs",
+      "canadian",
+      "french sauce"
+    ],
+    "time": "35 min",
+    "difficulty": "medium",
+    "image": "images/oeufs-benedictine.jpg",
+    "status": "active"
   },
   {
     "slug": "panini",
@@ -338,106 +232,14 @@
     "titleFr": "Panini jambon ou dinde",
     "description": "A classic pressed sandwich with mayo, Dijon, ham or turkey, tomato, and melted Swiss or Emmental — cooked in a panini press or a covered skillet until golden and gooey.",
     "descriptionFr": "Un sandwich pressé classique avec mayo, Dijon, jambon ou dinde, tomate et fromage fondu — cuit dans une presse à panini ou une poêle couverte jusqu'à ce qu'il soit doré et fondant.",
-    "tags": ["lunch", "sandwich", "quick"],
+    "tags": [
+      "lunch",
+      "sandwich",
+      "quick"
+    ],
     "time": "15 min",
     "difficulty": "easy",
     "image": "images/panini.jpg",
-    "status": "active"
-  },
-  {
-    "slug": "beef-stew",
-    "title": "Beef Stew",
-    "titleFr": "Bœuf bourguignon",
-    "status": "on-hold"
-  },
-  {
-    "slug": "salade-nicoise",
-    "title": "Salade Niçoise",
-    "titleFr": "Salade niçoise",
-    "status": "on-hold"
-  },
-  {
-    "slug": "mac-and-cheese",
-    "title": "Mac & Cheese",
-    "titleFr": "Mac & fromage",
-    "status": "on-hold"
-  },
-  {
-    "slug": "fried-rice",
-    "title": "Fried Rice",
-    "titleFr": "Riz frit",
-    "status": "on-hold"
-  },
-  {
-    "slug": "poutine",
-    "title": "Homemade Poutine",
-    "titleFr": "Poutine maison",
-    "status": "on-hold"
-  },
-  {
-    "slug": "lasagna",
-    "title": "Lasagna",
-    "titleFr": "Lasagnes",
-    "status": "on-hold"
-  },
-  {
-    "slug": "quiche",
-    "title": "Quiche",
-    "titleFr": "Quiche",
-    "status": "on-hold"
-  },
-  {
-    "slug": "chicken-potpie",
-    "title": "Chicken Pot Pie",
-    "titleFr": "Pâté au poulet",
-    "status": "on-hold"
-  },
-  {
-    "slug": "poke-bowl",
-    "title": "Poke Bowl",
-    "titleFr": "Poke bowl",
-    "status": "on-hold"
-  },
-  {
-    "slug": "fried-chicken",
-    "title": "Fried Chicken",
-    "titleFr": "Poulet frit",
-    "status": "on-hold"
-  },
-  {
-    "slug": "rice-soya-chicken",
-    "title": "Rice Soya Chicken",
-    "titleFr": "Poulet riz soya",
-    "status": "on-hold"
-  },
-  {
-    "slug": "teriyaki-chicken",
-    "title": "Teriyaki Chicken",
-    "titleFr": "Poulet teriyaki",
-    "status": "on-hold"
-  },
-  {
-    "slug": "butter-chicken",
-    "title": "Butter Chicken",
-    "titleFr": "Poulet au beurre",
-    "status": "on-hold"
-  },
-  {
-    "slug": "pilons-de-poulet",
-    "title": "Chicken Drumsticks",
-    "titleFr": "Pilons de poulet",
-    "status": "on-hold"
-  },
-  {
-    "slug": "honey-garlic-chicken-wings",
-    "title": "Honey Garlic Chicken Wings",
-    "titleFr": "Ailes de poulet miel et ail",
-    "description": "Crispy air-fried chicken wings seasoned with a baking powder rub, then tossed in a sticky honey garlic sauce with soy, ginger, and a touch of chili.",
-    "descriptionFr": "Ailes de poulet croustillantes cuites à la friteuse à air, assaisonnées avec de la poudre à pâte, puis nappées d'une sauce collante au miel et à l'ail avec soya, gingembre et une touche de piment.",
-    "tags": ["chicken", "wings", "appetizer", "dinner"],
-    "time": "45 min",
-    "difficulty": "easy",
-    "image": "images/honey-garlic-chicken-wings.jpg",
     "status": "active"
   },
   {
@@ -446,40 +248,104 @@
     "titleFr": "Tartare de saumon",
     "description": "Fresh and smoked salmon hand-cut into fine dice, seasoned with Dijon mustard, lemon, ginger, cornichons, and fresh herbs. Served with toasted baguette croutons.",
     "descriptionFr": "Saumon frais et fumé coupé au couteau, assaisonné de moutarde de Dijon, citron, gingembre, cornichons et herbes fraîches. Servi avec des croûtons de baguette grillée.",
-    "tags": ["fish", "salmon", "appetizer", "french", "dinner"],
+    "tags": [
+      "fish",
+      "salmon",
+      "appetizer",
+      "french",
+      "dinner"
+    ],
     "time": "20 min",
     "difficulty": "easy",
     "image": "images/salmon-tartare.jpg",
     "status": "active"
   },
   {
-    "slug": "general-tao",
-    "title": "General Tao Chicken",
-    "titleFr": "Poulet général tao",
-    "status": "on-hold"
+    "slug": "saumon-erable-soya",
+    "title": "Maple-Soy Baked Salmon",
+    "titleFr": "Saumon à l'érable et au soya cuit au four",
+    "description": "A simple baked salmon glazed with a sweet and savoury maple-soy marinade. The glaze caramelizes beautifully in the oven for a rich, lacquered finish.",
+    "descriptionFr": "Un saumon au four facile, nappé d'une marinade sucrée-salée à l'érable et au soya. Le glaçage caramélise délicieusement pendant la cuisson.",
+    "tags": [
+      "fish",
+      "salmon",
+      "baked",
+      "quick",
+      "dinner"
+    ],
+    "time": "30 min",
+    "difficulty": "easy",
+    "image": "images/saumon-erable-soya.jpg",
+    "status": "active"
   },
   {
-    "slug": "truite-dijon",
-    "title": "Dijon Trout with Rice",
-    "titleFr": "Truite dijon et riz",
-    "status": "on-hold"
+    "slug": "soft-chocolate-chip-cookies",
+    "title": "Soft Chocolate Chip Cookies",
+    "titleFr": "Cookies moelleux aux pépites de chocolat",
+    "description": "Ultra-thick, soft, and buttery chocolate chip cookies with no chilling required. Perfectly gooey centres every time.",
+    "descriptionFr": "Des cookies aux pépites de chocolat ultra-épais, moelleux et beurrés sans temps de repos. Des centres parfaitement fondants à chaque fois.",
+    "tags": [
+      "dessert",
+      "cookies",
+      "chocolate",
+      "baking"
+    ],
+    "time": "20 min",
+    "difficulty": "easy",
+    "image": "images/soft-chocolate-chip-cookies.jpg",
+    "status": "active"
   },
   {
-    "slug": "nachos",
-    "title": "Nachos",
-    "titleFr": "Nachos",
-    "status": "on-hold"
+    "slug": "tacos-boeuf-gratines",
+    "title": "Gratinated Beef Tacos",
+    "titleFr": "Tacos au bœuf gratinés",
+    "description": "Crispy hard-shell tacos filled with seasoned ground beef and melted cheese, finished in the oven and loaded with fresh toppings.",
+    "descriptionFr": "Coquilles à tacos croustillantes garnies de bœuf haché assaisonné et de fromage fondu, passées au four et garnies de légumes frais.",
+    "tags": [
+      "mexican",
+      "beef",
+      "dinner",
+      "tacos"
+    ],
+    "time": "35 min",
+    "difficulty": "medium",
+    "image": "images/tacos-boeuf-gratines.jpg",
+    "status": "active"
   },
   {
-    "slug": "confit-de-canard",
-    "title": "Duck Confit",
-    "titleFr": "Confit de canard",
-    "status": "on-hold"
+    "slug": "thin-breakfast-crepes",
+    "title": "Thin Breakfast Crepes",
+    "titleFr": "Crêpes fines pour le déjeuner",
+    "description": "Light, paper-thin crepes made with a simple vanilla batter. Quick to prepare and yields about 14 delicate crepes.",
+    "descriptionFr": "Des crêpes fines et légères avec une simple pâte à la vanille. Rapides à faire, elles donnent environ 14 crêpes.",
+    "tags": [
+      "breakfast",
+      "brunch",
+      "crepes",
+      "vegetarian",
+      "kids",
+      "french"
+    ],
+    "time": "35 min",
+    "difficulty": "easy",
+    "image": "images/thin-breakfast-crepes.jpg",
+    "status": "active"
   },
   {
-    "slug": "spaghetti-carbonara",
-    "title": "Spaghetti Carbonara",
-    "titleFr": "Spaghetti carbonara",
-    "status": "on-hold"
+    "slug": "tournedos-sauce-poivre",
+    "title": "Beef Tournedos with Pepper Sauce",
+    "titleFr": "Tournedos de bœuf sauce au poivre",
+    "description": "Pan-seared beef tournedos served with a classic homemade pepper sauce made with shallots, cognac, beef broth, and cream. An elegant yet straightforward bistro classic.",
+    "descriptionFr": "Tournedos de bœuf poêlés servis avec une sauce au poivre maison à base d'échalotes, de cognac, de bouillon de bœuf et de crème. Un classique de bistro élégant et facile à réaliser.",
+    "tags": [
+      "beef",
+      "steak",
+      "french",
+      "dinner"
+    ],
+    "time": "35 min",
+    "difficulty": "medium",
+    "image": "images/tournedos-sauce-poivre.jpg",
+    "status": "active"
   }
 ]

@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "lose-yourself",
+    "title": "Lose Yourself",
+    "year": 2024,
+    "duration": "3:04",
+    "description": "A high-energy track about letting go and losing yourself in the music.",
+    "tags": ["dance", "drop", "electronic"],
+    "soundcloudUrl": "https://soundcloud.com/vlyer/lose-yourself",
+    "cover": "images/lose.png",
+    "status": "published"
+  },
+  {
+    "slug": "the-void",
+    "title": "The Void",
+    "year": 2025,
+    "duration": "3:31",
+    "description": "Going into the void, not knowing what to expect, but hoping to find something new.",
+    "tags": ["ambient", "vibe", "electronic"],
+    "soundcloudUrl": "https://soundcloud.com/vlyer/the-void",
+    "cover": "images/void.jpg",
+    "status": "unreleased"
+  },
+  {
+    "slug": "flying-with-you",
+    "title": "Flying With You",
+    "year": 2025,
+    "duration": "3:48",
+    "description": "A story of a journey through space.",
+    "tags": ["beats", "electronic"],
+    "soundcloudUrl": "https://soundcloud.com/vlyer/flying-with-you",
+    "cover": "images/space.jpg",
+    "status": "unreleased"
+  },
+  {
+    "slug": "fragments",
+    "title": "Fragments",
+    "year": 2025,
+    "duration": "5:05",
+    "description": "Pieces are missing...",
+    "tags": ["ambient", "electronic"],
+    "soundcloudUrl": "https://soundcloud.com/vlyer/fragments",
+    "cover": "images/fragments.jpg",
+    "status": "unreleased"
+  }
+]
+
