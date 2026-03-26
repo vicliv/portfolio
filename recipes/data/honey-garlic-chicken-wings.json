@@ -11,7 +11,7 @@
   "time": "45 min",
   "difficulty": "easy",
   "ingredients": [
-    { "quantity": 20, "unit": "lbs", "item": "chicken wings, halved at joints, wing tips discarded", "itemFr": "ailes de poulet, séparées à l'articulation, pointes retirées", "group": "Wings" },
+    { "quantity": 2, "unit": "kg", "item": "chicken wings, halved at joints, wing tips discarded", "itemFr": "ailes de poulet, séparées à l'articulation, pointes retirées", "group": "Wings" },
     { "quantity": 2, "unit": "tbsp", "item": "aluminum-free baking powder (not baking soda)", "itemFr": "poudre à pâte sans aluminium (pas de bicarbonate)", "group": "Wings" },
     { "quantity": 1, "unit": "tsp", "item": "garlic powder", "itemFr": "poudre d'ail", "group": "Wings" },
     { "quantity": 1, "unit": "tsp", "item": "paprika", "itemFr": "paprika", "group": "Wings" },
