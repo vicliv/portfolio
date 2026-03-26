@@ -24,7 +24,8 @@
     "tags": [
       "beef",
       "appetizer",
-      "french"
+      "french",
+      "dinner"
     ],
     "time": "1 h (+ 12 h soak)",
     "difficulty": "hard",
@@ -230,6 +231,18 @@
     "status": "active"
   },
   {
+    "slug": "japanese-beef-curry",
+    "title": "Japanese Beef Curry",
+    "titleFr": "Curry de bœuf japonais",
+    "description": "A rich and comforting Japanese beef curry with tender vegetables and a deeply flavoured sauce spiked with honey, soy, and sesame.",
+    "descriptionFr": "Un curry de bœuf japonais riche et réconfortant avec des légumes tendres et une sauce savoureuse relevée de miel, soya et sésame.",
+    "tags": ["japanese", "curry", "asian", "dinner"],
+    "time": "50 min",
+    "difficulty": "medium",
+    "image": "images/japanese-beef-curry.jpg",
+    "status": "active"
+  },
+  {
     "slug": "steak-frites",
     "title": "Steak Frites",
     "titleFr": "Steak frites",
@@ -239,13 +252,25 @@
     "slug": "caesar-salad",
     "title": "Caesar Salad",
     "titleFr": "Salade César",
-    "status": "on-hold"
+    "description": "A classic Caesar salad with homemade dressing, crispy croutons, bacon, lemon-marinated chicken, and shaved Parmesan.",
+    "descriptionFr": "Une salade César classique avec vinaigrette maison, croûtons croustillants, bacon, poulet mariné au citron et parmesan.",
+    "tags": ["salad", "chicken", "lunch", "dinner"],
+    "time": "40 min",
+    "difficulty": "medium",
+    "image": "images/caesar-salad.jpg",
+    "status": "active"
   },
   {
-    "slug": "tacos",
-    "title": "Tacos",
-    "titleFr": "Tacos",
-    "status": "on-hold"
+    "slug": "tacos-boeuf-gratines",
+    "title": "Gratinated Beef Tacos",
+    "titleFr": "Tacos au bœuf gratinés",
+    "description": "Crispy hard-shell tacos filled with seasoned ground beef and melted cheese, finished in the oven and loaded with fresh toppings.",
+    "descriptionFr": "Coquilles à tacos croustillantes garnies de bœuf haché assaisonné et de fromage fondu, passées au four et garnies de légumes frais.",
+    "tags": ["mexican", "beef", "dinner", "tacos"],
+    "time": "35 min",
+    "difficulty": "easy",
+    "image": "images/tacos-boeuf-gratines.jpg",
+    "status": "active"
   },
   {
     "slug": "maple-syrup-pork",
@@ -311,12 +336,6 @@
     "slug": "panini",
     "title": "Panini",
     "titleFr": "Panini",
-    "status": "on-hold"
-  },
-  {
-    "slug": "beef-curry",
-    "title": "Beef Curry",
-    "titleFr": "Curry de bœuf",
     "status": "on-hold"
   },
   {

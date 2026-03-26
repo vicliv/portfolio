@@ -20,7 +20,7 @@
     { "quantity": 1, "unit": "tbsp", "item": "unsalted butter, melted", "itemFr": "beurre non salé, fondu", "group": "Batter" },
     { "quantity": null, "unit": null, "item": "softened butter, for cooking", "itemFr": "beurre ramolli, pour la cuisson", "group": "Filling" },
     { "quantity": 8, "unit": "slices", "item": "ham", "itemFr": "jambon", "group": "Filling" },
-    { "quantity": 200, "unit": "g", "item": "shredded Gruyère, Swiss, medium-sharp cheddar or Emmental cheese", "itemFr": "fromage Gruyère, Suisse, cheddar mi-fort ou Emmental râpé ou en lanières", "group": "Filling" },
+    { "quantity": 200, "unit": "g", "item": "shredded/strips Gruyère, Swiss, medium-sharp cheddar or Emmental cheese", "itemFr": "fromage Gruyère, Suisse, cheddar mi-fort ou Emmental râpé ou en lanières", "group": "Filling" },
     { "quantity": null, "unit": null, "item": "maple syrup", "itemFr": "sirop d'érable", "group": "Serving" }
   ],
   "steps": [

@@ -1,0 +1,41 @@
+{
+  "slug": "caesar-salad",
+  "title": "Caesar Salad",
+  "titleFr": "Salade César",
+  "description": "A classic Caesar salad with homemade dressing, crispy croutons, bacon, lemon-marinated chicken, and shaved Parmesan.",
+  "descriptionFr": "Une salade César classique avec vinaigrette maison, croûtons croustillants, bacon, poulet mariné au citron et parmesan.",
+  "defaultPortions": 2,
+  "portionLabel": "servings",
+  "portionLabelFr": "portions",
+  "tags": ["salad", "chicken", "lunch", "dinner"],
+  "time": "40 min",
+  "difficulty": "medium",
+  "ingredients": [
+    { "quantity": 1, "unit": null, "item": "romaine lettuce", "itemFr": "laitue romaine", "group": "Salad" },
+    { "quantity": 4, "unit": null, "item": "bacon strips", "itemFr": "tranches de bacon", "group": "Salad" },
+    { "quantity": 2, "unit": null, "item": "chicken breasts, cut into thin strips", "itemFr": "poitrines de poulet, coupées en lanières", "group": "Salad" },
+    { "quantity": null, "unit": null, "item": "Parmesan, shaved or grated", "itemFr": "parmesan, en copeaux ou râpé", "group": "Salad" },
+    { "quantity": 4, "unit": null, "item": "thick slices white bread (baguette or country loaf), cut into cubes", "itemFr": "tranches épaisses de pain blanc (baguette ou miche), coupées en cubes", "group": "Croutons" },
+    { "quantity": 2, "unit": null, "item": "egg yolks", "itemFr": "jaunes d'œufs", "group": "Dressing" },
+    { "quantity": 1, "unit": null, "item": "garlic clove, very finely minced", "itemFr": "gousse d'ail, très finement hachée", "group": "Dressing" },
+    { "quantity": 2, "unit": "tsp", "item": "Dijon mustard", "itemFr": "moutarde de Dijon", "group": "Dressing" },
+    { "quantity": 0.25, "unit": null, "item": "lemon, juiced", "itemFr": "citron, jus", "group": "Dressing" },
+    { "quantity": null, "unit": null, "item": "neutral oil (for emulsifying)", "itemFr": "huile neutre (pour monter)", "group": "Dressing" },
+    { "quantity": null, "unit": null, "item": "Parmesan, freshly grated", "itemFr": "parmesan fraîchement râpé", "group": "Dressing" },
+    { "quantity": 1, "unit": "tsp", "item": "Worcestershire sauce (optional)", "itemFr": "sauce Worcestershire (facultatif)", "group": "Dressing" },
+    { "quantity": 1, "unit": "tsp", "item": "anchovy paste (optional)", "itemFr": "pâte d'anchois (facultatif)", "group": "Dressing" },
+    { "quantity": 1, "unit": "tbsp", "item": "mayonnaise (optional, thickens if emulsion is loose)", "itemFr": "mayonnaise (facultatif, épaissit si l'émulsion est trop liquide)", "group": "Dressing" },
+    { "quantity": null, "unit": null, "item": "salt and pepper", "itemFr": "sel et poivre", "group": "Dressing" }
+  ],
+  "steps": [
+    { "text": "Cut the bread into cubes and spread on a baking sheet. Bake at 190°C (375°F) until golden and crispy, about 10–12 minutes. Set aside.", "textFr": "Couper le pain en cubes et étaler sur une plaque. Cuire au four à 190°C (375°F) jusqu'à ce qu'ils soient dorés et croustillants, environ 10–12 minutes. Réserver." },
+    { "text": "Cook the bacon in a skillet over medium heat until crispy. Drain on paper towel, then cut into small pieces.", "textFr": "Faire cuire le bacon à feu moyen jusqu'à ce qu'il soit croustillant. Égoutter sur du papier absorbant, puis couper en petits morceaux." },
+    { "text": "Marinate the chicken strips in lemon juice with salt and pepper for 10 minutes. Cook in a hot skillet over medium-high heat until golden and cooked through, about 3–4 minutes per side. Set aside.", "textFr": "Mariner les lanières de poulet dans le jus de citron avec sel et poivre pendant 10 minutes. Cuire à feu vif dans une poêle chaude jusqu'à coloration et cuisson complète, environ 3–4 minutes par côté. Réserver." },
+    { "text": "Make the dressing: whisk together the egg yolks, garlic, Dijon mustard, and lemon juice in a bowl. Slowly drizzle in the oil while whisking continuously to create a light emulsion — it should be fluid, not thick like mayonnaise. Stir in the grated Parmesan and mayonnaise, then season with salt and pepper.", "textFr": "Préparer la vinaigrette : fouetter les jaunes d'œufs, l'ail, la moutarde de Dijon et le jus de citron. Incorporer progressivement un filet d'huile en fouettant pour créer une émulsion légère — la texture doit être fluide, pas épaisse comme une mayo. Ajouter le parmesan râpé et la mayonnaise, puis assaisonner de sel et poivre." },
+    { "text": "Tear the romaine lettuce into pieces and toss with the dressing. Top with croutons, bacon, and chicken strips. Finish with shaved Parmesan.", "textFr": "Déchirer la laitue romaine en morceaux et mélanger avec la vinaigrette. Garnir avec les croûtons, le bacon et les lanières de poulet. Terminer avec des copeaux de parmesan." }
+  ],
+  "notes": "The dressing should be light and pourable, not thick — you're not making a full mayonnaise. Taste and adjust lemon and salt at the end. The chicken can be swapped for grilled shrimp.",
+  "notesFr": "La vinaigrette doit être légère et fluide, pas épaisse — on ne fait pas une mayonnaise complète. Goûter et ajuster le citron et le sel en fin de préparation. Le poulet peut être remplacé par des crevettes grillées.",
+  "image": "../images/caesar-salad.jpg",
+  "editPath": "recipes/data/caesar-salad.json"
+}
