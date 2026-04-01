@@ -1,0 +1,70 @@
+{
+  "slug": "tarte-au-citron",
+  "title": "Lemon Tart (The Best)",
+  "titleFr": "Tarte au citron (la meilleure)",
+  "description": "Ricardo's ultimate lemon tart with a pressed shortcrust, a silky lemon curd filling, and a toasted Swiss meringue topping. Bright, tangy, and absolutely worth the wait.",
+  "descriptionFr": "La meilleure tarte au citron de Ricardo : une pâte pressée, une crème au citron soyeuse et une meringue suisse grillée. Acidulée, lumineuse et irrésistible.",
+  "defaultPortions": 8,
+  "portionLabel": "slices",
+  "portionLabelFr": "parts",
+  "tags": ["dessert", "tart", "lemon", "baking", "vegetarian"],
+  "time": "1 h 20 min (+ 6 h refrigeration)",
+  "difficulty": "medium",
+  "ingredients": [
+    { "quantity": 250, "unit": "ml", "item": "all-purpose flour", "itemFr": "farine tout usage", "group": "Crust" },
+    { "quantity": 45, "unit": "ml", "item": "sugar", "itemFr": "sucre", "group": "Crust" },
+    { "quantity": 0.5, "unit": "ml", "item": "baking powder", "itemFr": "poudre à pâte", "group": "Crust" },
+    { "quantity": 90, "unit": "ml", "item": "cold salted butter, cubed", "itemFr": "beurre salé froid, en cubes", "group": "Crust" },
+    { "quantity": 1, "unit": "", "item": "egg", "itemFr": "œuf", "group": "Crust" },
+    { "quantity": 310, "unit": "ml", "item": "sugar", "itemFr": "sucre", "group": "Lemon Filling" },
+    { "quantity": 60, "unit": "ml", "item": "cornstarch", "itemFr": "fécule de maïs", "group": "Lemon Filling" },
+    { "quantity": 4, "unit": "", "item": "egg yolks", "itemFr": "jaunes d'œufs", "group": "Lemon Filling" },
+    { "quantity": 2, "unit": "", "item": "lemons, zested", "itemFr": "citrons, zestés", "group": "Lemon Filling" },
+    { "quantity": 180, "unit": "ml", "item": "fresh lemon juice", "itemFr": "jus de citron frais", "group": "Lemon Filling" },
+    { "quantity": 310, "unit": "ml", "item": "water", "itemFr": "eau", "group": "Lemon Filling" },
+    { "quantity": 30, "unit": "ml", "item": "unsalted butter", "itemFr": "beurre non salé", "group": "Lemon Filling" },
+    { "quantity": 45, "unit": "ml", "item": "cold water", "itemFr": "eau froide", "group": "Swiss Meringue" },
+    { "quantity": 5, "unit": "ml", "item": "cornstarch", "itemFr": "fécule de maïs", "group": "Swiss Meringue" },
+    { "quantity": 180, "unit": "ml", "item": "sugar", "itemFr": "sucre", "group": "Swiss Meringue" },
+    { "quantity": 4, "unit": "", "item": "egg whites", "itemFr": "blancs d'œufs", "group": "Swiss Meringue" }
+  ],
+  "steps": [
+    {
+      "text": "Preheat oven to 200°C (400°F). In a food processor, combine the flour, sugar, and baking powder. Add the cold cubed butter and pulse until the mixture resembles coarse sand.",
+      "textFr": "Préchauffez le four à 200°C (400°F). Dans un robot culinaire, mélangez la farine, le sucre et la poudre à pâte. Ajoutez le beurre froid en cubes et pulsez jusqu'à obtenir une texture sableuse."
+    },
+    {
+      "text": "Add the egg and pulse just until the dough comes together in crumbles. Press the mixture evenly into a 23 cm (9-inch) tart pan. Bake for 22 minutes until golden. Let cool completely.",
+      "textFr": "Ajoutez l'œuf et pulsez jusqu'à ce que la pâte commence à se tenir. Pressez-la uniformément dans un moule à tarte de 23 cm. Enfournez 22 minutes jusqu'à ce qu'elle soit dorée. Laissez refroidir complètement."
+    },
+    {
+      "text": "In a saucepan off the heat, whisk together the sugar and cornstarch for the filling. Whisk in the egg yolks, lemon zest, lemon juice, and water.",
+      "textFr": "Dans une casserole hors du feu, fouettez le sucre et la fécule pour la garniture. Incorporez les jaunes d'œufs, le zeste et le jus de citron, et l'eau."
+    },
+    {
+      "text": "Bring to a boil over medium heat, stirring constantly. Simmer for 1 minute, then strain through a fine sieve. Add the butter and stir until melted.",
+      "textFr": "Portez à ébullition à feu moyen en remuant constamment. Laissez mijoter 1 minute, puis passez au tamis fin. Ajoutez le beurre et remuez jusqu'à ce qu'il soit fondu."
+    },
+    {
+      "text": "Pour the filling into the cooled crust. Press plastic wrap directly onto the surface of the filling to prevent a skin from forming. Refrigerate until completely set and cold.",
+      "textFr": "Versez la garniture dans la croûte refroidie. Appuyez une pellicule plastique directement sur la surface pour éviter la formation d'une pellicule. Réfrigérez jusqu'à ce que la crème soit bien froide et prise."
+    },
+    {
+      "text": "For the meringue, combine the cold water and cornstarch in the top of a double boiler. Heat over simmering water, stirring, until thickened. Remove from heat.",
+      "textFr": "Pour la meringue, combinez l'eau froide et la fécule dans le haut d'un bain-marie. Chauffez au-dessus de l'eau frémissante en remuant jusqu'à épaississement. Retirez du feu."
+    },
+    {
+      "text": "Add the sugar and egg whites to the cornstarch mixture. Return to the double boiler and heat for about 1 minute, stirring, until the sugar dissolves. Remove from heat and beat with an electric mixer until stiff, glossy peaks form.",
+      "textFr": "Ajoutez le sucre et les blancs d'œufs au mélange de fécule. Remettez au bain-marie et chauffez environ 1 minute en remuant jusqu'à ce que le sucre soit dissous. Retirez du feu et fouettez au batteur électrique jusqu'à formation de pics fermes et brillants."
+    },
+    {
+      "text": "Spread the meringue over the cold filling. Bake at 180°C (350°F) for about 15 minutes until the meringue is lightly golden. Refrigerate for 6 to 8 hours before serving.",
+      "textFr": "Étalez la meringue sur la garniture froide. Enfournez à 180°C (350°F) environ 15 minutes jusqu'à ce que la meringue soit légèrement dorée. Réfrigérez 6 à 8 heures avant de servir."
+    }
+  ],
+  "notes": "Make sure the lemon filling is completely cold before topping with meringue — this prevents the meringue from weeping. The cornstarch in the meringue gives it extra stability. Don't skip the refrigeration time after the final bake; it's what sets the filling to a clean, sliceable texture.",
+  "notesFr": "Assurez-vous que la garniture au citron est bien froide avant d'y déposer la meringue — cela évite qu'elle ne pleure. La fécule dans la meringue lui apporte une stabilité supplémentaire. Ne sautez pas le temps de réfrigération après la cuisson finale ; c'est ce qui permet à la crème de bien se tenir à la coupe.",
+  "image": "../images/tarte-au-citron.jpg",
+  "source": "https://www.ricardocuisine.com/recettes/5101-tarte-au-citron-la-meilleure",
+  "editPath": "recipes/data/tarte-au-citron.json"
+}

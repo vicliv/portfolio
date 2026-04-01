@@ -313,6 +313,24 @@
     "status": "active"
   },
   {
+    "slug": "tarte-au-citron",
+    "title": "Lemon Tart (The Best)",
+    "titleFr": "Tarte au citron (la meilleure)",
+    "description": "Ricardo's ultimate lemon tart with a pressed shortcrust, a silky lemon curd filling, and a toasted Swiss meringue topping. Bright, tangy, and absolutely worth the wait.",
+    "descriptionFr": "La meilleure tarte au citron de Ricardo : une pâte pressée, une crème au citron soyeuse et une meringue suisse grillée. Acidulée, lumineuse et irrésistible.",
+    "tags": [
+      "dessert",
+      "tart",
+      "lemon",
+      "baking",
+      "vegetarian"
+    ],
+    "time": "1 h 20 min (+ 6 h refrigeration)",
+    "difficulty": "medium",
+    "image": "images/tarte-au-citron.jpg",
+    "status": "active"
+  },
+  {
     "slug": "thin-breakfast-crepes",
     "title": "Thin Breakfast Crepes",
     "titleFr": "Crêpes fines pour le déjeuner",
