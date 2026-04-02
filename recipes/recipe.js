@@ -12,6 +12,13 @@ const METRIC_UNITS = new Set(['g', 'kg', 'ml', 'L', 'l']);
 
 /* ---- Volume conversions to ml ---- */
 const ML_PER = { cup: 236.588, cups: 236.588, tbsp: 14.787, tsp: 4.929 };
+
+/* ---- ml → best-fit imperial unit ---- */
+function mlToImperial(ml) {
+  if (ml >= ML_PER.cups * 0.25) return { qty: ml / ML_PER.cups, unit: 'cups' };
+  if (ml >= ML_PER.tbsp)        return { qty: ml / ML_PER.tbsp, unit: 'tbsp' };
+  return                               { qty: ml / ML_PER.tsp,  unit: 'tsp'  };
+}
 const UNITS_KEY = 'units'; // localStorage key
 
 /* ---- Difficulty translations ---- */
@@ -137,15 +144,23 @@ function renderIngredientItem(ing, scaleFactor) {
     return `<li class="ingredient-item"><span class="ingredient-qty"></span>${escHtml(item)}</li>`;
   }
 
-  const qty = formatQuantity(ing.quantity, ing.unit, scaleFactor);
   const unit = ing.unit || '';
-  const isVolumeUnit = VOLUME_UNITS.has(unit);
-  const displayUnit = (useMetric && isVolumeUnit) ? 'ml' : unit;
+  let qty, displayUnit;
+
+  if (unit === 'ml' && !useMetric) {
+    const imp = mlToImperial(ing.quantity * scaleFactor);
+    qty = formatVolumeQty(imp.qty);
+    displayUnit = imp.unit;
+  } else {
+    qty = formatQuantity(ing.quantity, unit, scaleFactor);
+    const isVolumeUnit = VOLUME_UNITS.has(unit);
+    displayUnit = (useMetric && isVolumeUnit) ? 'ml' : unit;
+  }
 
   let qtyDisplay;
   if (!displayUnit) {
     qtyDisplay = qty;
-  } else if (METRIC_UNITS.has(displayUnit) || (useMetric && isVolumeUnit)) {
+  } else if (METRIC_UNITS.has(displayUnit) || (useMetric && VOLUME_UNITS.has(unit))) {
     qtyDisplay = `${qty}${displayUnit}`;  // "237ml", "200g"
   } else {
     qtyDisplay = `${qty} ${displayUnit}`; // "1 cup", "2 tbsp"
