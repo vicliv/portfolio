@@ -73,8 +73,8 @@
                         <a href="https://github.com/vicliv" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://scholar.google.ca/citations?hl=en&user=tuhCUyIAAAAJ&view_op=list_works&gmla=AEk_c1uckwRaDrr7Pmja2SM-MGwQjrKqOzXsxry6QXvg3mx160EM8bP1Jzhqs6hETeHe6J0vjn7viFmUOkgtQNpP" target="_blank"
-                            rel="noopener noreferrer" aria-label="Google Scholar">
+                        <a href="https://scholar.google.ca/citations?hl=en&user=tuhCUyIAAAAJ&view_op=list_works&gmla=AEk_c1uckwRaDrr7Pmja2SM-MGwQjrKqOzXsxry6QXvg3mx160EM8bP1Jzhqs6hETeHe6J0vjn7viFmUOkgtQNpP"
+                            target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
                             <i class="fas fa-graduation-cap"></i>
                         </a>
                         <a href="https://linkedin.com/in/victor-livernoche" target="_blank" rel="noopener noreferrer">
@@ -91,13 +91,16 @@
                 <h2 class="section-title" data-i18n="now.title">Now</h2>
                 <div class="now-body">
                     <ul class="now-list" data-i18n="now.research.text">
-                        <li>Finishing up the theoretical justification section of a paper on kurtosis-guided noise selection for denoising score-matching in tabular anomaly detection. The core idea builds on my earlier work on Diffusion Time Estimation.</li>
-                        <li>Exploring a label-space diffusion direction and uncertainty estimation for realism scoring in deepfake detection, both still in early stages.</li>
-                        <li>TA-ing COMP 511 at McGill right now, which means managing project proposal submissions and peer review through OpenReview.</li>
-                        <li>On the side, starting a project on AI-generated image provenance signals, and thinking through a research direction on political deepfakes following up on work around the 2025 Canadian federal election.</li>
+                        <li>Exploring a label-space diffusion direction and uncertainty estimation for realism scoring
+                            in deepfake detection, both still in early stages.</li>
+                        <li>Finished Winter Semester, now exploring new research directions and collaborations.</li>
+                        <li>On the side, starting a project on AI-generated image provenance signals, and thinking
+                            through a research direction on political deepfakes following up on work around the 2025
+                            Canadian federal election.</li>
                     </ul>
-                    <p class="now-location"><i class="fas fa-map-marker-alt"></i> <span data-i18n="now.location.text">Montréal, QC</span></p>
-                    <p class="now-updated" data-i18n="now.updated">Last updated: March 26th, 2026</p>
+                    <p class="now-location"><i class="fas fa-map-marker-alt"></i> <span
+                            data-i18n="now.location.text">Montréal, QC</span></p>
+                    <p class="now-updated" data-i18n="now.updated">Last updated: May 11th, 2026</p>
                 </div>
             </div>
         </section>
@@ -198,6 +201,21 @@
                 <h2 class="section-title" data-i18n="pubs.title">Publications</h2>
                 <div class="publications-grid">
                     <div class="publication-card">
+                        <h3>Kurtosis-Guided Denoising Score Matching for Tabular Anomaly Detection</h3>
+                        <p class="publication-authors">Victor Livernoche, Jie Zan, Reihaneh Rabbany</p>
+                        <p class="publication-meta" data-i18n="pubs.kdsm_meta">arXiv preprint • 2026</p>
+                        <p class="publication-abstract" data-i18n="pubs.kdsm_abs">
+                            We introduce K-DSM, a denoising score matching method that sets feature-wise noise levels
+                            from marginal kurtosis for tabular anomaly detection. This data-adaptive scaling improves
+                            density coverage without adding model complexity, giving strong semi-supervised results and
+                            robust unsupervised performance when paired with lightweight EMA-teacher filtering.
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://arxiv.org/abs/2605.06955" class="btn-small"
+                                data-i18n="pubs.preprint">Preprint</a>
+                        </div>
+                    </div>
+                    <div class="publication-card">
                         <h3>Deepfakes in the 2025 Canadian Election: Prevalence, Partisanship, and Platform Dynamics
                         </h3>
                         <p class="publication-authors">Victor Livernoche, Andreea Musulan, Zachary Yang, Jean-François
@@ -222,12 +240,13 @@
                             Adam Salvail-Berard, Gaétan Marceau Caron, Jean-François Godbout, Reihaneh Rabbany</p>
                         <p class="publication-meta" data-i18n="pubs.openfake_meta">Under review</p>
                         <p class="publication-abstract" data-i18n="pubs.openfake_abs">
-                            OpenFake is a politically focused benchmark for modern deepfake detection. It pairs ~3M real 
-                            images with captions and 963k high‑quality synthetic images from proprietary and open‑source 
-                            generators, maps misinformation modalities seen on social media, and includes a human‑perception 
-                            study showing recent proprietary models are hard to distinguish. A crowdsourced adversarial 
-                            platform continually adds challenging fakes to keep detectors robust. Overall, our results 
-                            offer encouraging evidence that detectors trained with high-quality data can generalize to 
+                            OpenFake is a politically focused benchmark for modern deepfake detection. It pairs ~3M real
+                            images with captions and 963k high‑quality synthetic images from proprietary and open‑source
+                            generators, maps misinformation modalities seen on social media, and includes a
+                            human‑perception
+                            study showing recent proprietary models are hard to distinguish. A crowdsourced adversarial
+                            platform continually adds challenging fakes to keep detectors robust. Overall, our results
+                            offer encouraging evidence that detectors trained with high-quality data can generalize to
                             real-world social-media distributions.
                         </p>
                         <div class="publication-links">
@@ -241,10 +260,14 @@
                             Ravanbakhsh</p>
                         <p class="publication-meta" data-i18n="pubs.diffusion_meta">ICLR 2024 • Spotlight (Top 5%)</p>
                         <p class="publication-abstract" data-i18n="pubs.diffusion_abs">
-                            This work explores using diffusion models for anomaly detection in unsupervised and semi-supervised 
-                            settings. It introduces Diffusion Time Estimation (DTE), a simplified and efficient alternative to 
-                            DDPM that estimates a diffusion-time density to score anomalies. DTE performs faster than DDPM and 
-                            achieves top results on ADBench, showing diffusion-based methods are competitive and scalable.
+                            This work explores using diffusion models for anomaly detection in unsupervised and
+                            semi-supervised
+                            settings. It introduces Diffusion Time Estimation (DTE), a simplified and efficient
+                            alternative to
+                            DDPM that estimates a diffusion-time density to score anomalies. DTE performs faster than
+                            DDPM and
+                            achieves top results on ADBench, showing diffusion-based methods are competitive and
+                            scalable.
                         </p>
                         <div class="publication-links">
                             <a href="https://openreview.net/forum?id=lR3rk7ysXz" class="btn-small" target="_blank"
@@ -258,9 +281,12 @@
                         <p class="publication-meta" data-i18n="pubs.prompt_meta">ML Reproducibility Challenge 2022 •
                             ReScience C 9.2 (#33) • 2023</p>
                         <p class="publication-abstract" data-i18n="pubs.prompt_abs">
-                            We reproduce and extend AMuLaP, a method for automatic label prompting in few-shot classification for Pretrained Language Models. 
-                            We confirm the original results on 3 GLUE tasks and test on 2 new datasets. Despite some setup 
-                            friction, the approach is reproducible, efficient, and shows promise for broader real-world NLP 
+                            We reproduce and extend AMuLaP, a method for automatic label prompting in few-shot
+                            classification for Pretrained Language Models.
+                            We confirm the original results on 3 GLUE tasks and test on 2 new datasets. Despite some
+                            setup
+                            friction, the approach is reproducible, efficient, and shows promise for broader real-world
+                            NLP
                             applications.
                         </p>
                         <div class="publication-links">
@@ -306,7 +332,8 @@
                         </div>
                         <div class="creation-card-body">
                             <h3 data-i18n="creations.recipes.title">Recipe Collection</h3>
-                            <p data-i18n="creations.recipes.desc">My own custom recipes in a gallery with search, filters, portion scaling, and unit conversion.</p>
+                            <p data-i18n="creations.recipes.desc">My own custom recipes in a gallery with search,
+                                filters, portion scaling, and unit conversion.</p>
                             <div class="creation-card-links">
                                 <a href="recipes/" class="btn-small" data-i18n="projects.visit">
                                     <i class="fas fa-external-link-alt"></i> Visit
@@ -361,8 +388,8 @@
                 <a href="https://github.com/vicliv" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://scholar.google.ca/citations?hl=en&user=tuhCUyIAAAAJ&view_op=list_works&gmla=AEk_c1tCEmyrdPCtYZJ04fnX8r3qqc6GEgiZ2AQmRAGARH8IGJCOHaZCiV5auDrsug-JNApn-QDrDixxuc6rZOd5" target="_blank"
-                    rel="noopener noreferrer" aria-label="Google Scholar">
+                <a href="https://scholar.google.ca/citations?hl=en&user=tuhCUyIAAAAJ&view_op=list_works&gmla=AEk_c1tCEmyrdPCtYZJ04fnX8r3qqc6GEgiZ2AQmRAGARH8IGJCOHaZCiV5auDrsug-JNApn-QDrDixxuc6rZOd5"
+                    target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
                     <i class="fas fa-graduation-cap"></i>
                 </a>
                 <a href="https://linkedin.com/in/victor-livernoche" target="_blank" rel="noopener noreferrer">

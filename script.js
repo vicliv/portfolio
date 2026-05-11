@@ -214,6 +214,8 @@ document.addEventListener('DOMContentLoaded', function () {
             'skills.python': 'Python',
             'skills.pytorch': 'PyTorch',
             'pubs.title': 'Publications',
+            'pubs.kdsm_meta': 'Prépublication arXiv • 2026',
+            'pubs.kdsm_abs': "Nous introduisons K-DSM, une méthode de score matching débruité qui fixe les niveaux de bruit par variable à partir de la kurtose marginale pour la détection d’anomalies tabulaires. Cette mise à l’échelle adaptative améliore la couverture de densité sans ajouter de complexité au modèle, avec de solides résultats en semi-supervisé et une performance robuste en non supervisé lorsqu’elle est combinée à un filtrage léger par enseignant EMA.",
             'pubs.openfake_meta': 'En évaluation',
             'pubs.openfake_abs': "OpenFake est un benchmark axé sur le politique pour la détection de deepfakes modernes. Il associe ~3 M d’images réelles avec légendes à 963 k d’images synthétiques de haute qualité issues de générateurs propriétaires et open source, cartographie les modalités de désinformation observées sur les réseaux sociaux et inclut une étude de perception montrant que les modèles propriétaires récents sont difficiles à distinguer. Une plateforme participative adversariale ajoute en continu des cas difficiles pour maintenir la robustesse des détecteurs. Globalement, nos résultats apportent des éléments encourageants montrant que des détecteurs entraînés sur des données de haute qualité peuvent se généraliser à des distributions réelles issues des réseaux sociaux.",
             'pubs.deepfakes_meta': 'Dans les Actes de la conférence ACM Web 2026',
