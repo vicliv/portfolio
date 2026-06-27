@@ -5,7 +5,7 @@ const API_BASE = 'https://deepfake-detector.ai4.institute';
 const LANG_KEY = 'lang';
 
 const MAX_IMAGE_BYTES = 50 * 1024 * 1024;   // 50 MB (images + GIF)
-const MAX_VIDEO_BYTES = 300 * 1024 * 1024;  // 300 MB (video)
+const MAX_VIDEO_BYTES = 100 * 1024 * 1024;  // 100 MB (video)
 
 /* ------------------------------------------------------------------ i18n */
 const UI = {
