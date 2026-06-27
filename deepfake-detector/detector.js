@@ -15,7 +15,7 @@ const UI = {
     headerTitle: 'Deepfake Detector',
     headerSubtitle: 'Upload an image or video to estimate how likely it is AI-generated or tampered. Powered by my OpenFake joint detector. Files are sent to the detection API for analysis and are not stored.',
     dropzoneText: 'Drag & drop an image or video here',
-    dropzoneSub: 'or click to choose a file · images/GIF ≤ 50 MB · video ≤ 300 MB',
+    dropzoneSub: 'or click to choose a file · images/GIF ≤ 50 MB · video ≤ 100 MB',
     analyze: 'Analyze',
     clear: 'Clear',
     loading: 'Analyzing…',
@@ -43,7 +43,7 @@ const UI = {
     errGeneric: 'Something went wrong while analyzing the file.',
     errNetwork: 'Could not reach the detection API. It may be offline, or it may need to allow requests from this site (CORS).',
     errTooBigImage: 'Image/GIF is too large (max 50 MB).',
-    errTooBigVideo: 'Video is too large (max 300 MB).',
+    errTooBigVideo: 'Video is too large (max 100 MB).',
     errType: 'Unsupported file type. Use an image (jpeg/png/webp/gif) or video (mp4/mov/webm/mkv).'
   },
   fr: {
@@ -52,7 +52,7 @@ const UI = {
     headerTitle: 'Détecteur de deepfakes',
     headerSubtitle: 'Téléversez une image ou une vidéo pour estimer la probabilité qu\'elle soit générée par IA ou trafiquée. Propulsé par mon détecteur joint OpenFake. Les fichiers sont envoyés à l\'API d\'analyse et ne sont pas conservés.',
     dropzoneText: 'Glissez-déposez une image ou une vidéo ici',
-    dropzoneSub: 'ou cliquez pour choisir un fichier · images/GIF ≤ 50 Mo · vidéo ≤ 300 Mo',
+    dropzoneSub: 'ou cliquez pour choisir un fichier · images/GIF ≤ 50 Mo · vidéo ≤ 100 Mo',
     analyze: 'Analyser',
     clear: 'Effacer',
     loading: 'Analyse en cours…',
@@ -80,7 +80,7 @@ const UI = {
     errGeneric: 'Une erreur est survenue lors de l\'analyse du fichier.',
     errNetwork: 'Impossible de joindre l\'API de détection. Elle est peut-être hors ligne, ou doit autoriser les requêtes de ce site (CORS).',
     errTooBigImage: 'Image/GIF trop volumineuse (max 50 Mo).',
-    errTooBigVideo: 'Vidéo trop volumineuse (max 300 Mo).',
+    errTooBigVideo: 'Vidéo trop volumineuse (max 100 Mo).',
     errType: 'Type de fichier non pris en charge. Utilisez une image (jpeg/png/webp/gif) ou une vidéo (mp4/mov/webm/mkv).'
   }
 };
